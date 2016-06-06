@@ -1,0 +1,14 @@
+--- 
+layout: home 
+title: Themes Gallery
+---
+
+{% for post in site.posts %}
+
+<p style="text-align:center">
+    <a class="item-inner" href="{{ post.url }}">
+        <span class="item-name">{{ post.title }}</span>
+    </a>
+<p>
+
+{% endfor %}

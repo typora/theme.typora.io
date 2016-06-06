@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Open Sans Regular'),url('./github/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Open Sans Italic'),url('./github/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Open Sans Bold'),url('./github/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Open Sans Bold Italic'),url('./github/700i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Merriweather Light'),url('./Merriweather/Merriweather-Light.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Merriweather Light Italic'),url('./Merriweather/Merriweather-LightItalic.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Merriweather Regular'),url('./Merriweather/Merriweather-Regular.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Merriweather Italic'),url('./Merriweather/Merriweather-Italic.ttf') format('truetype')
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    border-bottom: 1px dashed #999999;
+    min-height: 80px;
+    padding-top: 15px;
+}
+
+.product-name,
+.product-name a {
+    float: left;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 2em;
+    padding-left: 1em;
+}
+
+.category {
+  width: 90%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.category li {
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+.category .article {
+  text-align: left;
+  font-family: 'Merriweather','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+  font-weight: 300;
+}
+
+.category .article .post-header {
+  overflow: hidden;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.category .article .title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category .article .title a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 48em) {
+  .date {
+    display: none;
+  }
+}
+
+@media screen and (max-device-width: 330px) {
+  .product-name {
+    display: none;
+  }
+}
+
+.category .article .date {
+  float: right;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgba(0,0,0,0.2);
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.contact-posts .article .date {
+  text-transform: none;
+}
+
+.nav .pure-menu-list {
+    float: right;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-right: 1em;
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-right:2em;
+}
+
+#content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#post-footer,
+#post-footer a {
+    color: #eee;
+    font-family: 'open sans',arial,sans-serif;
+    letter-spacing: .1em;
+    font-weight: 300;
+}
+
+#post-footer a {
+    text-decoration: underline;
+}
+
+.highlight code {
+    display: block;
+}
+
+.math * {
+    color: inherit !important;
+}
+
+code.highlighter-rouge * {
+  color: initial !important;
+}
+
+blockquote {
+  padding: 1.33em;
+  font-style: italic;
+  border-left: 5px solid #7a7a7a;
+}
+
+img {
+	width: auto;
+  max-width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+  padding: 12px;
+  line-height: 1.2;
+  vertical-align: top;
+  border-top: 1px solid #333;
+}
+table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #333;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+table > tbody + tbody {
+  border-top: 2px solid #333;
+}

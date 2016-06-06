@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=latin" rel="stylesheet">
+  <link href="/assets/css/github.css" rel="stylesheet" />
+  <link href="/assets/css/pure-min.css" rel="stylesheet" />
+  <!--link href="/assets/css/jekyllthemes.css" rel="stylesheet" /-->
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/typora-theme.css" rel="stylesheet" />
+  <link rel='icon' href='/assets/img/favicon-16.png' sizes='16x16'>
+  <link rel='icon' href='/assets/img/favicon-32.png' sizes='32x32'>
+  <link rel='icon' href='/assets/img/favicon-48.png' sizes='48x48'>
+  <link rel='icon' href='/assets/img/favicon-64.png' sizes='64x64'>
+  <link rel='icon' href='/assets/img/favicon-128.png' sizes='128x128'>
+</head>
+
+<body>
+  <style type="text/css">
+  	html,
+	header {
+	  	background-color: #f6f6f6;
+	}
+
+	#pagecontainer {
+		background-color: #fff; 
+		min-height: calc(100vh - 510px);
+	}
+
+  	.nav {
+  		border-bottom: 0;
+  		background-color: #f6f6f6;
+  	}
+
+  	.inner-page {
+  		width: 100%;
+  		max-width: 800px;
+  		margin: auto;
+  		padding:24px;
+  	}
+
+  	h1 {
+  		border-bottom: 0;
+  	}
+
+  	.summary h1{
+  		   	
+  	}
+
+    .meta .btn:not(.disabled):hover {
+        background-color: #ccc;
+    }
+
+    a.disabled {
+      cursor: default;
+    }
+
+    a.btn.disabled:hover {
+      text-decoration: initial;
+      color: #777;
+    }
+
+    .meta .btn {
+      margin-top: 24px;
+    }
+
+    .pure-menu-link:hover, .pure-menu-link:focus {
+       background-color: #cccccc;
+    }
+
+    .summary {
+      padding-top: 40px;
+      min-height:270px;
+      display:flex;
+    }
+
+    @media (max-width: 630px) {
+        .summary {
+            display: block;
+        }
+        .item-image-right {
+          margin-top: 72px;
+          text-align: center;
+        }
+    }
+    .show-on-hover {
+      display: none;
+    }
+
+    a:hover .hide-on-hover {
+      display: none;
+    }
+    a:hover .show-on-hover {
+      display: inline;
+    }
+
+  </style>
+
+
+  <header class="pure-menu pure-menu-horizontal nav" id="header">
+    <div class="gallery">
+      <!--div class="product-name" style="margin-top:4px;"><a style="border: 1px solid;display: inline-block;font-size: 16px;" href="#" class="pure-menu-link"><i class="fa fa-angle-left" aria-hidden="true"></i> Back</a></div-->
+      <ul class="pure-menu-list" style="float: left; margin-left:1em;">
+        <li class="pure-menu-item pure-menu-active"><a href="/" class="pure-menu-link" id="title-bar-feature-btn">Back</a>
+        </li>
+      </ul>
+  </header>
+  <div style="background-color: #f6f6f6;padding-bottom:40px;">
+	  <div class="inner-page summary">
+		    <div class="item-image" style="text-align:center;flex:1;"><img src="/media/thumbnails/{{ page.thumbnail }}" /></div><div class="item-image-right" style="flex:1;">
+		      <h1>{{ page.title }}</h1>
+
+		      <div class="meta clearfix">
+		        <span style='font-family: "Lucida Grande",Verdana,sans-serif;'>{{ page.author }}  <span style="color: #bbb;margin-left:20px;font-size:14px;">{{ page.date | date: "%Y/%m/%d" }}</span></span>
+            <br/>
+		        {% if page.homepage %}
+		          <a class="btn" href="{{ page.homepage }}" target="_blank">Homepage</a>
+		        {% endif %}
+
+            {% if page.built-in %}
+              <a class="btn disabled" disabled><span class="hide-on-hover">Built-in with Typora</span><span class="show-on-hover">No Need to Download</span></a>
+            {% else if page.download %}
+		          <a class="btn" href="{{ page.download }}" target="_blank">Download</a>
+		        {% endif %}
+		      </div>
+		    </div>
+		</div>
+	</div>
+
+
+
+  <div id="pagecontainer" class="container">
+    <div id="post-content" class="inner-page">
+        {{ content }}
+    </div>
+  </div>
+
+
+
+  <footer id="post-footer" style="background-color: rgb(51, 51, 51); padding-top:50px; padding-bottom:50px; text-align:center;font-size:13px;">
+
+  		How to <a href="/doc/Install-Theme/">install</a> &#47; <a href="/doc/Write-Custom-Theme/">write</a> &#47; <a href="/doc/Submit-A-Theme/">submit</a> a theme
+
+  </footer>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

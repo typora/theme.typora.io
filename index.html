@@ -1,0 +1,17 @@
+--- 
+layout: home 
+title: Themes Gallery
+---
+
+<div class="gallery-wrapper">
+    <div class="gallery">
+        {% for post in site.categories.theme %}
+        <div class="item">
+            <a class="item-inner" href="{{ post.url }}">
+                <div class="item-image"><img src="/media/thumbnails/{{ post.thumbnail }}"></div>
+                <div class="item-name">{{ post.title }}</div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>

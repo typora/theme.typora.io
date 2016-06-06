@@ -1,0 +1,140 @@
+--- 
+layout: home 
+title: Themes Gallery
+---
+
+<style type="text/css">
+.doc-wrapper {
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 4rem;
+}
+.doc {
+    margin-right: auto;
+    margin-left: auto;
+    width: 600px;
+    /*box-shadow: 0 4px 9px rgba(0,0,0,0.3);
+    background-color: #f6f6f6;*/
+    min-height: 300px;
+    padding: 1rem;
+}
+.doc h2 {
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 0;
+    font-family: 'Merriweather','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+    color: #445588;
+}
+#content {
+    background-color: white;
+}
+.nav {
+    border-bottom: 1px dashed #999999;
+}
+a.more-content {
+    text-align: center;
+    color: #445588;
+    font-size: 0.9em;
+    display: block;
+    padding: 4px;
+    background-color: #eee;
+}
+a {
+    cursor: pointer;
+}
+.doc ul {
+    list-style-type: none;
+}
+.doc ul li {
+    position: relative;
+}
+.doc ul li:before {
+    content: "+";
+    display: inline-block;
+    position: absolute;
+    color: #008080;
+    left: -16px;
+}
+footer {
+    display: none;
+}
+</style>
+
+
+<div class="doc-wrapper">
+    <div class="doc">
+        <h2># How to install a theme</h2>
+        <article>
+            <ul>
+                <li><p>Download theme from this website or other place.</p></li>
+                <li><p>Open typora. Click "Open Theme Folder" button from `Prefernece Panel` → `Apperance` section.</p></li>
+                <li><p>Put downloaded content into the opened folder, make sure your css files are directly under that directory.</p></li>
+            </ul>
+        </article>
+        <a class='more-content' href="/doc/Install-Theme/">Read More...</a>
+    </div>
+</div>
+
+<div class="doc-wrapper">
+    <div class="doc">
+        <h2># How to write a theme</h2>
+        <article>
+            <ul>
+                <li><p>Write custom CSS styles for h1, p, blockquote, etc.</p></li>
+                <li><p>Download the <a>toolkit</a>. Copy content into `test.css` from the toolkit folder, and check rendered HTML in browser.</p></li>
+                <li><p>Name your css using use lowercase and "-" (no capitalised characters or whitespace), eg: my-typora-theme.css.</p></li>
+                <li><p>Follow instructions for "install theme", and test in typora.</p></li>
+            </ul>
+        </article>
+        <a class='more-content' href="/doc/Write-Custom-Theme/">Read More...</a>
+    </div>
+</div>
+
+<div class="doc-wrapper">
+    <div class="doc">
+        <h2># How to submit a theme</h2>
+        <article>
+            <ul>
+                <li><p>Fork <a href="https://github.com/typora/typora-theme-gallery" target="_blank">this site</a> on Github</p></li>
+                <li><p>Create a new post in the `_posts` directory and fill out the relevant YAML fields</p></li>
+                <li><p>Make a 250x200 thumbnail and drop it in the `thumbnails` directory. List its filename in the post's markdown file.</p></li>
+                <li><p>Test it out (also test your theme), then push your changes up and open a pull request.</p></li>
+            </ul>
+        </article>
+        <a class='more-content' href="/doc/Submit-A-Theme/">Read More...</a>
+    </div>
+</div>
+
+<div class="doc-wrapper">
+    <div class="doc">
+        <h2># More Tips &#38; Docs on Styles</h2>
+        <article>
+            <ul>
+                <li><p><a target="_blank" href="http://support.typora.io/Add-Custom-CSS/">Add Custom CSS</a></p></li>
+                <li><p><a target="_blank" hre="http://support.typora.io/Custom-Font/">Custom Font</a></p></li>
+                <li><p><a target="_blank" href="http://support.typora.io/Code-Block-Styles/">Change Code Block Styles</a></p></li>
+                <li><p>See "Read More.." for more documentations.</p></li>
+            </ul>
+        </article>
+        <a class='more-content' href="http://support.typora.io/style" target="_blank">Read More...</a>
+    </div>
+</div>
+
+<div class="doc-wrapper">
+    <div class="doc">
+        <h2># About this Site</h2>
+        <article>
+            <ul>
+                <li><p>Hosted on <a href="https://github.com/typora/typora-theme-gallery" target="_blank">Github</a>.</p></li>
+                <li><p>Forked from <a href="https://github.com/mattvh/jekyllthemes" target="_blank">jekyllthemes</a> and <a href="https://github.com/typora/wiki-website">typora-wiki</a>.</p></li>
+                <li><p>Contact to <a href="mailto:hi@typora.io">hi@typora.io</a>.</p></li>
+            </ul>
+        </article>
+        <a class='more-content' target="_blank" href="https://github.com/typora/typora-theme-gallery" >Fork Me on Github</a>
+    </div>
+</div>
+
+

@@ -1,0 +1,27 @@
+name: Typora Themes Gallery
+url: https://themes.typora.io
+description: themes, styles and related documents for Typora
+
+permalink: /:categories/:title/
+
+highlighter: null
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  # syntax_highlighter: rouge
+
+  # Rouge Highlighter in Kramdown › http://kramdown.gettalong.org/syntax_highlighter/rouge.html
+  # span, block element options fall back to global
+  syntax_highlighter_opts:
+    # Rouge Options › https://github.com/jneen/rouge#full-options
+    #line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
+
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']

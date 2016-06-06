@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">  
+  <link href="/assets/css/pure-min.css" rel="stylesheet" />
+  <!--link href="/assets/css/jekyllthemes.css" rel="stylesheet" /-->
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/typora-wiki.css" rel="stylesheet" />
+  <link rel='icon' href='/img/favicon-16.png' sizes='16x16'>
+  <link rel='icon' href='/img/favicon-32.png' sizes='32x32'>
+  <link rel='icon' href='/img/favicon-48.png' sizes='48x48'>
+  <link rel='icon' href='/img/favicon-64.png' sizes='64x64'>
+  <link rel='icon' href='/img/favicon-128.png' sizes='128x128'>
+</head>
+
+<body>
+  <style type="text/css">
+
+    body {
+      font-family: "Merriweather", "PT Serif", Georgia, "Times New Roman", "STSong", Serif;
+      font-weight: 300;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: #2E2E2E;
+      line-height: 1.15em;
+      font-family: 'Open Sans','Hiragino Sans GB','Microsoft YaHei','WenQuanYi Micro Hei',sans-serif;
+      text-rendering: geometricPrecision;
+    }
+
+  	#pagecontainer {
+  		background-color: #fff; 
+  		min-height: calc(100vh - 510px);
+  	}
+
+    #post-content {
+      padding-top: 36px;
+      border-top: 1px dashed #999999;
+      line-height: 1.6rem;
+      padding-bottom: 100px;
+    }
+
+    #post-content>blockquote:first-child {
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+      margin-bottom:2em;
+      margin-left: 0;
+    }
+
+  	.nav {
+      border-bottom: none;
+      height: auto;
+    }
+
+  	.inner-page {
+  		width: 100%;
+  		max-width: 800px;
+  		margin: auto;
+  		padding:24px;
+  	}
+
+  	h1 {
+  		border-bottom: 0;
+  	}
+
+    #header {
+      padding-bottom: 32px;
+    }
+
+    #header h1 {  
+      text-align: center;
+      margin-top: 81px;
+      margin-bottom: 48px;
+      white-space: pre-wrap;
+    }
+
+    h1 {
+      font-size: 3.6rem;
+      letter-spacing: -2px;
+      text-indent: -3px;
+    }
+
+    .pure-menu-active>.pure-menu-link, .pure-menu-link:hover, .pure-menu-link:focus {
+        background-color: initial;
+        border: #777 solid 1px;
+    }
+
+    .post-title h1{
+      
+    }
+
+    .post-meta {
+      font-style: italic;
+      text-align: center;
+      color: #7a7a7a;
+    }
+
+    div.highlighter-rouge {
+      padding: 8px;
+      border: 1px #777 solid;
+      line-height: 1.2rem;
+      font-family: Menlo, Monaco, "Courier New", monospace;
+      overflow-x: auto;
+    }
+
+    div.highlighter-rouge pre{
+      overflow: visible;
+      font-size: 0.95em;
+    }
+
+    a {
+      color: #463F5C;
+      text-decoration: underline;
+    }
+  </style>
+
+  <header class="pure-menu pure-menu-horizontal nav post-title" id="header">
+    <div class="gallery">
+      <ul class="pure-menu-list" style="float: left; margin-left:1em;position: absolute;">
+        <li class="pure-menu-item pure-menu-active"><a href="/doc" class="pure-menu-link" id="title-bar-feature-btn">All Theme Docs</a>
+        </li>
+      </ul>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <section class="post-meta">
+    <time>{{ page.date | date: "%B %e, %Y" }}</time>
+    by
+    <span>{{ page.author }}</span>
+    </section>
+  </header>
+
+  <div id="pagecontainer" class="container">
+    <div id="post-content" class="inner-page">
+        {{ content }}
+    </div>
+  </div>
+
+
+
+  <footer id="post-footer" style="background-color: rgb(51, 51, 51); padding-top:50px; padding-bottom:50px; text-align:center;font-size:13px;">
+      hosted on <a href="https://github.com/typora/typora-theme-gallery">Github</a>.
+  </footer>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56771470-2', 'auto');
+  ga('set', 'page', '/support');
+  ga('send', 'pageview');
+
+  </script>
+
+<!--link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.4.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script-->
+</body>
+</html>

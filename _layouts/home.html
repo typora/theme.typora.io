@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} — Typora</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet"-->
+  <link href="/assets/css/github.css" rel="stylesheet" />
+  <link href="/assets/css/pure-min.css" rel="stylesheet" />
+  <!--link href="/assets/css/jekyllthemes.css" rel="stylesheet" /-->
+  <link href="/assets/css/syntax.css" rel="stylesheet" />
+  <link href="/assets/css/typora-theme.css" rel="stylesheet" />
+  <link rel='icon' href='/assets/img/favicon-16.png' sizes='16x16'>
+  <link rel='icon' href='/assets/img/favicon-32.png' sizes='32x32'>
+  <link rel='icon' href='/assets/img/favicon-48.png' sizes='48x48'>
+  <link rel='icon' href='/assets/img/favicon-64.png' sizes='64x64'>
+  <link rel='icon' href='/assets/img/favicon-128.png' sizes='128x128'>
+</head>
+
+
+<body>
+
+  <header class="pure-menu pure-menu-horizontal nav" id="header">
+    <div class="gallery">
+      <div class="product-name">Typora</div>
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="http://typora.io" class="pure-menu-link">Home</a>
+        </li>
+        <li class='pure-menu-item  {% if page.url == "/" %} pure-menu-active {% endif %}'><a href="/" class="pure-menu-link" id="title-bar-feature-btn">Themes</a>
+        </li>
+        <li class='pure-menu-item  {% if page.url contains "/doc" %} pure-menu-active {% endif %}'><a href="/doc" class="pure-menu-link">Documents</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <div id="pagecontainer" class="container">
+
+    <div class="widebanner row">
+      <div class="span12">
+        <div class="banner72" id="banner72">
+
+          <script type="text/javascript">
+            
+          </script>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id="content">
+        {{ content }}
+    </div>
+  </div>
+
+  <style type="text/css">
+    #post-footer a {
+      color: #445588;
+    }
+  </style>
+
+   <footer id="post-footer" style="color: rgb(51, 51, 51); padding-top:50px; padding-bottom:50px; text-align:center;font-size:13px;">
+
+      How to <a href="/doc/Install-Theme/">install</a> &#47; <a href="/doc/Write-Custom-Theme/">write</a> &#47; <a href="/doc/Submit-A-Theme/">submit</a> a theme
+
+  </footer>
+
+
+
+</body>
+</html>
