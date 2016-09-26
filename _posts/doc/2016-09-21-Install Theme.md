@@ -51,4 +51,4 @@ For more details, please check [Add Custom CSS](http://support.typora.io/Add-Cus
 
 #### How to write my own theme?
 
-Please refer to [Write Custom Theme for Typora](theme).
+Please refer to [Write Custom Theme for Typora](/doc/Write-Custom-Theme/).
