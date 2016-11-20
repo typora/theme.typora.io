@@ -3,7 +3,7 @@ layout: post
 title: Write Custom Theme for Typora
 category: doc
 author: typora.io
-typora-root-url: ../../../
+typora-root-url: ../../
 ---
 
 ## Summary

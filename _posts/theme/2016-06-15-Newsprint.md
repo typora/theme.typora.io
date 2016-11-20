@@ -8,7 +8,7 @@ download: https://github.com/typora/typora-default-themes/archive/master.zip
 built-in: true
 author: typora.io
 thumbnail: newsprint.png
-typora-root-url: ../../../
+typora-root-url: ../../
 ---
 
 # Newsprint

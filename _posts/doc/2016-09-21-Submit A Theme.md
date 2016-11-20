@@ -3,7 +3,7 @@ layout: post
 title: Submit A Theme
 category: doc
 author: typora.io
-typora-root-url: ../../../
+typora-root-url: ../../
 ---
 
 - Fork [this site](https://github.com/typora/typora-theme-gallery) on Github

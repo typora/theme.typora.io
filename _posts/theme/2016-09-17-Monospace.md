@@ -6,7 +6,7 @@ homepage: https://github.com/typora/typora-monospace-theme
 download: https://github.com/typora/typora-monospace-theme/archive/master.zip
 author: typora.io
 thumbnail: monospace.png
-typora-root-url: ../../../
+typora-root-url: ../../
 ---
 
 This is a experimental theme to check the possibility of css-powered custom theme.

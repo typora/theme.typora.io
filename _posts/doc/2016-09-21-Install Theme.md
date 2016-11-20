@@ -3,7 +3,7 @@ layout: post
 title: Install Theme
 category: doc
 author: typora.io
-typora-root-url: ../../../
+typora-root-url: ../../
 ---
 
 ## Summary
