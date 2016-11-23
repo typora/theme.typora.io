@@ -11,9 +11,9 @@ thumbnail: timesprint.png
 typora-root-url: ../../
 ---
 
-# Newsprint
+# Timesprint
 
-A newspaper like theme. 
+A modified version of Newsprint that uses Times New Roman. So Typora can be compaitable with those silly font requirements.
 
  ![1](/media/theme/timesprint/1.png)
 
