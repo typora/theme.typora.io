@@ -19,4 +19,4 @@ typora-root-url: ../../
 
   > Designed and tested on macOS. Not fully tested, but should work for Windows/Linux. But this theme does not include styles for Windows "unibody" style.
   
-- If only small modifications are introduced, like changing a font or changing the padding of write area based on an exisiting theme, we could recommand you to edit the post of the original theme, and add links or discriptions about your "forked" one.
+- If only small modifications are introduced, like changing a font or changing the padding of write area based on an existing theme, we could recommend you to edit the post of the original theme, and add links or descriptions about your "forked" one.
