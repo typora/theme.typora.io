@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Submit A Theme
+title: Submit a Theme
 category: doc
 author: typora.io
 typora-root-url: ../../
@@ -18,5 +18,5 @@ typora-root-url: ../../
 - If your theme does not include the styles for Typora on specific platform, please put a notice in post, for example:
 
   > Designed and tested on macOS. Not fully tested, but should work for Windows/Linux. But this theme does not include styles for Windows "unibody" style.
-  
-- If only small modifications are introduced, like changing a font or changing the padding of write area based on an existing theme, we could recommend you to edit the post of the original theme, and add links or descriptions about your "forked" one.
+
+- If only small modifications are introduced, like changing a font or changing the padding of write area based on an existing theme, we could recommend you to write your post under folder `/_posts/fork`, and set the category to be `fork` in the YAML front matter of the post, and then put a reference link in the original theme. 
