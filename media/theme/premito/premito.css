@@ -385,6 +385,7 @@ svg[id^="mermaidChart"] {
 
 .MathJax .merror {
     font-weight: lighter;
+    width: 100%!important;
 }
 
 /** focus mode */
