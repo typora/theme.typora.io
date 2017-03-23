@@ -13,14 +13,10 @@ typora-copy-images-to: ../../media/theme/github
 
 # Github-Dark
 
-This is dark theme for typora, inspired or forked from [GitHub](http://github.com).
+This is a dark theme for typora, forked from [GitHub](http://github.com).
 
 ![Snip20170320_1](/media/theme/github/github-dark.png)
 
 ---
 
-### Themes Forked From it...
-
-![](/media/thumbnails/premito.png)
-
-[**Premito**](/fork/Premito/) (/pɹɛmitoʊ/) This theme was born out of a need to create a beautiful printed file with MathJax math, code blocks, and flowcharts.
+Designed and tested on macOS. Not fully tested, but should work for Windows/Linux.
