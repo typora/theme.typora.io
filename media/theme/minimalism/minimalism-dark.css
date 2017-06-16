@@ -69,14 +69,14 @@
 }
 
 html {
-    font-size: 17px; background: #FBFBFB;
+    font-size: 17px; background: #11151C;
 }
 
 body {
     font-family: "Nimbus Sans L","Open Sans","Clear Sans",sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: rgb(60, 60, 60);
+    color: rgb(106, 169, 185);
     line-height: 1.6;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -85,9 +85,9 @@ body {
 
 #write{
     max-width: 787px;
-    margin: 0 auto;
-    padding: 20px 30px 40px 30px;
-    padding-top: 20px;
+  	margin: 0 auto;
+  	padding: 20px 30px 40px 30px;
+	padding-top: 20px;
     padding-bottom: 100px;
 }
 #write > ul:first-child,
@@ -102,7 +102,7 @@ body > *:last-child {
     margin-bottom: 0 !important;
 }
 a {
-    color: #DD4C4F;
+    color: #F2825A;
     text-decoration: none; 
     white-space: pre-wrap; 
     white-space: -moz-pre-wrap; 
@@ -119,7 +119,7 @@ h6 {
     position: relative;
     margin-top: 1.2rem;
     margin-bottom: 1.2rem;
-    color: rgb(47, 47, 47);
+    color: rgb(74, 184, 140);
     font-weight: normal;
     line-height: 1.4;
     cursor: text;
@@ -196,7 +196,7 @@ hr {
     height: 4px;
     padding: 0;
     margin: 16px 0;
-    background-color: #FFFFFF;
+    background-color: #e7e7e7;
     border: 0 none;
     overflow: hidden;
     box-sizing: content-box;
@@ -255,11 +255,11 @@ ol:last-child {
     margin-bottom: 0;
 }
 blockquote {
-    color: #5F5F5F;
-    border: 1px solid #DDDDDD;
-    background-color: #FFFFFF;
+    color: #5A9CAB;
+	border: 1px solid #122A3F;
+    background-color: #0B1722;
     border-radius: 2px;
-    border-left: 3px solid #E06D72;
+    border-left: 3px solid #40A889;
     padding-left: 20px;
     padding-right: 20px;
     padding: 25px, 10px, 25px, 10px;
@@ -274,23 +274,23 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #cccccc;
-    background-color: white;
+    border-top: 1px solid #122A3F;
+    background-color: #0B1722;
     margin: 0;
     padding: 0;
 }
 table tr:nth-child(2n) {
-    background-color: #f8f8f8;
+    background-color: #0B1722;
 }
 table tr th {
     font-weight: bold;
-    border: 1px solid #cccccc;
+    border: 1px solid #122A3F;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
 }
 table tr td {
-    border: 1px solid #cccccc;
+    border: 1px solid #122A3F;
     text-align: left;
     margin: 0;
     padding: 6px 13px;
@@ -311,8 +311,9 @@ table tr td:last-child {
 .md-fences,
 code,
 tt {
-    border: 1px solid #DDDDDD;
-    background-color: #FFFFFF;
+    color: #5A9CAB;
+    border: 1px solid #122A3F;
+    background-color: #0B1722;
     border-radius: 2px;
     padding: 0;
     font-family: 'Roboto Mono', Courier, monospace;
@@ -321,19 +322,18 @@ tt {
 }
 
 .md-fences {
-    background-color: #FFFFFF;
     margin-bottom: 15px;
     margin-top: 15px;
-    padding: 0.1em;
+    padding: 0.2em 0.1em;
     padding-top: 0px;
     padding-bottom: 0px;
 }
 .task-list{
-    padding-left: 0;
+	padding-left: 0;
 }
 
 .task-list-item {
-    padding-left:32px;
+	padding-left:32px;
 }
 
 .task-list-item input {
@@ -361,10 +361,10 @@ tt {
 }
 
 .md-fences {
-    background-color: #FFFFFF;
+	background-color: #0B1722;
 }
 #write pre.md-meta-block {
-    padding: 1rem;
+	padding: 1rem;
     font-size: 85%;
     line-height: 1.45;
     background-color: #f7f7f7;
@@ -375,24 +375,24 @@ tt {
 }
 
 .mathjax-block>.code-tooltip {
-    bottom: .375rem;
+	bottom: .375rem;
 }
 
 #write>h3.md-focus:before{
-    left: -1.5625rem;
-    top: .375rem;
+	left: -1.5625rem;
+	top: .375rem;
 }
 #write>h4.md-focus:before{
-    left: -1.5625rem;
-    top: .285714286rem;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
 #write>h5.md-focus:before{
-    left: -1.5625rem;
-    top: .285714286rem;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
 #write>h6.md-focus:before{
-    left: -1.5625rem;
-    top: .285714286rem;
+	left: -1.5625rem;
+	top: .285714286rem;
 }
 .md-image>.md-meta {
     border: 1px solid #ddd;
@@ -404,7 +404,7 @@ tt {
 }
 
 .md-tag{
-    color: inherit;
+	color: inherit;
 }
 
 .md-toc { 
@@ -441,8 +441,8 @@ header, .context-menu, .megamenu-content, footer{
 
 .CodeMirror {
     /* Set height, width, borders, and global font properties here */
-    background-color: #F3F2F4;
-    color: #656565;
+    background-color: #111C2A;
+    color: #F6F7EE;
     font-family: 'Roboto Mono', Courier, monospace;
     font-size: 16px;
     height: 300px;
@@ -504,62 +504,62 @@ header, .context-menu, .megamenu-content, footer{
 .cm-s-typora-default .cm-header,
 .cm-s-typora-default .cm-property {
     font-size: 16px;
-    color: #1C7AF8;
+    color: #F9B53B;
 }
 
 .cm-s-typora-default pre.cm-header1:not(.cm-atom) *:not(.cm-overlay){
     font-size: 16px;
-    color: #1C7AF8;
+    color: #F9B53B;
 }
 
 .cm-s-typora-default pre.cm-header2:not(.cm-atom) *:not(.cm-overlay){
     font-size: 16px;
-    color: #1C7AF8;
+    color: #F9B53B;
 }
 
 .cm-s-typora-default .cm-atom,
 .cm-s-typora-default .cm-number {
     color: #8E8E93;
-    background-color: #EAE9EA;
+    background-color: #182134;
 }
 
 .cm-s-typora-default .cm-table-row, 
 .cm-s-typora-default .cm-block-start{
-    color: #F73E2D;
+    color: #F6F7EE;
     font-family: monospace;
 }
 
 .cm-s-typora-default .cm-comment{
-    background-color: #F4EFE0;
-    color: #EBC13B;
-    padding: 2px 4px 2px 5px;
+    background-color: #182134;
+    color: #53C0DB;
+    padding: 4px 4px 4px 5px;
     font-family: monospace;
 }
 .cm-s-typora-default .cm-code{
-    background-color: #F5E0E5;
-    color: #F74551;
+    background-color: #182134;
+    color: #53C0DB;
     padding: 4px 4px 4px 5px;
     font-family: monospace;
 }
 
 .cm-s-typora-default .cm-tag{
-    background-color: #E0E8F4;
-    color: #446BA8;
+    background-color: #182134;
+    color: #1C7AF8;
     padding: 2px 4px 2px 5px;
     border: 1px solid #1C7AF8;
     border-radius: 3px;
 }
 
 .cm-s-typora-default .cm-string{
-    color: #6A9B00;
+    color: #4AB88C;
 }
 
 .cm-s-typora-default .cm-link {
     text-decoration: none;
-    background-color: #B9CFF7;
-    color: #000000;
+    background-color: #182134;
+    color: #B979FF;
     padding: 2px 4px 2px 5px;
-    border: 1px solid #1C7AF8;
+    border: 1px solid #B979FF;
     border-radius: 3px;
 }
 
