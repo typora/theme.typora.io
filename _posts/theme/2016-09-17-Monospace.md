@@ -10,6 +10,8 @@ typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/monospace
 ---
 
+> **Note**: Requires macOS ≥ 10.11 or Windows/Linux
+
 This is a experimental theme to check the possibility of css-powered custom theme.
 
 It is a coder-friendly theme which will display the rendered Markdown close to its un-rendered source code. It will display most Markdown syntax as it is, yet also displays rendered images, tables, table of contents, etc.
