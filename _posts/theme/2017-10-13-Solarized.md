@@ -15,6 +15,6 @@ typora-copy-images-to: ../../media/theme/solarized
 
 This Solarized theme for Typora uses the same color scheme originally created by Ethan Schoonover.
 
-![Snip20170320_1](/media/theme/solarized/screenshot.jpg)
+![Screenshot](/media/theme/solarized/screenshot.jpg)
 
 ---
