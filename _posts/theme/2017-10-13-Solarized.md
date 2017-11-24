@@ -6,7 +6,7 @@ homepage: https://github.com/belenos/typora-solarized
 download: https://github.com/belenos/typora-solarized/archive/master.zip
 built-in: false
 author: Rafael Belenos
-thumbnail: solarized.jpg
+thumbnail: solarized.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/solarized
 ---
