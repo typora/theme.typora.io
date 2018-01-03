@@ -472,3 +472,7 @@ img {
     display: block;
     overflow-x: auto;
 }
+
+img:only-child {
+  display: block;
+}
