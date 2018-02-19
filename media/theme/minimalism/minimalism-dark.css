@@ -541,6 +541,10 @@ tt {
   left: 8px;
 }
 
+.task-list-item.md-task-list-item input {
+    left: 0;
+}
+
 @media screen and (min-width: 914px) {
     /*body {
         width: 854px;
