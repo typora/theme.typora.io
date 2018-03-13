@@ -25,5 +25,3 @@ kramdown:
 
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
-
-theme: jekyll-theme-minimal
