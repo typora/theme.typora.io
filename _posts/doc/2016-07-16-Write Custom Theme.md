@@ -6,6 +6,10 @@ author: typora.io
 typora-root-url: ../../
 ---
 
+## Translations
+
+[繁體中文](https://pjchender.github.io/2018/04/24/Other/[Note]%20Write%20Custom%20Theme%20for%20Typora/)
+
 ## Summary
 
 If you want to write a custom CSS theme for Typora, all you need to do is:
