@@ -367,11 +367,16 @@ html {
 }
 
 
-[mdtype="table_row"] > th, 
-[mdtype="table_row"] > td {
+#write table th, #write table td {
   border: 1px solid #ddd;
   padding: 0.5em 1em;
   color: #666;
+}
+
+#write table .md-table-edit th {
+  border: none;
+  padding: 0;
+  color: inherit;
 }
 
 #write table th, #write-table th {
