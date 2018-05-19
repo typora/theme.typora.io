@@ -10,6 +10,37 @@ typora-root-url: ../../
 
 [繁體中文](https://pjchender.github.io/2018/04/24/Other/[Note]%20Write%20Custom%20Theme%20for%20Typora/)
 
+## Update -- CSS Variables
+
+Overwriting exisitng [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is more recommanded if you want to define fonts, colors, backgrounds. Eaiser version of macOS/Safari does not support this, but it is still much easier to use. Common used ones are: 
+
+```css
+:root {
+   --bg-color:  #ffffff; /*change background*/
+   --text-color: #333333; /*change text color*/
+   --md-char-color: #C7C5C5; /*change color of meta characetrs like `*` in markdown */
+   --meta-content-color: #5b808d; /*change color of meta contents like image text or link address in markdown */
+
+   --primary-color: #428bca; /* color of primary buttons */
+   --primary-btn-border-color: #285e8e;
+   --primary-btn-text-color: #fff;
+
+   --window-border: 1px solid #eee; /*border for sidebar, etc*/
+
+   --active-file-bg-color: #eee; /*background color if list item in file tree or file list*/
+   --active-file-text-color: inherit;
+   --active-file-border-color: #777;
+
+   --side-bar-bg-color: var(--bg-color); /*change background of sidebar*/
+   --item-hover-bg-color: rgba(229, 229, 229, 0.59); /*background of control items when hover, like menu in sidebar*/
+   --item-hover-text-color: inherit;
+   --monospace: monospace; /*monospace font for codes, fences*/
+}
+```
+
+The variables may change in future, so you [could use DevTools in Typora to confirm it](#test-in-typora). 
+
+
 ## Summary
 
 If you want to write a custom CSS theme for Typora, all you need to do is:
