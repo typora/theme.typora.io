@@ -300,9 +300,13 @@ hr {
   height: 10px;
 }
 
-strong, b {
+#write strong {
   font-weight: bolder;
   color: #000;
+}
+
+.code-tooltip.md-hover-tip strong {
+  color: white;
 }
 
 /* 保证块/段落之间的空白隔行 */
