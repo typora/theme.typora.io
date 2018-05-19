@@ -28,7 +28,7 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
 
    You could also follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
    
-   To debug CSS in Typora like Safari or Chrome, you could enable debug mode from help menu (macOS) or form preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the **DevTool** like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
+   To debug CSS in Typora like Safari or Chrome, you could enable debug mode from help menu (macOS) or form preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the [DevTools](https://developer.chrome.com/devtools) like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
    
    You could also put the css file you create into toolkit/theme/test.css along with resources like image or font it used. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
 
