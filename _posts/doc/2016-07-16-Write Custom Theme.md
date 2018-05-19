@@ -24,11 +24,13 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
 
    If you want to convert existing css files (from Wordpress or Jekyll theme), just copy the content, and then add styles those css files did not cover, like styles for "toc" or for UI components. 
 
-3. Test/Debug your css file. 
+3. Tweak/Debug css classes and styles. 
 
-   Put the css file you create into `toolkit/theme/test.css` along with resources like image or font it used. And open html files under `toolkit/core` and `toolkit/electron` to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows.
-
-   Then, follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
+   You could also follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
+   
+   To debug CSS in Typora like Safari or Chrome, you could enable debug mode from help menu (macOS) or form preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the **DevTool** like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
+   
+   You could also put the css file you create into toolkit/theme/test.css along with resources like image or font it used. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
 
 4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](typora-theme-gallery).
 
