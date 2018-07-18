@@ -1,0 +1,18 @@
+---
+layout: theme
+title: Rose
+category: theme
+homepage: https://github.com/CharlesHahn/typora-vue-theme
+download: https://codeload.github.com/CharlesHahn/typora-vue-theme/
+built-in: false
+author: Charles
+thumbnail: rose.png
+typora-root-url: ../../
+typora-copy-images-to: ../../media/theme/rose
+---
+
+Following are a few screenshots:
+
+![typora_pic_0](/media/theme/rose/pic_0.png)
+
+![typora_pic_1](/media/theme/rose/pic_1.png)
