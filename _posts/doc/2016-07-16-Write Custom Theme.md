@@ -63,7 +63,7 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
    
    You could also put the css file you create into toolkit/theme/test.css along with resources like image or font it used. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
 
-4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](typora-theme-gallery).
+4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](https://github.com/typora/typora-theme-gallery).
 
 ## Basic Rules
 
