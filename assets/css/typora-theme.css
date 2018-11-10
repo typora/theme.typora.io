@@ -475,4 +475,5 @@ img {
 
 img:only-child {
   display: block;
+  margin: auto;
 }
