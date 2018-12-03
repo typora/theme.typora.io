@@ -12,7 +12,7 @@ typora-root-url: ../../
 
 ## Update -- CSS Variables
 
-Overwriting exisitng [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is more recommanded if you want to define fonts, colors, backgrounds. Eaiser version of macOS/Safari does not support this, but it is still much easier to use. Common used ones are: 
+Overwriting existing [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is more recommended if you want to define fonts, colors, backgrounds. Eaiser version of macOS/Safari does not support this, but it is still much easier to use. Common used ones are: 
 
 ```css
 :root {
@@ -45,11 +45,11 @@ The variables may change in future, so you [could use DevTools in Typora to conf
 
 If you want to write a custom CSS theme for Typora, all you need to do is:
 
-1. New a css file. The file name **should not include capitalised characters or whitespace**, for example: `my-typora-theme` is a valid file name.
+1. Create a new css file. The file name **should not include capitalised characters or whitespace**, for example: `my-typora-theme` is a valid file name.
 
 2. Write the css file. 
 
-   We prepare a [toolkit][] for you to get start or do simple test. 
+   We prepared a [toolkit] for you to get started or to do simple testing. 
 
    If you want to write one from scratch, pick the template.less, and fill it.
 
@@ -59,18 +59,18 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
 
    You could also follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
    
-   To debug CSS in Typora like Safari or Chrome, you could enable debug mode from help menu (macOS) or form preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the [DevTools](https://developer.chrome.com/devtools) like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
+   To debug CSS in Typora like Safari or Chrome, you could enable debug mode from help menu (macOS) or from preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the [DevTools](https://developer.chrome.com/devtools) like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
    
-   You could also put the css file you create into toolkit/theme/test.css along with resources like image or font it used. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
+   You could also put the css file you created into toolkit/theme/test.css along with resources like image or font it uses. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
 
 4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](https://github.com/typora/typora-theme-gallery).
 
 ## Basic Rules
 
-1. File naming rule for theme css: Do not use capitalized letters, and please replace whitespace with `-`, and typora will convert them to readable label in menu item. For example, for `my-first-typora-theme.css`, typora will put an menu item "My First Typora Theme" under "Themes" menu.
+1. File naming rule for theme css: Do not use capitalized letters, and please replace whitespace with `-`, and Typora will convert them to readable label in menu item. For example, for `my-first-typora-theme.css`, Typora will put an menu item "My First Typora Theme" under "Themes" menu.
 2. Put default font size into `html`, then for elements like `h1` or `p`, use `rem` for their `font-size` property, or else custom font size in preference panel will not work.
 3. Typora is created upon Webkit (on macOS) or Chromium (on Windows/Linux), so please use css properties supported by Chrome or Safari (aka Webkit).
-4. Some modifications of CSS may cause Typora not work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
+4. Some modifications of CSS may cause Typora not to work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
 
 ---
 
@@ -317,6 +317,3 @@ Please make a pull request to [typora-wiki-site](https://github.com/typora/wiki-
 [install-theme]: /doc/Install-Theme/
 [typora-theme-gallery]: https://github.com/typora/typora-theme-gallery
 [toolkit]: https://github.com/typora/typora-theme-toolkit
-
-
-
