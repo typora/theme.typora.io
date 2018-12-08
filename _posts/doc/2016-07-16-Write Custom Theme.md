@@ -49,7 +49,7 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
 
 2. Write the css file. 
 
-   We prepared a [toolkit] for you to get started or to do simple testing. 
+   We prepared a [toolkit][toolkit] for you to get started or to do simple testing. 
 
    If you want to write one from scratch, pick the template.less, and fill it.
 
