@@ -2,8 +2,8 @@
 layout: theme
 title: Colarized
 category: theme
-homepage: https://github.com/typora/typora-colarized-theme
-download: https://github.com/typora/typora-colarized-theme/archive/master.zip
+homepage: https://github.com/Freakwill/typora-theme-gallery/blob/gh-pages/_posts/theme/2019-03-12-Colarized.md
+download: https://github.com/Freakwill/typora-theme-gallery/blob/gh-pages/media/theme/colarized/Solarized.zip
 built-in: false
 author: typora.io
 thumbnail: colarized.png
