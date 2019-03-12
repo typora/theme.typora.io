@@ -26,5 +26,6 @@ A nice vivid theme. Colarized means colorful solarized.
 How Colorful it is.
 
 ![Snip20190312_3](/media/theme/colarized/Snip20190312_3.png)
-![Snip20190312_3](/media/theme/colarized/Snip20190312_4.png)
+
+![Snip20190312_4](/media/theme/colarized/Snip20190312_4.png)
 
