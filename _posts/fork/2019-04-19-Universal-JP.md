@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: Universal JP
-category: theme
+category: fork
 homepage: https://github.com/hidekuro/typora-universal-jp-theme
 download: https://github.com/hidekuro/typora-universal-jp-theme/archive/master.zip
 built-in: false
