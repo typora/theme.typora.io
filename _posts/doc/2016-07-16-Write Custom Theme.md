@@ -8,7 +8,7 @@ typora-root-url: ../../
 
 ## Translations
 
-[繁體中文](https://pjchender.github.io/2018/04/24/Other/[Note]%20Write%20Custom%20Theme%20for%20Typora/)
+[繁體中文](https://pjchender.github.io/2018/04/24/note-%E5%A6%82%E4%BD%95%E7%82%BA-typora-%E6%92%B0%E5%AF%AB%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%A8%A3%E5%BC%8F/)
 
 ## Update -- CSS Variables
 
