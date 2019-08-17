@@ -6,7 +6,7 @@ homepage: https://github.com/material-ocean/Typora-Theme
 download: https://github.com/material-ocean/Typora-Theme/archive/master.zip
 built-in: false
 author: Blacksuan19
-thumbnail: 2019-08-17_18-12.png
+thumbnail: material-ocean.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/material-ocean
 ---
