@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: Dark_Typora
-category: theme
+category: fork
 homepage: https://github.com/AlexFlipnote/Dark_Typora
 download: https://github.com/AlexFlipnote/Dark_Typora/archive/master.zip
 built-in: false
