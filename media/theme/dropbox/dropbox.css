@@ -256,7 +256,7 @@ code, .md-fences {
 blockquote {
 	margin: 0 0 1.11111rem;
 	padding: 0.5rem 1.11111rem 0 1.05556rem;
-	border-left: 1px solid #d2d2d2;
+	border-left: 2px solid rgba(0, 112, 224, 0.32);
 }
 blockquote,
 blockquote p {
@@ -337,7 +337,6 @@ p.mathjax-block,
 }
 
 .file-list-item {
-  border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: #E6E8EB;
 }

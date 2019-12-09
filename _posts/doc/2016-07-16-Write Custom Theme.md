@@ -6,34 +6,71 @@ author: typora.io
 typora-root-url: ../../
 ---
 
+## Translations
+
+[繁體中文](https://pjchender.github.io/2018/04/24/note-%E5%A6%82%E4%BD%95%E7%82%BA-typora-%E6%92%B0%E5%AF%AB%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%A8%A3%E5%BC%8F/)
+
+## Update -- CSS Variables
+
+Overwriting existing [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) is more recommended if you want to define fonts, colors, backgrounds. Earlier versions of macOS/Safari does not support this, but it is still much easier to use. Common used ones are: 
+
+```css
+:root {
+   --bg-color:  #ffffff; /*change background*/
+   --text-color: #333333; /*change text color*/
+   --md-char-color: #C7C5C5; /*change color of meta characetrs like `*` in markdown */
+   --meta-content-color: #5b808d; /*change color of meta contents like image text or link address in markdown */
+
+   --primary-color: #428bca; /* color of primary buttons */
+   --primary-btn-border-color: #285e8e;
+   --primary-btn-text-color: #fff;
+
+   --window-border: 1px solid #eee; /*border for sidebar, etc*/
+
+   --active-file-bg-color: #eee; /*background color if list item in file tree or file list*/
+   --active-file-text-color: inherit;
+   --active-file-border-color: #777;
+
+   --side-bar-bg-color: var(--bg-color); /*change background of sidebar*/
+   --item-hover-bg-color: rgba(229, 229, 229, 0.59); /*background of control items when hover, like menu in sidebar*/
+   --item-hover-text-color: inherit;
+   --monospace: monospace; /*monospace font for codes, fences*/
+}
+```
+
+The variables may change in future, so you [could use DevTools in Typora to confirm it](#test-in-typora). 
+
+
 ## Summary
 
 If you want to write a custom CSS theme for Typora, all you need to do is:
 
-1. New a css file. The file name **should not include capitalised characters or whitespace**, for example: `my-typora-theme` is a valid file name.
+1. Create a new css file. The file name **should not include capitalised characters or whitespace**, for example: `my-typora-theme` is a valid file name.
 
 2. Write the css file. 
 
-   We prepare a [toolkit][] for you to get start or do simple test. 
+   We prepared a [toolkit][toolkit] for you to get started or to do simple testing. 
 
    If you want to write one from scratch, pick the template.less, and fill it.
 
    If you want to convert existing css files (from Wordpress or Jekyll theme), just copy the content, and then add styles those css files did not cover, like styles for "toc" or for UI components. 
 
-3. Test/Debug your css file. 
+3. Tweak/Debug css classes and styles. 
 
-   Put the css file you create into `toolkit/theme/test.css` along with resources like image or font it used. And open html files under `toolkit/core` and `toolkit/electron` to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows.
+   You could also follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
+   
+   To debug CSS in Typora like in Safari or Chrome, you could enable debug mode from help menu (macOS) or from preferences panel (macOS/Linux/Windows) and find & click "Inspect Elements" from context menu, which will pop up the [DevTools](https://developer.chrome.com/devtools) like Safari or Chrome browser. On Linux/Windows version, you could toggle it from `View` menu or just press `F12`.
+   
+   You could also put the css file you created into toolkit/theme/test.css along with resources like image or font it uses. And open html files under toolkit/core and toolkit/electron to preview your css. Please preview the html files using Safari on Mac or Chrome on Linux/Windows. 
 
-   Then, follow [how to install custom theme][install-theme] to install and use the theme and test it with Typora.
-
-4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](typora-theme-gallery).
+4. If you want to share your theme, just make a fork and make a pull request to [Typora Theme Gallery](https://github.com/typora/typora-theme-gallery).
 
 ## Basic Rules
 
-1. File naming rule for theme css: Do not use capitalized letters, and please replace whitespace with `-`, and typora will convert them to readable label in menu item. For example, for `my-first-typora-theme.css`, typora will put an menu item "My First Typora Theme" under "Themes" menu.
+1. File naming rule for theme css: Do not use capitalized letters, and please replace whitespace with `-`, and Typora will convert them to readable label in menu item. For example, for `my-first-typora-theme.css`, Typora will put an menu item "My First Typora Theme" under "Themes" menu.
 2. Put default font size into `html`, then for elements like `h1` or `p`, use `rem` for their `font-size` property, or else custom font size in preference panel will not work.
 3. Typora is created upon Webkit (on macOS) or Chromium (on Windows/Linux), so please use css properties supported by Chrome or Safari (aka Webkit).
-4. Some modifications of CSS may cause Typora not work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
+4. Some modifications of CSS may cause Typora not to work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
 
 ---
 
@@ -280,6 +317,3 @@ Please make a pull request to [typora-wiki-site](https://github.com/typora/wiki-
 [install-theme]: /doc/Install-Theme/
 [typora-theme-gallery]: https://github.com/typora/typora-theme-gallery
 [toolkit]: https://github.com/typora/typora-theme-toolkit
-
-
-
