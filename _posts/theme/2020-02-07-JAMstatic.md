@@ -15,4 +15,4 @@ typora-root-url: ../../
 
 The [JAMstatic](https://jamstatic.fr/) theme for Typora, inspired by the [GitHub theme](http://theme.typora.io/theme/Github/).
 
-![1](/media/theme/JAMstatic/jamstatic-theme.png)
+![Theme preview](/media/theme/jamstatic/jamstatic-theme.png)
