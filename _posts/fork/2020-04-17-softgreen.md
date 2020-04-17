@@ -25,12 +25,12 @@ Soft Green Theme from h5builder maybe the best theme for my eyes. I like the gen
 
 ## Snapshots
 
-![snapshot-1](https://github.com/pomopopo/typora-theme-softgreen/README.assets/snapshot-1.png)
+![snapshot-1](/media/theme/softgreen/snapshot-1.png)
 
 
 
-![snapshot-2](https://github.com/pomopopo/typora-theme-softgreen/README.assets/snapshot-2.png)
+![snapshot-2](/media/theme/softgreen/snapshot-2.png)
 
 
 
-![snapshot-3](https://github.com/pomopopo/typora-theme-softgreen/README.assets/snapshot-3.png)
+![snapshot-3](/media/theme/softgreen/snapshot-3.png)
