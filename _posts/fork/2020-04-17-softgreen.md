@@ -7,7 +7,7 @@ download: https://github.com/pomopopo/typora-theme-softgreen
 built-in: False
 date: 2020-04-17
 author: Pomo
-thumbnail: softgreen.jpg
+thumbnail: softgreen.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/softgreen
 ---
