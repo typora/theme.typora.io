@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: softgreen
-category: fork
+category: theme
 homepage: https://github.com/pomopopo/typora-theme-softgreen
 download: https://github.com/pomopopo/typora-theme-softgreen
 built-in: False
