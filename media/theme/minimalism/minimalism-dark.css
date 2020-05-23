@@ -50,11 +50,11 @@
 
 /* Webfont: HKGrotesk-Medium */@font-face {
     font-family: 'HKGrotesk';
-    src: url('HKGrotesk-Medium.eot'); /* IE9 Compat Modes */
-    src: url('HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('HKGrotesk-Medium.woff') format('woff'), /* Modern Browsers */
-         url('HKGrotesk-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('HKGrotesk-Medium.svg#HKGrotesk-Medium') format('svg'); /* Legacy iOS */
+    src: url('./minimalism/HKGrotesk-Medium.eot'); /* IE9 Compat Modes */
+    src: url('./minimalism/HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./minimalism/HKGrotesk-Medium.woff') format('woff'), /* Modern Browsers */
+         url('./minimalism/HKGrotesk-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./minimalism/HKGrotesk-Medium.svg#HKGrotesk-Medium') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: 500;
     text-rendering: optimizeLegibility;
@@ -62,11 +62,11 @@
 
 /* Webfont: HKGrotesk-MediumItalic */@font-face {
     font-family: 'HKGroteskMedium';
-    src: url('HKGrotesk-MediumItalic.eot'); /* IE9 Compat Modes */
-    src: url('HKGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('HKGrotesk-MediumItalic.woff') format('woff'), /* Modern Browsers */
-         url('HKGrotesk-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('HKGrotesk-MediumItalic.svg#HKGrotesk-MediumItalic') format('svg'); /* Legacy iOS */
+    src: url('./minimalism/HKGrotesk-MediumItalic.eot'); /* IE9 Compat Modes */
+    src: url('./minimalism/HKGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./minimalism/HKGrotesk-MediumItalic.woff') format('woff'), /* Modern Browsers */
+         url('./minimalism/HKGrotesk-MediumItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./minimalism/HKGrotesk-MediumItalic.svg#HKGrotesk-MediumItalic') format('svg'); /* Legacy iOS */
     font-style: italic;
     font-weight: 500;
     text-rendering: optimizeLegibility;
@@ -74,11 +74,11 @@
 
 /* Webfont: HKGrotesk-Bold */@font-face {
     font-family: 'HKGrotesk';
-    src: url('HKGrotesk-Bold.eot'); /* IE9 Compat Modes */
-    src: url('HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('HKGrotesk-Bold.woff') format('woff'), /* Modern Browsers */
-         url('HKGrotesk-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('HKGrotesk-Bold.svg#HKGrotesk-Bold') format('svg'); /* Legacy iOS */
+    src: url('./minimalism/HKGrotesk-Bold.eot'); /* IE9 Compat Modes */
+    src: url('./minimalism/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./minimalism/HKGrotesk-Bold.woff') format('woff'), /* Modern Browsers */
+         url('./minimalism/HKGrotesk-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./minimalism/HKGrotesk-Bold.svg#HKGrotesk-Bold') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -86,11 +86,11 @@
 
 /* Webfont: HKGrotesk-BoldItalic */@font-face {
     font-family: 'HKGrotesk';
-    src: url('HKGrotesk-BoldItalic.eot'); /* IE9 Compat Modes */
-    src: url('HKGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('HKGrotesk-BoldItalic.woff') format('woff'), /* Modern Browsers */
-         url('HKGrotesk-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('HKGrotesk-BoldItalic.svg#HKGrotesk-BoldItalic') format('svg'); /* Legacy iOS */
+    src: url('./minimalism/HKGrotesk-BoldItalic.eot'); /* IE9 Compat Modes */
+    src: url('./minimalism/HKGrotesk-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./minimalism/HKGrotesk-BoldItalic.woff') format('woff'), /* Modern Browsers */
+         url('./minimalism/HKGrotesk-BoldItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./minimalism/HKGrotesk-BoldItalic.svg#HKGrotesk-BoldItalic') format('svg'); /* Legacy iOS */
     font-style: italic;
     font-weight: bold;
     text-rendering: optimizeLegibility;
@@ -179,7 +179,7 @@ html {
 }
 
 body {
-    font-family: 'Atlas Grotesk', sans-serif;
+    font-family: 'HKGrotesk', sans-serif;
     font-weight: 300;
     
     text-rendering: optimizeLegibility;
@@ -200,7 +200,7 @@ body {
 }
 
 strong {
-    font-family: 'Atlas Grotesk', serif; 
+    font-family: 'HKGrotesk', serif; 
     font-weight: bold;
     text-decoration: none;
     text-rendering: optimizeLegibility;
@@ -211,7 +211,7 @@ strong {
 } 
 
 em {
-    font-family: 'Atlas Grotesk', serif; 
+    font-family: 'HKGrotesk', serif; 
     font-weight: normal; 
     font-style: italic;
 } 
@@ -269,7 +269,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Atlas Grotesk",sans-serif;
+    font-family: "HKGrotesk",sans-serif;
     font-weight: bold;
     letter-spacing: -0.45px; 
     word-spacing: 0.5px;
