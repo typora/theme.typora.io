@@ -1,20 +1,20 @@
 ---
 layout: theme
-title: chinese 
+title: chineseStyle 
 category: theme
 homepage: https://github.com/luokangyuan/typora-theme-chineseStyle
 download: https://codeload.github.com/luokangyuan/typora-theme-chineseStyle/zip/master
 built-in: false
 author: luokangyuan
-thumbnail: chinese.png
+thumbnail: chineseStyle.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/chinese
+typora-copy-images-to: ../../media/theme/chineseStyle
 ---
 
 This is a sexual apathy style and chinese style typora theme.
 
 Following are a few screenshots:
 
-![typora_chinese_theme_screen_01](/media/theme/vue/typora_chinese_theme_screen_01.png)
+![typora_chineseStyle_theme_screen_01](/media/theme/vue/typora_chineseStyle_theme_screen_01.png)
 
-![typora_chinese_theme_screen_02](/media/theme/vue/typora_chinese_theme_screen_02.png)
+![typora_chineseStyle_theme_screen_02](/media/theme/vue/typora_chineseStyle_theme_screen_02.png)
