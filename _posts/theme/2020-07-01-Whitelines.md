@@ -5,7 +5,7 @@ category: theme
 homepage: https://github.com/typora/typora-theme-gallery
 download: https://github.com/typora/typora-theme-gallery/raw/gh-pages/media/theme/whitelines/whitelines.css
 author: Todd Parsons
-thumbnail: Whitelines.png
+thumbnail: whitelines.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/whitelines
 
