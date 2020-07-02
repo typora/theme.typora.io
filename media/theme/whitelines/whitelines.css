@@ -42,6 +42,34 @@ content, body.typora-export {
 	max-width: 100% !important;
 }
 
+@media print {
+.typora-export {
+	background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+	background-size: contain;
+	background-attachment: fixed;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+	}
+#write {
+  position: relative;
+  text-align:left;
+    margin: 2rem auto;
+    display: inline-block;
+    margin-bottom: 4rem;
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1rem 2rem;
+    padding-bottom: 5rem;
+    border: 1rem solid white;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+    background-color: var(--offwhite);
+}
+#write > * {
+	max-width: 100% !important;
+}
+}
+
 @media only screen and (max-width: 1000px) {
   #write {
     margin: 0;
