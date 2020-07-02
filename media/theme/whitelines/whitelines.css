@@ -17,7 +17,7 @@ body {
 
 }
 content, body.typora-export {
-	  background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+    background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
   background-size: contain;
   background-attachment: fixed;
     text-align: center;
@@ -39,18 +39,18 @@ content, body.typora-export {
     background-color: var(--offwhite);
 }
 #write > * {
-	max-width: 100% !important;
+  max-width: 100% !important;
 }
 
 @media print {
 .typora-export {
-	background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
-	background-size: contain;
-	background-attachment: fixed;
+  background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+  background-size: contain;
+  background-attachment: fixed;
     text-align: center;
     overflow-y: scroll;
     overflow-x: hidden;
-	}
+  }
 #write {
   position: relative;
   text-align:left;
@@ -66,7 +66,7 @@ content, body.typora-export {
     background-color: var(--offwhite);
 }
 #write > * {
-	max-width: 100% !important;
+  max-width: 100% !important;
 }
 }
 
@@ -77,9 +77,13 @@ content, body.typora-export {
     border: none;
   }
   #typora-source .CodeMirror-lines {
-    margin: 0;
-    width: 100%;
-    border: none;
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+    border: none !important;
+}
+.CodeMirror-sizer {
+  padding-right: 0 !important;
 }
 }
 footer {
@@ -110,7 +114,7 @@ p {
   margin: 0 auto;
 }
 p+p{
-	border-top: none;
+  border-top: none;
 }
 
 /** Lists **/
@@ -133,10 +137,10 @@ pre, .md-fences {
   background-color: white;
 }
 .mathjax-block {
-	background-color: white;
-	color: black;
-	padding: 1rem;
-	width: 100%;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  width: 100%;
 }
 
 /** Links **/
@@ -167,16 +171,16 @@ blockquote {
   background-color: white;
 }
 blockquote:before {
-	position: absolute;
-	color: var(--orange);
-	content: "“";
-	font-size: 2cm;
-	font-weight: 800;
+  position: absolute;
+  color: var(--orange);
+  content: "“";
+  font-size: 2cm;
+  font-weight: 800;
     left: 0cm;
     padding: 0 1cm;
 }
 mark {
-	background-color: white;
+  background-color: white;
 }
 ::spelling-error {
   color: var(--orange);
@@ -203,12 +207,12 @@ th {
 
 /** Images **/
 img{
-	width: calc(100% - 10px);
-	object-fit: cover;
-	border-left: none;
-	border-right: none;
-	border-radius: 0;
-	margin-top:1rem;
+  width: calc(100% - 10px);
+  object-fit: cover;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin-top:1rem;
 }
 
 /** Lists **/
@@ -219,17 +223,17 @@ ol, ul {
 }
 
 li > p {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 .md-toc {
-	padding: 1rem;
-	background-color: white;
-	border: none;
-	margin: 0;
-	border-radius: 0;
-	width: auto !important;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+  width: auto !important;
 }
 .md-toc-tooltip {
     border: none !important;
@@ -251,10 +255,10 @@ li > p {
   background: var(--orange);
 }
 #md-notification {
-	background: var(--offwhite);
+  background: var(--offwhite);
 }
 .md-image>.md-meta {
-	color: var(--orange);
+  color: var(--orange);
 }
 
 /** Source code view **/
@@ -262,8 +266,8 @@ li > p {
     top: 0;
     bottom: 0;
     background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
-  	background-size: contain;
-  	background-attachment: fixed;
+    background-size: contain;
+    background-attachment: fixed;
 }
 #typora-source .CodeMirror-lines {
     margin: 2rem auto;
