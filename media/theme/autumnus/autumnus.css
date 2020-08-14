@@ -1,0 +1,938 @@
+@charset "utf-8";
+
+/* 
+基础颜色：
+黑色： #111；#333；#555；#777；#999；
+白色：#fff;#fcfcfc;#f8f8f8;#f5f5f5;#f0f0f0;
+红色：#ff4d4d；
+黄色：#FFFF00;#F6EFA6;
+蓝色：#80aaff;
+*/
+
+:root {
+	--bg-color: #ffffff;
+	/*change background*/
+	--text-color: #333;
+	/* 默认字体颜色 */
+	--md-char-color: #ff4d4d;
+	/*markdown 符号的颜色，诸如 # * 等 */
+	--meta-content-color: #5b808d;
+	/*change color of meta contents like image text or link address in markdown */
+
+	--window-border: 1px solid #eee;
+	/*border for sidebar, etc*/
+
+	--monospace: 'sarasa term sc';
+	/*monospace font for codes, fences*/
+
+	--write-bg: #fff;
+	/* 写作背景色 */
+	--link-bg: transparent;
+	/* 超链接背景色 */
+	--mark-bg: #333;
+	/* 高亮背景色 */
+	--code-bg: #f0f0f0;
+	/* 代码背景色 */
+	--codeb-bg: #f8f8f8;
+	/* 代码块背景色 */
+	--quota-bg: #f8f8f8;
+	/* 引用背景色 */
+	--thead-bg: #f0f0f0;
+	/* 表格表头背景色 */
+	--tbody-bg: #f8f8f8;
+	/* 表格表体背景色 */
+
+	--text-color: #333;
+	/* 默认字体颜色：正文等 */
+	--title-color: #111;
+	/* 强调颜色：标题；加强等 */
+	--link-color: #2979FF;
+	/* 超链接字体色 */
+	--mark-color: #fff;
+	/* 高亮字体色 */
+	--code-color: #333;
+	/* 代码字体色 */
+	--quota-color: #555;
+	/* 引用字体色 */
+	--footer-color: #999;
+	/* 脚注字体色 */
+
+	--link-hover: #ff4d4d;
+	/* 默认hover色：划过小标题；链接时的颜色 */
+	--thead-hover: #fcfcfc;
+	/* 表格hover色：表头 */
+	--tbody-hover: #fcfcfc;
+	/* 表格hover色：表体 */
+
+	--base-font: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+	--title-font: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK TC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+	--em-font: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "Source Han Serif CN", STSong, "AR PL New Sung", "AR PL SungtiL GB", NSimSun, SimSun, "TW\-Sung", "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif;
+	--code-font: "Sarasa Term SC", Consolas, "Lucida Console";
+
+
+}
+
+/* 字体设置 */
+
+/* 默认字体：黑体 */
+html,
+body,
+#write {
+	font-family: var(--base-font);
+	font-weight: 400;
+	font-size: 16px;
+	font-size: 1em;
+	line-height: 1.75rem;
+}
+
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+	font-family: var(--base-font);
+	font-weight: 600;
+	line-height: 2rem;
+}
+
+#write strong,
+#write em {
+	font-family: var(--base-font);
+	font-weight: 800 !important;
+	color: var(--title-color);
+}
+
+/* 标题字体：明朝体 */
+#write h1,
+#write h2 {
+	font-family: var(--title-font);
+	font-weight: 800;
+	line-height: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#write em,
+#write blockquote {
+	font-family: var(--em-font);
+	font-style: italic;
+}
+
+/* 代码字体：等宽字体 */
+.CodeMirror pre,
+pre,
+code,
+pre tt,
+.md-fences {
+	font-family: var(--code-font);
+	font-size: 1em;
+	line-height: 1rem;
+}
+
+/* 标题字号 */
+
+#write h1 {
+	font-size: 3em;
+}
+
+#write h2 {
+	font-size: 2em;
+	margin: 2em auto;
+}
+
+#write h3 {
+	font-size: 1.6em;
+}
+
+#write h4 {
+	font-size: 1.4em;
+}
+
+#write h5 {
+	font-size: 1.25em;
+}
+
+#write h6 {
+	font-size: 1em;
+}
+
+
+
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
+	-webkit-font-smoothing: initial；
+}
+
+html,
+body,
+#write {
+	background: var(--write-bg);
+	color: var(--text-color);
+}
+
+content {
+	background-color: var(--write-bg);
+	min-width: 640px;
+}
+
+#write {
+	max-width: 960px;
+	min-height: calc(100vh - 6em);
+	min-width: calc(100vw - 45em);
+	padding: 3rem 4rem;
+	text-align: justify;
+	border-radius: 5px;
+}
+
+.typora-node #write {
+	min-height: calc(100% - 6em);
+}
+
+/* 目录自动编号 */
+
+.md-toc::before {
+	content: "Contents";
+	font-size: 2em;
+	color: #555;
+	text-align: center;
+	display: block;
+	margin: 2rem auto;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.md-toc-content {
+	margin: 1em 10em;
+	padding: 0 20px;
+}
+
+.md-toc-h1,
+.md-toc-h2,
+.md-toc-h3,
+.md-toc-h4 {
+	font-size: 18px;
+	color: #555;
+	margin: .75rem;
+}
+
+.md-toc-h2 .md-toc-inner,
+.md-toc-h3 .md-toc-inner,
+.md-toc-h4 .md-toc-inner {
+	margin-left: 2em;
+	white-space: nowrap;
+}
+
+.md-toc-h1 {
+	counter-increment: counter_md-toc-h1;
+	counter-reset: counter_md-toc-h2;
+}
+
+.md-toc-h1::before {
+	content: counter(counter_md-toc-h1)".";
+}
+
+.md-toc-h2 {
+	counter-increment: counter_md-toc-h2;
+	counter-reset: counter_md-toc-h3;
+}
+
+.md-toc-h2::before {
+	content: counter(counter_md-toc-h1)"."counter(counter_md-toc-h2);
+}
+
+.md-toc-h3 {
+	counter-increment: counter_md-toc-h3;
+	counter-reset: counter_md-toc-h4;
+}
+
+.md-toc-h3::before {
+	content: counter(counter_md-toc-h1)"."counter(counter_md-toc-h2)"."counter(counter_md-toc-h3);
+}
+
+.md-toc-h4 {
+	counter-increment: counter_md-toc-h4;
+	counter-reset: counter_md-toc-h4;
+}
+
+.md-toc-h4::before {
+	content: counter(counter_md-toc-h1)"."counter(counter_md-toc-h2)"."counter(counter_md-toc-h3)"."counter(counter_md-toc-h4);
+}
+
+.md-toc-h2 .md-toc-inner,
+.md-toc-h3 .md-toc-inner,
+.md-toc-h4 .md-toc-inner {
+	margin-left: 2em;
+}
+
+.md-toc-h5,
+.md-toc-h6 {
+	display: none;
+}
+
+/* 标题样式 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--title-color);
+}
+
+#write h1 a,
+#write h2 a,
+#write h3 a,
+#write h4 a,
+#write h5 a,
+#write h6 a {
+	color: var(--title-color);
+}
+
+#write h3 span,
+#write h4 span,
+#write h5 span,
+#write h6 span {
+	padding: .2em;
+}
+
+#write h3 span:hover,
+#write h4 span:hover,
+#write h5 span:hover,
+#write h6 span:hover {
+	color: var(--link-hover);
+	border: 1.5px dotted #fb5555;
+}
+
+#write h3::before,
+#write h4::before,
+#write h5::before,
+#write h6::before {
+	content: "# ";
+	color: #999;
+}
+
+#write h1 {
+	font-size: 3em;
+	margin-top: 3em;
+	padding-bottom: 1.5em;
+	border-bottom: 4px double #777;
+}
+
+p {
+	line-height: 1.75em;
+}
+
+/* 超链接样式 */
+
+a,
+.md-def-url {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+ins,
+a {
+	text-decoration: none;
+}
+
+#write a {
+	border-bottom: 1px solid var(--link-color);
+}
+
+#write a:hover {
+	border-bottom-color: var(--link-hover);
+	color: var(--link-hover);
+	text-decoration: none;
+}
+
+/* em & strong style */
+
+#write strong,
+#write em {
+	color: var(--title-color);
+}
+
+/* mark style */
+
+mark {
+	margin: 0 5px;
+	color: var(--mark-color);
+	padding: 2px 4px;
+	border-radius: 5px;
+	background-color: var(--mark-bg);
+}
+
+/* code style */
+
+#write pre.md-meta-block {
+	min-height: 30px;
+	background: var(--codeb-bg);
+	color: #999;
+	font-weight: 300;
+	font-size: 1em;
+	position: sticky;
+	padding: 1.5em;
+	margin-top: -1.5em;
+	margin-bottom: 2em;
+	border-radius: 5px;
+	line-height: 1.25rem;
+}
+
+.CodeMirror pre,
+pre,
+code,
+pre tt,
+.md-fences {
+	padding: .25em;
+	border-radius: 5px;
+	background-color: var(--codeb-bg);
+	line-height: 1rem;
+}
+
+code {
+	background-color: var(--code-bg);
+}
+
+#write .md-fences {
+	border: 1px solid #f0f0f0;
+	padding: 1em 0.5em;
+	display: block;
+	-webkit-overflow-scrolling: touch;
+}
+
+/* 列表样式 */
+#write ul,
+#write ol,
+#write li {
+	margin: 0;
+	padding: 0;
+}
+
+#write ul {
+	margin-left: 1.5em;
+	list-style: disc;
+}
+
+#write ol {
+	list-style: decimal-leading-zero;
+	margin-left: 1.5em;
+}
+
+#write ol ol {
+	list-style-type: lower-roman;
+}
+
+#write ul li,
+#write ol li,
+#write li ul,
+#write li ol,
+#write ul ul,
+#write ol ol {
+	margin-bottom: 0.8em;
+	margin-left: 1rem;
+}
+
+.task-list {
+	list-style: none !important;
+	padding-left: 0;
+}
+
+.task-list-item {
+	padding-left: 2.125rem;
+}
+
+.task-list-item input {
+	top: 3px;
+}
+
+.task-list-done {
+	/* styles for completed tasks */
+	text-decoration: line-through;
+	color: var(--footer-color);
+}
+
+.task-list-not-done {
+	/* styles for incomplete tasks */
+	color: var(--text-color);
+}
+
+/* 块/段落引用 */
+
+/* 清除默认样式 */
+blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+blockquote p {
+	color: var(--quota-color);
+	line-height: 1.75rem;
+}
+
+blockquote {
+	background: var(--quota-bg);
+	margin: 2rem -3.8rem;
+	padding: 2rem 6rem;
+}
+
+blockquote blockquote {
+	padding: 0;
+	margin: 0;
+	padding-left: 2rem;
+	border-left: 4px solid #ff4d4d;
+}
+
+/* 一致化 horizontal rule */
+hr {
+	border: none;
+	border-bottom: 1px solid #999;
+	margin-bottom: 0.8em;
+	height: 15px;
+}
+
+/* img */
+
+img {
+	border-radius: 5px;
+	border-right: 2px solid transparent;
+}
+
+/* 脚注样式 脚注内的文字颜色应当较原字稍淡 */
+
+sup.md-footnote::before {
+	content: "[";
+}
+
+sup.md-footnote::after {
+	content: "]";
+}
+
+sup.md-footnote {
+	font-size: .5em;
+}
+
+.footnotes,
+.footnotes em,
+.footnotes strong {
+	color: var(--footer-color) !important;
+}
+
+.footnotes a {
+	color: #64B5F6;
+}
+
+/* 表格样式 */
+
+table {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 99.99%;
+}
+
+#write table th,
+#write-table th,
+#write table thead th,
+#write-table thead th {
+	background: var(--thead-bg);
+	padding: .5em 1em;
+}
+
+#write table caption {
+	border-bottom: none;
+}
+
+#write table td {
+	background-color: var(--tbody-bg);
+	border: 1px solid #f0f0f0;
+	padding: 0.5em 1em;
+	color: var(--text-color);
+}
+
+#write tr th:hover {
+	background-color: var(--thead-hover);
+}
+
+#write td:hover {
+	background-color: var(--tbody-hover);
+}
+
+#write th:hover,
+#write td:hover {
+	color: var(--link-hover);
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+	.task-list-item input:before {
+		margin-top: -0.2rem;
+	}
+
+	.task-list-item input:checked:before,
+	.task-list-item input[checked]:before {
+		margin-top: -0.2rem;
+	}
+}
+
+/* 不同的宽度的设备上的字数统计样式 */
+
+@media screen and (min-width: 1300px) {
+	#write {
+		box-shadow: 0px 2px 2px 2px hsla(0, 0%, 95%, 0.1), 1px 3px 5px 2px hsla(0, 0%, 85%, 0.2), 2px 4px 5px 2px hsla(0, 0%, 75%, 0.3), 3px 5px 10px 2px hsla(0, 0%, 65%, 0.4);
+	}
+}
+
+
+
+@media screen and (min-width: 1100px) {
+
+	body,
+	#footer-word-count-info,
+	body.pin-outline,
+	.pin-outline #footer-word-count-info,
+	.pin-outline footer {
+		background: var(--write-bg);
+	}
+
+
+	#write {
+		max-width: 1000px;
+		padding: 40px 60px;
+		background: var(--write-bg);
+		margin: 3em auto 3em;
+		border-width: 0 1px;
+	}
+
+	.pin-outline #write {
+		max-width: 1000px;
+		background: var(--write-bg);
+		margin: 0 0 0;
+		border: 0;
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	footer {
+		background-color: transparent;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+
+	body.pin-outline,
+	.pin-outline #footer-word-count-info,
+	.pin-outline footer,
+	#footer-word-count-info {
+		background: var(--write-bg);
+	}
+
+	.pin-outline #write {
+		max-width: 1000px;
+		padding: 40px 60px;
+		background: var(--write-bg);
+		margin: 3em auto 3em;
+		border: 1px solid #ddd;
+		border-width: 0 1px;
+	}
+
+	.pin-outline footer {
+		background-color: transparent;
+	}
+
+}
+
+@media print {
+
+	/**
+	 * needed to prevent extra blank page
+	 */
+	html,
+	body {
+		border: 1px solid transparent;
+		height: 99%;
+		page-break-after: avoid;
+		page-break-before: avoid;
+	}
+
+	#write {
+		box-shadow: 0px 0px 0px 0px transparent;
+		border-radius: 0px;
+	}
+
+	#write h1,
+	#write h2 {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		border-bottom: 0px;
+	}
+
+	blockquote {
+		position: relative;
+		margin: 2em 1em;
+		padding: 1.5em;
+		background: var(--quota-bg);
+		border: 0px solid transparent;
+	}
+
+	blockquote {
+		border: 2px dotted #ff4d4d;
+		border-radius: 5px;
+	}
+
+	blockquote blockquote {
+		border-radius: 0px;
+		border: 0px solid transparent;
+		border-left: 4px solid #ff4d4d;
+	}
+
+	.typora-export * {
+		-webkit-print-color-adjust: exact;
+	}
+
+}
+
+
+.MathJax_Display {
+	font-size: 0.9em;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+p.mathjax-block,
+.mathjax-block {
+	padding-bottom: 0;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: 5px;
+	box-shadow: none;
+}
+
+.md-image>.md-meta {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.md-image>img {
+	margin-top: 2px;
+}
+
+.md-image>.md-meta:first-of-type:before {
+	padding-left: 4px;
+}
+
+/* 源代码模式 */
+
+#typora-source {
+	color: #555;
+	font-family: var(--code-font);
+}
+
+#typora-source pre {
+	line-height: 1.5em;
+	border-radius: 0px !important;
+}
+
+
+/** ui for windows **/
+
+::-webkit-scrollbar-corner {
+	display: none;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.05);
+	background-clip: padding-box;
+}
+
+#md-searchpanel {
+	border-bottom: 1px solid #ccc;
+}
+
+#md-searchpanel .btn {
+	border: 1px solid #ccc;
+}
+
+#md-notification:before {
+	top: 14px;
+}
+
+#md-notification {
+	background: #f0f0f0;
+}
+
+/* 侧边栏 文件概览和大纲列表 */
+
+:root {
+	--active-file-bg-color: #fcfcfc;
+	/* 文件列表 当前文件激活 背景色*/
+	--active-file-text-color: #80aaff;
+	--active-file-border-color: #80aaff;
+	/* 树形结构下文件激活边框色 */
+	--side-bar-bg-color: #f8f8f8;
+	/*文件 大纲 侧边栏 背景色*/
+	--item-hover-bg-color: #f0f0f0;
+	/* 打开文文件夹、正文菜单、最近使用 hover 效果 */
+	--item-hover-text-color: inherit;
+
+	--primary-color: #80aaff;
+	/* color of primary buttons */
+	--primary-btn-border-color: #80aaff;
+	--primary-btn-text-color: #fff;
+}
+
+/* 侧边栏文档大纲tab标签 激活 */
+
+.info-panel-tab:hover {
+	color: var(--primary-color);
+}
+
+/* 侧边栏文档大纲tab标签 激活 */
+.active-tab-outline,
+.active-tab-files {
+	color: var(--primary-color);
+}
+
+/* bugfix */
+#outline-content,
+#file-library {
+	color: var(--text-color);
+}
+
+/* 文件 大纲 激活 */
+.outline-item:hover {
+	color: var(--primary-color);
+}
+
+.file-list-item:hover {
+	background-color: var(--bg-color);
+	color: var(--primary-color);
+}
+
+/* 书写区右键菜单 */
+/* control-menu */
+
+.context-menu.dropdown-menu>li>a:focus {
+	background-color: #f0f0f0;
+}
+
+.context-menu.dropdown-menu>.active>a,
+.context-menu.dropdown-menu>li>a:hover,
+.menu-style-btn.active {
+	color: var(--primary-color);
+}
+
+/* 一体化模式下菜单页 */
+
+/* 菜单侧标栏 */
+.megamenu-menu {
+	box-shadow: 2px 2px 5px 0 #33333380, 2px 0px 10px 0 #33333380;
+}
+
+/* bugfix */
+.megamenu-opened .megamenu-menu {
+	left: -1px !important;
+}
+
+/* 侧边栏item激活 */
+.megamenu-menu-list:not(.saved) li a:hover,
+.megamenu-menu-list li a.active {
+	background-color: #f0f0f0;
+	color: var(--primary-color);
+	display: block !important;
+}
+
+/* bugfix */
+.megamenu-menu-list li {
+	line-height: 48px;
+}
+
+.megamenu-menu-list li a {
+	height: 48px;
+}
+
+a.menu-style-btn:hover {
+	background: #f0f0f0;
+}
+
+/* 标题 */
+
+.megamenu-menu-panel h1,
+.megamenu-menu-panel h2 {
+	margin: 2rem auto 3rem;
+}
+
+/* 长形按钮 */
+.long-btn:hover {
+	color: var(--primary-color) !important;
+}
+
+.megamenu-menu-panel .btn {
+	border: 1px solid #ccc;
+}
+
+/* 最近文档 */
+
+.megamenu-menu-panel table tr {
+	background: #f8f8f8;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+	background-color: #f0f0f0;
+}
+
+.megamenu-menu-panel tr:hover,
+.megamenu-menu-panel th:hover,
+.megamenu-menu-panel td:hover {
+	color: var(--primary-color) !important;
+}
+
+/* 主题页 */
+/* 样式预览 */
+
+.theme-preview-div:hover {
+	border-color: #80aaff80;
+}
+
+.theme-preview-div {
+	border: 4px solid #99999950;
+}
+
+.theme-preview-div.active,
+.theme-preview-div.active:hover {
+	border-color: var(--primary-color);
+}
+
+/* 偏好设定 */
+
+/* 偏好设定侧边栏 */
+.nav-group-item.active {
+	background: var(--item-hover-bg-color) !important;
+	color: (var--primary-color);
+}
+
+/* 关于页 */
+
+/* fix */
+.about-content-meta {
+	font-family: noto serif cjk sc;
+}
+
+
+/* titlebar */
+
+#top-titlebar {
+	height: 28px;
+}
+
+#w-traffic-lights {
+	display: flex;
+	flex-direction: row;
+}
+
+#w-max-group {
+	display: contents;
+}
