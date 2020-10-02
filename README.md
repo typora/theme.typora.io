@@ -1,4 +1,4 @@
-Typora Themes
+Typora Themes - An Amazing Theme is just a few steps away.
 =============
 
 A directory of typora themes
