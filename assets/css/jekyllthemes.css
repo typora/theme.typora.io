@@ -7999,6 +7999,12 @@ code {
   max-width: 100%;
   padding-bottom: 1em;
 }
+
+.item-image:hover{
+ transform:scale(1.08);
+ transition:all 0.3s ease-in;
+}
+
 .gallery div.item .item-name {
   text-align: center;
 }
