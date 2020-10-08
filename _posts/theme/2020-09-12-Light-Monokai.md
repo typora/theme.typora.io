@@ -3,7 +3,7 @@ layout: theme
 title: Light Monokai
 category: theme
 homepage: https://github.com/valfur03/Monokai-Theme-for-Typora
-download: https://github.com/valfur03/Monokai-Theme-for-Typora/releases/download/0.1/Light-Monokai.rar
+download: https://github.com/valfur03/Monokai-Theme-for-Typora/archive/0.1.zip
 author: valfur03
 thumbnail: light-monokai.png
 typora-root-url: ../../
