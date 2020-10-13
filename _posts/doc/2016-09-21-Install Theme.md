@@ -22,6 +22,8 @@ Open preference panel by <code>cmd+`</code>, then click "Open Theme Folder"
 
 ![typora-preference-mac](/media/doc/install-theme/Snip20160921_1.png)
 
+On macOS, usually it is `/Users/{username}/Library/Application Support/abnerworks.Typora/themes/`
+
 ### Windows/Linux
 
 Open preference panel from `File` → `Preference` from menubar, then click "Open Theme Folder":
