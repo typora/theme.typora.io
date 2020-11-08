@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: GothicDark
-category: theme
+category: fork
 homepage: https://github.com/gilbertohasnofb/typora-gothic-dark-theme
 download: https://github.com/gilbertohasnofb/typora-gothic-dark-theme/releases/latest
 built-in: false
