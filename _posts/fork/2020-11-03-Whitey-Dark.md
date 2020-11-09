@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: WhiteyDark
-category: theme
+category: fork
 homepage: https://github.com/gilbertohasnofb/typora-whitey-dark-theme
 download: https://github.com/gilbertohasnofb/typora-whitey-dark-theme/releases/latest
 built-in: false
