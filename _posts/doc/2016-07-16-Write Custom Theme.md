@@ -106,7 +106,7 @@ html {
 #write {
   max-width: 90%; /*adjust size of the wriring area*/
   font-size: 1rem; /*basic font size*/
-  font-color: #555; /*basic font color*/
+  color: #555; /*basic font color*/
   ...
 }
 ```
