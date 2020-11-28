@@ -59,12 +59,13 @@
 ## 基本规则
 
 1. 主题 CSS 的文件命名规则：请勿使用大写字母，并将空格替换为`-`，Typora 会将其转换为菜单项中的可读标签。例如，对于`my-first-typora-theme.css`，Typora 将在“主题”菜单下生成一个菜单项“my first typora theme”。
-
 2. 将默认字体大小放入` html `中，然后将` rem `用作` h1 `及` p `这类元素的` font-size `属性，否则偏好设置面板中的自定义字体大小将不起作用。
-
 3. Typora 是基于 Webkit（macOS ）及 Chromium（Windows / Linux）创建的，因此请使用 Chrome 及 Safari（又名Webkit）支持的 CSS 属性。
-
 4. CSS 的某些修改可能会导致 Typora 无法按预期工作，例如，添加`white-space: pre-wrap;`到选择器` #write `将导致无法通过按 Tab 键插入`\t`，因此请尽可能覆盖默认的 CSS 样式然后进行测试。
+
+------
+
+目录：
 
 * Outline
 {:toc}
@@ -233,7 +234,7 @@ mark {..} /*highlight*/
 
 ### 聚焦模式
 
-关于这个主题，请参考[这个文档][focus mode]
+关于这个主题，请参考[这个文档][focus mode]。
 
 #### 自定义字体
 
@@ -241,7 +242,7 @@ mark {..} /*highlight*/
 
 ### 背景
 
-关于这个主题，请参考这个[文档][background]。
+关于这个主题，请参考[这个文档][background]。
 
 ### 用户界面
 
@@ -291,7 +292,6 @@ Typora 的 Windows/Linux 版本比 macOS 版本支持更多的 html 组件，包
 [Code-Block-Styles]: http://support.typora.io/Code-Block-Styles
 [MathJax]: http://www.mathjax.org
 [background]: http://support.typora.io/Backgound/
-
 [install-theme]: https://github.com/typora/typora-theme-gallery/blob/gh-pages/_posts/doc/2016-09-21-Install%20Theme.md
 [typora-theme-gallery]: https://github.com/typora/typora-theme-gallery
 [toolkit]: https://github.com/typora/typora-theme-toolkit
