@@ -1,3 +1,7 @@
+---
+permalink: /doc/zh/Write-Custom-Theme/
+---
+
 ## 更新 CSS 变量
 
 如果你想定义字体、颜色或背景，建议覆盖现有的[ CSS 变量](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables)。macOS / Safari 的早期版本不支持这样做，但是它仍然更容易使用。常用的有:
