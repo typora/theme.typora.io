@@ -308,6 +308,7 @@ Please make a pull request to [typora-wiki-site](https://github.com/typora/wiki-
 
 
 [CodeMirror]: http://codemirror.net
+
 [Custom Font]: http://support.typora.io/Custom-Font/
 [focus mode]: http://support.typora.io/Change-Styles-in-Focus-Mode/
 [Code-Block-Styles]: http://support.typora.io/Code-Block-Styles

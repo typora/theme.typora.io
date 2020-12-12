@@ -2,6 +2,8 @@
 
 *Huge dragon, lawful evil*
 
+![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png)
+
 > **Armor Class** 19 (Natural Armor)
 >
 > **Hit Points** 225 (18d12 + 108)
@@ -28,9 +30,11 @@
 >
 > **Challenge** 16 (15,000 XP)
 
+---
+
 ***Legendary Resistance (3/Day).*** If the dragon fails a saving throw, it can choose to succeed instead.
 
-Actions
+## Actions
 
 ***Multiattack.*** The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.
 
@@ -39,8 +43,6 @@ Actions
 ***Claw.*** *Melee Weapon Attack:* +12 to hit, reach 5 ft., one target. *Hit:* 14 (2d6 + 7) slashing damage.
 
 ***Tail.*** *Melee Weapon Attack:* +12 to hit, reach 15 ft., one target. *Hit:* 16 (2d8 + 7) bludgeoning damage.
-
-![Ancient Blue Dragon - Monsters - Archives of Nethys: Pathfinder ...](https://2e.aonprd.com/Images/Monsters/DragonBlue_AncientBlueDragon.png)
 
 ***Frightful Presence.*** Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become [frightened](https://www.dndbeyond.com/compendium/rules/basic-rules/appendix-a-conditions#Frightened) for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.
 
