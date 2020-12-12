@@ -1,3 +1,17 @@
+
+
+# Magic is distilled laziness…
+
+This theme, named after the fantasy setting of [Dungeons & Dragons](https://www.dndbeyond.com/), is designed with tabletop RPG players in mind. The theme allows beautiful HTML exports designed to look like a professionally made tabletop resource, whilst remaining easy to edit in code view and in small windows, thanks to CSS media queries.
+
+See below for an example of a D&D style stat block made using this theme! A few pointers:
+
+- Using `> blockquotes` will create a green box similar to the ones used in 5e stat blocks
+- The heading with a yellow line underneath is `# h4`
+- Tables will not have margins between one another, so it makes sense to split the basic 6 stats into two tables, one after the other, as below.
+- `# h1` and `—` (hr) are the only aspects which span both columns, so use these wherever you would like columns to reset
+- Check out the markdown used to create this document [here](https://teparsons.github.io/torillic/typora.md)
+
 # Adult Blue Dragon
 
 *Huge dragon, lawful evil*
@@ -48,7 +62,7 @@
 
 ***Lightning Breath (Recharge 5–6).*** The dragon exhales lightning in a 90-­foot line that is 5 feet wide. Each creature in that line must make a DC 19 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one.
 
-Legendary Actions
+#### Legendary Actions
 
 The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.
 
