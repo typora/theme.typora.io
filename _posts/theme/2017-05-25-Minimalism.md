@@ -2,9 +2,9 @@
 layout: theme
 title: Minimalism.
 category: theme
-homepage: https://github.com/pinqbird/typora-theme-gallery
-download: https://github.com/pinqbird/typora-theme-gallery/blob/gh-pages/media/theme/minimalism/minimalism.zip?raw=true
-author: pinkbird
+homepage: https://github.com/zissoo/typora-theme-gallery
+download: https://github.com/zissoo/typora-theme-gallery/blob/gh-pages/media/theme/minimalism/minimalism.zip?raw=true
+author: zissoo
 thumbnail: minimalism.png
 typora-root-url: ../../
 ---
