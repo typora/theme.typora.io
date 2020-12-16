@@ -308,11 +308,11 @@ Please make a pull request to [typora-wiki-site](https://github.com/typora/wiki-
 
 
 [CodeMirror]: http://codemirror.net
-[Custom Font]: http://support.typora.io/Custom-Font/
-[focus mode]: http://support.typora.io/Change-Styles-in-Focus-Mode/
-[Code-Block-Styles]: http://support.typora.io/Code-Block-Styles
+[custom-font]: https://support.typora.io/Custom-Font/
+[focus mode]: https://support.typora.io/Change-Styles-in-Focus-Mode/
+[Code-Block-Styles]: https://support.typora.io/Code-Block-Styles
 [MathJax]: http://www.mathjax.org
-[background]: http://support.typora.io/Backgound/
+[background]: https://support.typora.io/Backgound/
 
 [install-theme]: /doc/Install-Theme/
 [typora-theme-gallery]: https://github.com/typora/typora-theme-gallery
