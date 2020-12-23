@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: One Dark Pro
-category: theme
+category: fork
 homepage: https://github.com/ahanniga/typora-one-dark-pro
 download: https://github.com/ahanniga/typora-one-dark-pro/archive/main.zip
 built-in: false
