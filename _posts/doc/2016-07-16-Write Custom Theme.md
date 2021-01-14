@@ -8,7 +8,7 @@ typora-root-url: ../../
 
 ## Translations
 
-[繁體中文](https://pjchender.github.io/2018/04/24/note-%E5%A6%82%E4%BD%95%E7%82%BA-typora-%E6%92%B0%E5%AF%AB%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%A8%A3%E5%BC%8F/)
+[简体中文](/doc/zh/Write-Custom-Theme/)，[繁體中文](https://pjchender.github.io/2018/04/24/note-%E5%A6%82%E4%BD%95%E7%82%BA-typora-%E6%92%B0%E5%AF%AB%E5%AE%A2%E8%A3%BD%E5%8C%96%E6%A8%A3%E5%BC%8F/)
 
 ## Update -- CSS Variables
 
@@ -106,7 +106,7 @@ html {
 #write {
   max-width: 90%; /*adjust size of the wriring area*/
   font-size: 1rem; /*basic font size*/
-  font-color: #555; /*basic font color*/
+  color: #555; /*basic font color*/
   ...
 }
 ```
@@ -308,11 +308,11 @@ Please make a pull request to [typora-wiki-site](https://github.com/typora/wiki-
 
 
 [CodeMirror]: http://codemirror.net
-[Custom Font]: http://support.typora.io/Custom-Font/
-[focus mode]: http://support.typora.io/Change-Styles-in-Focus-Mode/
-[Code-Block-Styles]: http://support.typora.io/Code-Block-Styles
+[custom-font]: https://support.typora.io/Custom-Font/
+[focus mode]: https://support.typora.io/Change-Styles-in-Focus-Mode/
+[Code-Block-Styles]: https://support.typora.io/Code-Block-Styles
 [MathJax]: http://www.mathjax.org
-[background]: http://support.typora.io/Backgound/
+[background]: https://support.typora.io/Backgound/
 
 [install-theme]: /doc/Install-Theme/
 [typora-theme-gallery]: https://github.com/typora/typora-theme-gallery

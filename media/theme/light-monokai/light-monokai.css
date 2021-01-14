@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+:root {
+    --bg-color: #272822;
+    --blur-text-color: #333333;
+    --control-text-color: #C8C8C8;
+    --select-text-bg-color: #a2a192;
+    --text-color: #C8C8C8;
+}
+
+
+/* ===== Global ===== */
+
+html {
+    size: auto;
+    font-size: 13px;
+    background-color: #1A1A1D;
+    color: #C5C6C7;
+}
+
+body {
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#write {
+    size: auto;
+    padding: 70px 10ch;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+
+.md-math-block,
+.md-rawblock,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 2rem 0;
+}
+
+a {
+    color: #e6db74;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #807B49;
+}
+
+code {
+    color: #f92672;
+    font-family: 'Inconsolata', monospace;
+}
+
+blockquote {
+    border-left: 7px solid #424241;
+    padding: 5px 10px;
+    background-color: #333332;
+}
+
+ul,
+ol {
+    margin-left: 40px;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+#write li p {
+    margin-bottom: 0;
+}
+
+p>.md-image:only-child:not(.md-img-error) img,
+p>img:only-child {
+    margin: 0;
+}
+
+table {
+    background-color: transparent;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: #2a2a2a;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #424242;
+}
+
+td,
+th {
+    border: 1px solid #696969;
+    padding: 10px;
+}
+
+pre.md-meta-block {
+    margin-top: 40px;
+    border-bottom: 1px dotted white;
+    padding: 10px;
+    line-height: 20px;
+    background: #272822;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: none;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #d1d1d1;
+}
+
+
+/* ===== Typora GUI ===== */
+
+#typora-sidebar {
+    background: #272822;
+}
+
+.file-node-content {
+    color: #C5C6C7;
+}
+
+.file-node-content:hover {
+    color: #ebebeb;
+}
+
+.file-tree-node.active>.file-node-background {
+    background-color: #55544e;
+}
+
+.btn-primary {
+    background-color: #a6e22e;
+}
+
+.btn-primary:hover {
+    background-color: #90c02f;
+}
+
+.modal-content {
+    border: 1px solid #696969;
+}
+
+.dropdown-menu .divider {
+    border-top: 1px solid #696969;
+}
+
+.dropdown-menu>li>a {
+    color: #C5C6C7;
+}
+
+
+/* ===== Code Blocks ===== */
+
+.md-fences {
+    border: 1px solid #696969;
+    border-radius: 5px;
+    padding: 5px;
+    background: #272822;
+}
+
+.cm-s-inner.CodeMirror {
+    color: #ffffff;
+}
+
+.cm-s-inner span.cm-comment {
+    color: #75715e;
+}
+
+.cm-s-inner span.cm-atom {
+    color: #ae81ff;
+}
+
+.cm-s-inner span.cm-number {
+    color: #ae81ff;
+}
+
+.cm-s-inner span.cm-operator {
+    color: #fff;
+}
+
+.cm-s-inner span.cm-comment.cm-attribute {
+    color: #97b757;
+}
+
+.cm-s-inner span.cm-comment.cm-def {
+    color: #bc9262;
+}
+
+.cm-s-inner span.cm-comment.cm-tag {
+    color: #bc6283;
+}
+
+.cm-s-inner span.cm-comment.cm-type {
+    color: #5998a6;
+}
+
+.cm-s-inner span.cm-property,
+.cm-s-inner span.cm-attribute {
+    color: #a6e22e;
+}
+
+.cm-s-inner span.cm-keyword {
+    color: #f92672;
+}
+
+.cm-s-inner span.cm-builtin {
+    color: #f92672;
+}
+
+.cm-s-inner span.cm-string {
+    color: #e6db74;
+}
+
+.cm-s-inner span.cm-variable {
+    color: #fff;
+}
+
+.cm-s-inner span.cm-variable-2 {
+    color: #fff;
+}
+
+.cm-s-inner span.cm-variable-3,
+.cm-s-inner span.cm-type {
+    color: #f92672;
+}
+
+.cm-s-inner span.cm-def {
+    color: #ffffff;
+}
+
+.cm-s-inner span.cm-bracket {
+    color: #f8f8f2;
+}
+
+.cm-s-inner span.cm-tag {
+    color: #f92672;
+}
+
+.cm-s-inner span.cm-header {
+    color: #ae81ff;
+}
+
+.cm-s-inner span.cm-link {
+    color: #ae81ff;
+}
+
+.cm-s-inner span.cm-error {
+    background: #f92672;
+    color: #f8f8f0;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+    border-left: 1px solid white;
+}
+
+
+/* ===== Responsive ===== */
+
+@media screen and (max-width: 768px) {
+    #write {
+        padding: 50px 1ch;
+    }
+    ul,
+    ol {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 10px;
+    }
+    #write {
+        padding: 20px 3ch;
+    }
+    ul,
+    ol {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 10px;
+    }
+    #write {
+        padding: 5px 2ch;
+    }
+}

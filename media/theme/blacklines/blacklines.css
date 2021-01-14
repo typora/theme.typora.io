@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;577&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+  font-family: 'Didact Gothic', sans-serif;
+  
+  --orange: #F4794A;
+  --offblack: #141415;
+  --grey: #969799;
+}
+
+html {
+	
+}
+body {
+
+}
+content, body.typora-export {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6) ),url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+  background-size: contain;
+  background-attachment: fixed;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#write {
+  position: relative;
+  text-align:left;
+    margin: 2rem auto;
+    display: inline-block;
+    margin-bottom: 4rem;
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1rem 2rem;
+    padding-bottom: 5rem;
+    border: 1rem solid black;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+    background-color: var(--offblack);
+    color: white;
+}
+#write > * {
+  max-width: 100% !important;
+}
+
+@media print {
+.typora-export {
+  background: transparent url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+  background-size: contain;
+  background-attachment: fixed;
+    text-align: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+#write {
+  position: relative;
+  text-align:left;
+    margin: 2rem auto;
+    display: inline-block;
+    margin-bottom: 4rem;
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1rem 2rem;
+    padding-bottom: 5rem;
+    border: 1rem solid black;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+    background-color: var(--offblack);
+}
+#write > * {
+  max-width: 100% !important;
+}
+}
+
+@media only screen and (max-width: 1000px) {
+  #write {
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+  #typora-source .CodeMirror-lines {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+    border: none !important;
+}
+.CodeMirror-sizer {
+  padding-right: 0 !important;
+}
+}
+footer {
+  background-color: var(--orange) !important;
+  color: white !important;
+  right: 0 !important;
+}
+/** Headings **/
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: underline black;
+  width: 100%;
+}
+h1, h3, h5 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+h2, h4, h6 {
+  color: var(--orange);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/** Font setting **/
+p {
+  color: white;
+  min-width: 100%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 1rem 0;
+  margin: 0 auto;
+}
+p+p{
+  border-top: none;
+}
+
+/** Lists **/
+li::marker {
+  color: var(--orange);
+  font-weight: bold;
+}
+
+
+/** Code **/
+code {
+  line-height: 1.5rem;
+  font-family: Inconsolata;
+  background-color: black;
+}
+pre, .md-fences, pre.md-meta-block {
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 100%;
+  background-color: black;
+}
+.mathjax-block {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+/** Links **/
+a {
+  text-decoration: none;
+  color: var(--orange)
+}
+a:hover {
+  color: var(--grey)
+}
+a:visited {
+  color: var(--grey)
+}
+a:active {
+  background-color: black;
+  color: var(--orange);
+}
+
+/** Emphasis **/
+del {
+  text-decoration-color: var(--orange);
+  text-decoration-style: wavy;
+}
+
+blockquote {
+  padding-left: 2cm;
+  padding-right:2rem;
+  background-color: black;
+}
+blockquote:before {
+  position: absolute;
+  color: var(--orange);
+  content: "“";
+  font-size: 2cm;
+  font-weight: 800;
+    left: 0cm;
+    padding: 0 1cm;
+}
+mark {
+  background-color: black;
+}
+::spelling-error {
+  color: var(--orange);
+}
+
+/** Decoration **/
+hr {
+  border: 2px solid black;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+td {
+  border: 1px solid black;
+  background-color: black;
+  padding: 1rem;
+}
+th {
+  color: white;
+  background-color: var(--orange);
+  padding: 1rem;
+}
+
+/** Images **/
+img{
+  width: calc(100% - 10px);
+  object-fit: cover;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  margin-top:1rem;
+}
+
+/** Lists **/
+ol, ul {
+  padding-inline-start: 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+li > p {
+  padding: 0;
+  border: 0;
+}
+
+.md-toc {
+  padding: 1rem;
+  background-color: black;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+  width: auto !important;
+}
+.md-toc-tooltip {
+    border: none !important;
+    padding: 0 1rem !important;
+    color: white;
+    background-color: var(--orange) !important;
+    border-radius: 5px;
+    top: -40px !important;
+}
+
+/** Interface **/
+::-webkit-scrollbar-track {
+  background: var(--offblack);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--grey);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--orange);
+}
+#md-notification {
+  background: var(--offblack);
+}
+.md-image>.md-meta {
+  color: var(--orange);
+}
+#typora-sidebar {
+	background-color: black;
+}
+.file-list-item.active {
+	background: var(--offblack);
+}
+
+/** Source code view **/
+#typora-source {
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6) ),url(https://www.whitelinespaper.com/wp-content/themes/whitelines/assets/img/slider-bg.png);
+    background-size: contain;
+    background-attachment: fixed;
+}
+#typora-source .CodeMirror-lines {
+    margin: 2rem auto;
+    width: 21cm;
+    min-height: 29.7cm;
+    border: 1rem solid black;
+    box-shadow: 0.5rem 0.5rem 2rem rgba(0,0,0,0.5);
+    background-color: var(--offblack);
+}
+.CodeMirror-line {
+	color: white;
+    border-bottom: 1px solid black;
+    border-width: 2px !important;
+}
+
+/** Diagrams **/
