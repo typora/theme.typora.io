@@ -2,8 +2,8 @@
 layout: theme
 title: Blacklines
 category: theme
-homepage: https://github.com/typora/typora-theme-gallery
-download: https://github.com/typora/typora-theme-gallery/raw/gh-pages/media/theme/blacklines/blacklines.css
+homepage: https://github.com/TEParsons/Whitelines
+download: https://github.com/TEParsons/Whitelines/tree/master/Typora/Blacklines
 author: Todd Parsons
 thumbnail: blacklines.png
 typora-root-url: ../../
