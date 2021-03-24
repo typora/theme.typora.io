@@ -1,7 +1,7 @@
 ---
 layout: theme
 title: OrangeheartMonokai
-category: theme
+category: fork
 homepage: https://github.com/joriewong/typora-theme-orange-heart-monokai
 download: https://github.com/joriewong/typora-theme-orange-heart-monokai
 built-in: false
