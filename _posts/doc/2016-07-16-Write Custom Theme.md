@@ -69,8 +69,9 @@ If you want to write a custom CSS theme for Typora, all you need to do is:
 
 1. File naming rule for theme css: Do not use capitalized letters, and please replace whitespace with `-`, and Typora will convert them to readable label in menu item. For example, for `my-first-typora-theme.css`, Typora will put an menu item "My First Typora Theme" under "Themes" menu.
 2. Put default font size into `html`, then for elements like `h1` or `p`, use `rem` for their `font-size` property, or else custom font size in preference panel will not work.
-3. Typora is created upon Webkit (on macOS) or Chromium (on Windows/Linux), so please use css properties supported by Chrome or Safari (aka Webkit).
-4. Some modifications of CSS may cause Typora not to work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
+3. Use tag as selectors if possible. For example, for `### heading 3`, use `h3` instead of `h3.md-header`, because for any markdown render, "### heading 3" will be converted to `h3` tag. And for typora, we will keep as less html attributes (including class) as possible just like other markdown convertors. You could limit `h3` in writing area by `#write h3` selector. 
+4. Typora is created upon Webkit (on macOS) or Chromium (on Windows/Linux), so please use css properties supported by Chrome or Safari (aka Webkit).
+5. Some modifications of CSS may cause Typora not to work as expected, for example, adding `white-space: pre-wrap;` to selector `#write` will make  `\t` cannot be inserted by pressing Tab key, so please overwrite default css styles as less as possible, test it out.
 
 ---
 
