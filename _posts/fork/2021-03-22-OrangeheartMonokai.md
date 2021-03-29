@@ -15,6 +15,6 @@ Select orange heart(橙心) theme in [markdown-nice](https://mdnice.com/). This 
 
 Views details on this theme on the [homepage](https://github.com/joriewong/typora-theme-orange-heart-monokai).
 
-![english](/media/theme/orangeheartmonokai/en.png)
+![english](/media/theme/orangeheartmonokai/en.jpg)
 
-![chinese](/media/theme/orangeheartmonokai/zh.png)
+![chinese](/media/theme/orangeheartmonokai/zh.jpg)
