@@ -1,19 +1,19 @@
 ---
 layout: theme
-title: Github Night
+title: Jonas
 category: theme
-homepage: https://github.com/kinoute/typora-github-night-theme
-download: https://github.com/kinoute/typora-github-night-theme/releases/latest
+homepage: https://github.com/Wolfxin/Typora-theme-jonas
+download: https://github.com/Wolfxin/Typora-theme-jonas/releases/latest
 built-in: false
-date: 2021-01-14
-author: Yann Defretin
-thumbnail: github-night.png
+date: 2021-06-05
+author: Jonas Wolfxin
+thumbnail: jonas.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/github-night
+typora-copy-images-to: ../../media/theme/jonas
 
 ---
 
-# Github Night Theme for Typora
+# Jonas Theme for Typora
 
 A dark theme for [Typora](https://typora.io), a multi-platform Markdown Editor, that reproduces the new GitHub Dark Theme, recently deployed on their website.
 
