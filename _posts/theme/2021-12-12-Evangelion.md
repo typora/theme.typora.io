@@ -48,3 +48,5 @@ I take the color palette of [Neon Genesis Evangelion](https://en.wikipedia.org/w
 
 And this theme code is inspired by both [bear-dracula](https://github.com/imageslr/typora-theme-bear) and [mint-dark](https://github.com/Y1chenYao/typora-mint-theme). I love these 2 themes, too!
 
+*Designed and tested on macOS. Not fully tested, but should work for Windows/Linux.*
+
