@@ -5,7 +5,7 @@ category: theme
 homepage: https://github.com/Beanie127/typora-ChocolateBox-theme
 download: https://github.com/Beanie127/typora-ChocolateBox-theme/latest/
 author: Beanie127
-thumbnail: chocolatebox.png
+thumbnail: chocolatebox-thumb.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/chocolatebox
 
