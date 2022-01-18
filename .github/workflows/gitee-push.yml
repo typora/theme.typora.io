@@ -40,4 +40,5 @@ jobs:
         git config --global user.email "hi@typora.io"
         git config --global user.name "Typora"
         git remote add gitee git@gitee.com:typora-mirror/typora-theme-gallery.git
+        ssh-keyscan -H gitee.com > ~/.ssh/known_hosts
         git push -f gitee gh-pages
