@@ -44,7 +44,7 @@ It may be caused by your CSS filename contains capitalised characters or whitesp
 
 Briefly speaking, if the theme is created by you, you would modify it directly. 
 
-If the theme is built-in with Typora, or was downloaded from website, then, you may need to update them by download new one to replace the original one. In this case, we recommend you to put your modifications into another files, which won;t be overwritten when typora, or the theme file is updated. You could put your modifications into:
+If the theme is built-in with Typora, or was downloaded from website, then, you may need to update them by download new one to replace the original one. In this case, we recommend you to put your modifications into another files, which won't be overwritten when typora, or the theme file is updated. You could put your modifications into:
 
 - `base.user.css` under theme folder, the css rules inside it will be applied to all themes.
 - `{theme-css-name}.user.css`, the css rules inside it will only be applied to theme file `{theme-css-name}.css`.
