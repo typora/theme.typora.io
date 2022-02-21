@@ -1,6 +1,7 @@
 --- 
 layout: home 
-title: Themes Gallery
+title: Theme Documents
+titleCN: 主题文档
 ---
 
 <style type="text/css">
@@ -113,13 +114,24 @@ footer {
         <h2># More Tips &#38; Docs on Styles</h2>
         <article>
             <ul>
-                <li><p><a target="_blank" href="http://support.typora.io/Add-Custom-CSS/">Add Custom CSS</a></p></li>
-                <li><p><a target="_blank" hre="http://support.typora.io/Custom-Font/">Custom Font</a></p></li>
-                <li><p><a target="_blank" href="http://support.typora.io/Code-Block-Styles/">Change Code Block Styles</a></p></li>
+                {% if site.url contains ".cn" %}
+                <li><p><a target="_blank" href="https://support.typoraio.cn/Add-Custom-CSS/">Add Custom CSS</a></p></li>
+                <li><p><a target="_blank" hre="https://support.typoraio.cn//Custom-Font/">Custom Font</a></p></li>
+                <li><p><a target="_blank" href="https://support.typoraio.cn/Code-Block-Styles/">Change Code Block Styles</a></p></li>
                 <li><p>See "Read More.." for more documentations.</p></li>
+                {% else %}
+                <li><p><a target="_blank" href="https://support.typora.io/Add-Custom-CSS/">Add Custom CSS</a></p></li>
+                <li><p><a target="_blank" hre="https://support.typora.io/Custom-Font/">Custom Font</a></p></li>
+                <li><p><a target="_blank" href="https://support.typora.io/Code-Block-Styles/">Change Code Block Styles</a></p></li>
+                <li><p>See "Read More.." for more documentations.</p></li>
+                {% endif %}
             </ul>
         </article>
-        <a class='more-content' href="http://support.typora.io/style" target="_blank">Read More...</a>
+        {% if site.url contains ".cn" %}
+        <a class='more-content' href="https://support.typoraio.cn/style" target="_blank">Read More...</a>
+        {% else %}
+        <a class='more-content' href="https://support.typora.io/style" target="_blank">Read More...</a>
+        {% endif %}
     </div>
 </div>
 
