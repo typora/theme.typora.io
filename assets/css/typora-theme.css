@@ -128,7 +128,8 @@ a:focus {
     -moz-box-shadow: 0 4px 9px rgba(0,0,0,0.3);
     box-shadow: 0 4px 9px rgba(0,0,0,0.3);
     width: 250px;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
 }
 
 .gallery div.item .item-name {
