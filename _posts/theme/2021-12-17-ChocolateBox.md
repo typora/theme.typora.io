@@ -3,7 +3,7 @@ layout: theme
 title: Chocolate Box
 category: theme
 homepage: https://github.com/Beanie127/typora-ChocolateBox-theme
-download: https://github.com/Beanie127/typora-ChocolateBox-theme/latest/
+download: https://github.com/Beanie127/typora-ChocolateBox-theme/tree/main/latest
 author: Beanie127
 thumbnail: chocolatebox-thumb.png
 typora-root-url: ../../
