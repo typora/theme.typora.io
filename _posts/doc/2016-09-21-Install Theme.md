@@ -18,11 +18,11 @@ typora-root-url: ../../
 
 ### macOS
 
-Open preference panel by <code>cmd+`</code>, then click "Open Theme Folder"
+Open the preference panel using the keyboard combination <code>cmd+`</code>, then click "Open Theme Folder"
 
 ![typora-preference-mac](/media/doc/install-theme/Snip20160921_1.png)
 
-On macOS, usually it is `/Users/{username}/Library/Application Support/abnerworks.Typora/themes/`
+On macOS, the theme folder is usually in  `/Users/{username}/Library/Application Support/abnerworks.Typora/themes/`
 
 ### Windows/Linux
 
@@ -34,22 +34,24 @@ Open preference panel from `File` → `Preference` from menubar, then click "Ope
 
 #### Where to find/download Typora themes ?
 
-You could visit [Typora Theme Gallery](http://theme.typora.io) to download themes provide by other users to us.
+Visit [Typora Theme Gallery](http://theme.typora.io) to download themes provide by other users to us.
 
 #### The theme not show in theme menu bar, or after selecting it, the theme not updated.
 
-It may be caused by your CSS filename contains capitalised characters or whitespace. Please change to lowercase + hyphen, e.g. `my-typora-theme.css`.
+This problem can happen when your CSS filename contains capitalized characters or whitespace. Please change the filename to lowercase and surround it with hyphens, e.g., `my-typora-theme.css`.
 
 #### How to modify existing theme.
 
-Briefly speaking, if the theme is created by you, you would modify it directly. 
+If the theme is created by you, you would modify it directly.
 
-If the theme is built-in with Typora, or was downloaded from website, then, you may need to update them by download new one to replace the original one. In this case, we recommend you to put your modifications into another files, which won;t be overwritten when typora, or the theme file is updated. You could put your modifications into:
+If the theme is built-in with Typora or was downloaded from a website, you may need to update it by downloading a new one to replace the original. In this case, we recommend you make your modifications using a copy that has been renamed. Otherwise Typora might overwrite your changes if  the theme file is updated. 
 
-- `base.user.css` under theme folder, the css rules inside it will be applied to all themes.
-- `{theme-css-name}.user.css`, the css rules inside it will only be applied to theme file `{theme-css-name}.css`.
+Note that you can put your modifications in two files:
 
-For more details, please check [Add Custom CSS](http://support.typora.io/Add-Custom-CSS/).
+-   `base.user.css` under the theme folder, the css rules inside it will be applied to all themes.
+-   `{theme-css-name}.user.css`, the css rules inside it will only be applied to the theme file `{theme-css-name}.css`.
+
+For more details, please check [Add Custom CSS](https://support.typora.io/Add-Custom-CSS/).
 
 #### How to write my own theme?
 

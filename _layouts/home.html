@@ -2,7 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>{{ page.title }} — Typora</title>
+  {% if site.url contains ".cn" and page.titleCN %}
+  <title>{{ page.titleCN}} — Typora</title>
+  {% else %}
+  <title>{{ page.title}} — Typora</title>
+  {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--link href="http://fonts.googleapis.com/css?family=Playball" rel="stylesheet"-->
   <link href="/assets/css/github.css" rel="stylesheet" />
@@ -20,7 +24,7 @@
   <meta name="twitter:description" content="Download or share your Typora Themes." />
   <meta name="twitter:image" content="/img/twitter-sum.png" />
   <script>
-  if (window.location.protocol != "https:"){
+  if (window.location.protocol != "https:" && window.location.host.indexOf(":4000") == -1){
       window.location.protocol = "https";
   }
   </script>
@@ -28,16 +32,28 @@
 
 
 <body>
-
   <header class="pure-menu pure-menu-horizontal nav" id="header">
     <div class="gallery">
       <div class="product-name">Typora</div>
       <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="http://typora.io" class="pure-menu-link">Home</a>
+        <li class="pure-menu-item">
+          {% if site.url contains ".cn" %}
+          <a href="https://typoraio.cn" class="pure-menu-link">Home</a>
+          {% else %}
+          <a href="https://typora.io" class="pure-menu-link">Home</a>
+          {% endif %}
         </li>
-        <li class='pure-menu-item  {% if page.url == "/" %} pure-menu-active {% endif %}'><a href="/" class="pure-menu-link" id="title-bar-feature-btn">Themes</a>
+        <li class='pure-menu-item  {% if page.url == "/" %} pure-menu-active {% endif %}'>
+          <a href="/" class="pure-menu-link">{% if site.url contains ".cn" %}主题{% else %}Themes{% endif %}</a>
         </li>
-        <li class='pure-menu-item  {% if page.url contains "/doc" %} pure-menu-active {% endif %}'><a href="/doc" class="pure-menu-link">Documents</a>
+        <li class='pure-menu-item  {% if page.url contains "/doc" %} pure-menu-active {% endif %}'>
+          <a href="/doc" class="pure-menu-link">
+            {% if site.url contains ".cn" %}
+            帮助
+            {% else %}
+            Documents
+            {% endif %}
+          </a>
         </li>
       </ul>
     </div>
