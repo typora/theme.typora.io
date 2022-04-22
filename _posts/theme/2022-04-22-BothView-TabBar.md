@@ -12,7 +12,7 @@ typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/bothview-tabbar
 ---
 
-![header](/media/thumbnail/bothview-tabbar.jpg)
+![header](/media/thumbnails/bothview-tabbar.jpg)
 
 # Both Sidebars and Tab Bar for Typora
 The BothView theme makes you use files list sidebar and outline sidebar together.
