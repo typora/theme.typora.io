@@ -8,7 +8,7 @@ built-in: false
 author: mcesar-rlacruz
 thumbnail: compact-night.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/compact
+typora-copy-images-to: ../../media/theme/compact-night
 ---
 
 created by [mcesar-rlacruz](https://github.com/mcesar-rlacruz)
