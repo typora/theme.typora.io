@@ -23,5 +23,8 @@ kramdown:
       line_numbers: false
       start_line: 1
 
+plugins:
+  - jemoji
+
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
