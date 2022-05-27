@@ -24,27 +24,27 @@ This overall scarcity of ornament gives Compact Night a someway sober or austere
 ### Snapshots
 #### The above text rendered with Compact Night.
 
-![](Snapshots/1_What.PNG)
+![](/media/theme/compact/1_What.PNG)
 
 #### Common markup and lists.
 
-![](Snapshots/2_Common_lists.PNG)
+![](/media/theme/compact/2_Common_lists.PNG)
 
 #### Code blocks and quotations.
 
-![](Snapshots/3_Code_q.PNG)
+![](/media/theme/compact/3_Code_q.PNG)
 
 #### Headings.
 
-![](Snapshots/4_headings.PNG)
+![](/media/theme/compact/4_headings.PNG)
 
 #### Tables, footnotes, inlined HTML and fonts.
 
-![](Snapshots/5_Tables_fn_html_f3.PNG)
+![](/media/theme/compact/5_Tables_fn_html_f3.PNG)
 
 #### Paragraphs.
 
-![](Snapshots/6_Text.PNG)
+![](/media/theme/compact/6_Text.PNG)
 
 ### Installation.
 
