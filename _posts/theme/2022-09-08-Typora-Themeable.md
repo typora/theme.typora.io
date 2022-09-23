@@ -5,7 +5,7 @@ category: theme
 homepage: https://github.com/jhildenbiddle/typora-themeable
 download: https://github.com/jhildenbiddle/typora-themeable/releases/latest/download/typora-themeable.zip
 author: John Hildenbiddle
-thumbnail: typora-themeable.png
+thumbnail: typora-themeable.jpg
 typora-root-url: ../../
 ---
 
