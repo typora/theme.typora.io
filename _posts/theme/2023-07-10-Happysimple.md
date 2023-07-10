@@ -3,7 +3,7 @@ layout: theme
 title: Happysimple
 category: theme
 homepage: https://github.com/HappySimple/Typora-theme-Happysimple
-download: https://github.com/HappySimple/Typora-theme-Happysimple
+download: https://alist.happysimple.club/lanzouyun/Typora-theme-Happysimple.rar
 built-in: false
 author: HappySimple
 thumbnail: Happysimple.png
@@ -29,13 +29,6 @@ typora-copy-images-to: ../../media/theme/happysimple
 - 美化了自带的表格，还增加了<font style="color: #fff; background: #ffafa3;">三线表样式</font>的表格！
 - 增加了`小标签`、`折叠标签`、`强调型文本`和`字体特效` 等！
 - 此外，还美化了`YAML`、`目录`、`注释`、`超链接`、`公式`、`列表`等！
-
-
-
-## 下载方式
-
-1. [Alist-HappySimple](https://alist.happysimple.club/lanzouyun/Typora-theme-Happysimple.rar)
-2. [Github](https://github.com/HappySimple/Typora-theme-Happysimple)
 
 
 
