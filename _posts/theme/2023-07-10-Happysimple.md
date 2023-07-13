@@ -3,12 +3,12 @@ layout: theme
 title: Happysimple
 category: theme
 homepage: https://github.com/HappySimple/Typora-theme-Happysimple
-download: https://alist.happysimple.club/lanzouyun/Typora-theme-Happysimple.rar
+download: https://github.com/HappySimple/Typora-theme-Happysimple/releases/tag/markdown
 built-in: false
 author: HappySimple
 thumbnail: Happysimple.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/happysimple
+typora-copy-images-to: ../../media/theme/Happysimple
 ---
 
 
@@ -17,7 +17,7 @@ typora-copy-images-to: ../../media/theme/happysimple
 
 > 此主题仅在Windows下设计和测试，在其操作系统上的效果未知！
 
-![Github Dark Default](/media/theme/happysimple/Happysimple_01.png)
+![Github Dark Default](/media/theme/Happysimple/Happysimple_01.png)
 
 ## 主题特色
 
