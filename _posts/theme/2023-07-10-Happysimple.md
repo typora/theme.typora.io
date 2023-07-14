@@ -8,7 +8,7 @@ built-in: false
 author: HappySimple
 thumbnail: Happysimple.png
 typora-root-url: ../../
-typora-copy-images-to: ../../media/theme/Happysimple
+typora-copy-images-to: ../../media/theme/happysimple
 ---
 
 
@@ -17,7 +17,7 @@ typora-copy-images-to: ../../media/theme/Happysimple
 
 > 此主题仅在Windows下设计和测试，在其操作系统上的效果未知！
 
-![Github Dark Default](/media/theme/Happysimple/Happysimple_01.png)
+![](/media/theme/happysimple/Happysimple_01.png)
 
 ## 主题特色
 
