@@ -14,7 +14,7 @@ jobs:
       - name: Cloning repo
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
