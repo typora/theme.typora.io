@@ -3,7 +3,7 @@ layout: theme
 title: Happysimple
 category: theme
 homepage: https://github.com/HappySimple/Typora-theme-Happysimple
-download: https://github.com/HappySimple/Typora-theme-Happysimple/releases/tag/markdown
+download: https://github.com/HappySimple/Typora-theme-Happysimple/releases
 built-in: false
 author: HappySimple
 thumbnail: Happysimple.png
