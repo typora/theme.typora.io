@@ -17,7 +17,7 @@ typora-copy-images-to: ../../media/theme/happysimple
 
 > 此主题仅在Windows下设计和测试，在其操作系统上的效果未知！
 
-![主题预览](/media/theme/happysimple/Happysimple_01.png)
+![主题预览](/media/theme/happysimple/HappySimple_01.png)
 
 ## 主题特色
 
@@ -29,7 +29,7 @@ typora-copy-images-to: ../../media/theme/happysimple
 
 - 标题前可<font style="color: #fff; background: #ffafa3;">嵌入图标</font>！
 
-  ![内置图标](/media/theme/happysimple/Happysimple_02.png)
+  ![内置图标](/media/theme/happysimple/HappySimple_02.png)
 
 - 代码块采用了<font style="color: #fff; background: #ffafa3;">mac暗色风格</font>！
 
@@ -43,7 +43,7 @@ typora-copy-images-to: ../../media/theme/happysimple
 
 ## 主题安装
 
-打开Typora➡️文件➡️偏好设置➡️外观➡️打开主题文件夹➡️将压缩包内容解压至此目录➡️重启Typora➡️选择主题➡️开始使用
+打开Typora➡️文件➡️偏好设置➡️外观➡️打开主题文件夹➡️解压压缩包，将文件夹中的内容（5个）移动至此目录➡️重启Typora➡️选择主题➡️开始使用
 
 
 
