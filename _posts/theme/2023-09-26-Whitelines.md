@@ -3,7 +3,7 @@ layout: theme
 title: Whitelines
 category: theme
 homepage: https://github.com/TEParsons/Whitelines
-download: https://github.com/TEParsons/Whitelines/releases/v2.0.0
+download: https://github.com/TEParsons/Whitelines/releases/latest
 author: Todd Parsons
 thumbnail: whitelines.png
 typora-root-url: ../../
