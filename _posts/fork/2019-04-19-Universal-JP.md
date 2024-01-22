@@ -13,7 +13,7 @@ typora-copy-images-to: ../../media/theme/universal-jp
 
 # Universal JP
 
-A variation of the Github theme optimized for Japanese.
+A variation of the GitHub theme optimized for Japanese.
 
 ----
 

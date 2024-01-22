@@ -1,6 +1,6 @@
 ---
 layout: theme
-title: Github Dark
+title: GitHub Dark
 category: fork
 homepage: https://github.com/TheTastefulToastie/typora-theme-github-dark
 download: https://github.com/TheTastefulToastie/typora-theme-github-dark/archive/master.zip
@@ -10,9 +10,9 @@ typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/github-dark
 ---
 
-###### Github Dark
+###### GitHub Dark
 
-A variation of the Github theme with darker colors.
+A variation of the GitHub theme with darker colors.
 
 ----
 
