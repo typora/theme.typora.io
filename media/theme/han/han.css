@@ -285,6 +285,14 @@ pre, code, pre tt {
   font-family: Courier, 'Courier New', monospace;
 }
 
+code {
+  background: rgba(135,131,120,.15);
+  color: #EB5757;
+  border-radius: 4px;
+  font-size: 85%;
+  padding: 0.2em 0.4em;
+}
+
 #write .md-fences {
   border: 1px solid #ddd;
   padding: 1em 0.5em;
