@@ -14,12 +14,12 @@ jobs:
       - name: Cloning repo
         uses: actions/checkout@v2
         with:
-          fetch-depth: 0
+          fetch-depth: 1
           
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.ALIYUN_SERVER_ACCESS_TOKEN }}
+          key: ${{ secrets.ALIYUN_PEM }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
           name: id_rsa
           if_key_exists: replace
@@ -38,12 +38,11 @@ jobs:
           # SETUP GIT
           git config --global user.email "hi@typora.io"
           git config --global user.name "Typora"
-          git remote add a dokku@dokku.typoraio.cn:wiki
+          git remote add a dokku@dokku.typoraio.cn:theme
           sed -i 's/rubygems.org/gems.ruby-china.com/g' Gemfile
           git commit -am "update Gemfile"
           git checkout -b master
         env:
-          SSH_KEY: ${{secrets.ALIYUN_SERVER_ACCESS_TOKEN}}
           PEM_KEY: ${{secrets.ALIYUN_PEM}}
           
       - name: PUSH
