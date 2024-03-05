@@ -1,0 +1,50 @@
+---
+name: 'deploy'
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloning repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.ALIYUN_SERVER_ACCESS_TOKEN }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          name: id_rsa
+          if_key_exists: replace
+          # known_hosts: unnecessary
+      
+      - name: SETUP
+        run: |
+          # SETUP SSH
+          touch /home/runner/.ssh/github.pem
+          echo "$PEM_KEY" > /home/runner/.ssh/github.pem
+          chmod 400 /home/runner/.ssh/github.pem
+          cp /home/runner/.ssh/github.pem /home/runner/.ssh/id_rsa_ec2
+          ssh-keygen -y -f /home/runner/.ssh/github.pem > /home/runner/.ssh/id_rsa_ec2.pub
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_rsa_ec2
+          # SETUP GIT
+          git config --global user.email "hi@typora.io"
+          git config --global user.name "Typora"
+          git remote add a dokku@dokku.typoraio.cn:wiki
+          sed -i 's/rubygems.org/gems.ruby-china.com/g' Gemfile
+          git commit -am "update Gemfile"
+          git checkout -b master
+        env:
+          SSH_KEY: ${{secrets.ALIYUN_SERVER_ACCESS_TOKEN}}
+          PEM_KEY: ${{secrets.ALIYUN_PEM}}
+          
+      - name: PUSH
+        run: git push -f -u a master
