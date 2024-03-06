@@ -39,6 +39,8 @@ jobs:
           git config --global user.email "hi@typora.io"
           git config --global user.name "Typora"
           git remote add a dokku@dokku.typoraio.cn:theme
+          sed -i 's/rubygems.org/gems.ruby-china.com/g' Gemfile
+          git commit -am "update Gemfile"
           git checkout -b master
         env:
           PEM_KEY: ${{secrets.ALIYUN_PEM}}
