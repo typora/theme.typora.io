@@ -4,7 +4,7 @@
 
 # KeepStyle主题
 
-![PixPin_2024-03-18_22-56-41](./../Notes/Typora/assets/image/2024-03-18-KeepStyle/KeepStyle.png)
+![预览图](https://raw.githubusercontent.com/KSMLC/TyporaThemeKeepStyle/gh-pages/media/theme/KeepStyle/KeepStyle.png)
 
 ### 下载
 
