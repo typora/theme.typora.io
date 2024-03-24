@@ -1,12 +1,16 @@
-| 布局 | 标题      | 类别 | 首页                                          | 下载                                                         | 作者   | 缩略图        | typora-root-url （英语） |
-| ---- | --------- | ---- | --------------------------------------------- | ------------------------------------------------------------ | ------ | ------------- | ------------------------ |
-| 主题 | Keepstyle | 主题 | https://github.com/KSMLC/TyporaThemeKeepStyle | [Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle) | KS-MLC | keepstyle.png | ../../                   |
+| layout | title     | category | homepage                                      | download                                                     | author | thumbnail     | typora-root-url |
+| ------ | --------- | -------- | --------------------------------------------- | ------------------------------------------------------------ | ------ | ------------- | --------------- |
+| theme  | Keepstyle | theme    | https://github.com/KSMLC/TyporaThemeKeepStyle | [Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle) | KS-MLC | keepstyle.png | ../../          |
 
 # KeepStyle主题
 
 **均为暗色主题，keepstyle_ide模仿idea主题颜色，将字体加粗等进行颜色加成，更清晰明了此时主题的状态。**
 
 将文件夹里css文件复制到主题文件夹即可，子文件夹里包含了字体。
+
+有空就会更新
+
+如需其他要求可自行修改css代码
 
 ##### keepstyle
 
