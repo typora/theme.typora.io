@@ -37,14 +37,13 @@ jobs:
           ssh-add ~/.ssh/id_rsa_ec2
           # SETUP GIT
           rm -rf .git
-          git init
+          git init -b master
           git config --global user.email "hi@typora.io"
           git config --global user.name "Typora"
           git remote add a dokku@dokku.typoraio.cn:theme
           sed -i 's/rubygems.org/gems.ruby-china.com/g' Gemfile
           git add .
           git commit -m "update Gemfile"
-          git checkout -b master
         env:
           PEM_KEY: ${{secrets.ALIYUN_PEM}}
           
