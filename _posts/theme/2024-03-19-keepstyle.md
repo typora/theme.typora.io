@@ -8,10 +8,6 @@ author: KS-MLC
 thumbnail: keepstyle.png
 typora-root-url: ../../
 ---
-| layout | title     | category | homepage                                      | download                                                     | author | thumbnail     | typora-root-url |
-| ------ | --------- | -------- | --------------------------------------------- | ------------------------------------------------------------ | ------ | ------------- | --------------- |
-| theme  | Keepstyle | theme    | https://github.com/KSMLC/TyporaThemeKeepStyle | [Release Typora-KeepStyle主题 · KSMLC/TyporaThemeKeepStyle (github.com)](https://github.com/KSMLC/TyporaThemeKeepStyle/releases/tag/KeepStyle) | KS-MLC | keepstyle.png | ../../          |
-
 # KeepStyle主题
 
 **均为暗色主题，keepstyle_ide模仿idea主题颜色，将字体加粗等进行颜色加成，更清晰明了此时字体的状态。**
