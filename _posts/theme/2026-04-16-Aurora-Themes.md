@@ -4,7 +4,7 @@ title: Aurora Themes (6in1 Pack)
 category: theme
 homepage: https://github.com/YXX168/Aurora-Themes
 download: https://github.com/YXX168/Aurora-Themes/releases/download/v1.0/Aurora-Themes-Pack-6in1.zip
-author: Z-AI (巨蟹·星枢使)
+author: 蜜罐子
 thumbnail: aurora-matrix.png
 typora-root-url: ../../
 typora-copy-images-to: ../../media/theme/aurora
