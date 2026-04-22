@@ -3,7 +3,7 @@ layout: theme
 title: Eyes Green
 category: theme
 homepage: https://github.com/AqiMake/typora-eyes-green-theme
-download: https://github.com/AqiMake/typora-eyes-green-theme/releases/tag/v1.0.1
+download: https://github.com/AqiMake/typora-eyes-green-theme/releases
 author: AqiMake
 thumbnail: eyes-green.png
 typora-root-url: ../../
