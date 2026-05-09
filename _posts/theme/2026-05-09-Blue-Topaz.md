@@ -23,7 +23,9 @@ The package includes four variants:
 
 The theme focuses on document rendering: headings, lists, blockquotes, tables, inline code, fenced code blocks, task checkboxes, metadata blocks, and Typora alert blocks. It also includes light and dark palettes, Blue Topaz-style heading colors, restrained rounded blocks, and readable code coloring.
 
-![Blue Topaz Typora theme preview](/media/theme/blue-topaz/blue-topaz-preview.png)
+![blue-topaz-preview.png](/media/theme/blue-topaz/blue-topaz-preview.png)
+
+![blue-topaz-dark-preview.png](/media/theme/blue-topaz/blue-topaz-dark-preview.png)
 
 ## Notes
 
