@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "dokku": {
-      "predeploy": "touch /app/_site/.static" 
-    }
-  }
-}
