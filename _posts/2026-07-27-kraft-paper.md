@@ -1,10 +1,12 @@
 ---
-layout: post
+layout: theme
 title: "Kraft Paper"
 author: "jasper0507"
-preview: "kraft-paper.png"
 homepage: "https://github.com/jasper0507/kraft-paper"
 download: "https://github.com/jasper0507/kraft-paper/releases/latest"
+thumbnail: "kraft-paper.png"
+preview: "kraft-paper.png"
+category: "theme"
 description: "A warm paper-textured Typora theme (light + dark) inspired by claude.ai — fixed 768px measure, serif body, and CJK song/hei emphasis for long-form reading."
 tags: [light, dark, clean, cjk, reading, minimal]
 ---
