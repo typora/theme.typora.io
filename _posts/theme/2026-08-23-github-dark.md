@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: theme
 title: "GitHub Dark"
+category: theme
 author: "SprInec"
-preview: "github-dark-2026.png"
+thumbnail: "github-dark-2026.png"
 homepage: "https://github.com/SprInec/typora-theme-github-dark"
 download: "https://github.com/SprInec/typora-theme-github-dark/archive/refs/heads/main.zip"
 description: "A restrained GitHub-style dark Typora theme with cohesive interface integration for Windows and Ubuntu."
