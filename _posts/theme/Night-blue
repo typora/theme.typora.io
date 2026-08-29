@@ -1,0 +1,238 @@
+html {
+    font-size: 19px;
+}
+
+/* for printing */
+@media print {
+    h1 {page-break-before: always;}
+}
+pre.md-meta-block {
+    visibility: hidden;
+}
+
+pre.md-meta-block {counter-reset: h1}
+h1 {counter-reset: h2}
+h1 {counter-reset: h2}
+h2 {counter-reset: h3}
+h3 {counter-reset: h4}
+h4 {counter-reset: h5}
+h5 {counter-reset: h6}
+
+h1:before {counter-increment: h1; content: counter(h1, upper-roman) ". "}
+h2:before {counter-increment: h2; content: counter(h2) ". "}
+h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6, georgian) ". "}
+
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none } 
+
+i {font-style: italic;  }
+em, dfn, cite {background: #221; font-style: italic; border-bottom: 1px dotted #b88;
+    text-decoration: none;}
+html, body {
+    margin: auto;
+    background: #050505;
+}
+
+#typora-sidebar {
+    background: #050505;
+    color: 99c;
+}
+
+img {
+    font-size: 1.3em;
+    max-width: 50%;
+    float: left;
+}
+
+img + img {
+    float: right;
+}
+body {
+    font-family: "FreeSerif";
+    color: #88b;
+    line-height: 1.1;
+    text-align: justify;
+}
+b, strong {background-color: rgba(75, 2, 2, 0.5);}
+
+h1 {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6, li p, p, blockquote, blockquote p {
+    margin-bottom: 0em !important;
+    margin-top: 0em !important;
+    -webkit-margin-before: 0em !important;
+    -webkit-margin-after: 0em !important;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6,
+ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6,
+table, table + p {
+    margin-top: 1em !important!;
+    -webkit-margin-before: 1em !important;
+}
+p + p{
+    margin-top: 0.5em !important!;
+    -webkit-margin-before: 0.5em !important;
+}
+
+h1 {
+    font-size:2.5em;
+    font-weight: normal;
+    border: 1px solid black;
+    position: fixed;
+    background-color: #155515;
+}
+h2  {font-weight: bold;}
+
+h3 {
+    font-style: italic;
+    font-weight: normal;
+}
+
+ h4 {
+    text-decoration: underline;
+
+ }
+
+h6 { 
+    font-weight: normal;
+    text-decoration: underline;
+}
+#write {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0.55em;
+    line-height: 1.3;
+}
+
+blockquote, notitie {
+    color: #272;
+    font-family: "Allura","Z003";
+    font-size: 1.3em;
+    text-align: left;
+    display: inline;
+}
+ blockquote p {
+    display: inline;
+ }
+
+table {
+    border:1px solid gray;
+    border-collapse: collapse;
+ }
+ table, th {
+     border-bottom: 1px solid gray;
+}
+th, td {
+   border-right:1px dashed gray;
+   padding-left: 0.2em;
+   vertical-align: top !important;
+}
+th {border-bottom-width: 2px;}
+tr:nth-child(even) {background-color: rgba(0,0,0,0.1);}
+.md-tag, [md-inline='linebreak'] {
+    display: inline-block;
+    width: 2.2em;
+    height: 1em;
+    font-size: 0.35em;
+    background: inherit;
+    color: #151;
+}
+
+code,
+pre {
+    font-family: "Metrophobic";
+    font-size: .9em;
+    background: inherit;
+    color: #b33;
+}
+.md-fences{
+    margin-left: 0.4em;
+    padding-left: 0.4em;
+    border: 1px solid #ddd;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    margin-bottom: 1.5em;
+}
+
+a {
+    color: #A9C;
+    text-decoration: none;
+}
+
+ol {
+  background-color: rgba(155, 155, 0, 0.15);
+}
+
+ul, ol {
+    -webkit-margin-before: 0px !important;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    padding-left: 1em;
+}
+ul { background-color: rgba(21, 165, 21, 0.15);}
+
+/** focus mode */
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus) img,
+.on-focus-mode .task-list-item:not(.md-focus-container)>input {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+.on-focus-mode li[cid]:not(.md-focus-container){
+    color: rgba(0, 0, 255, 0.7);
+}
+
+.on-focus-mode .md-fences.md-focus .CodeMirror-code>*:not(.CodeMirror-activeline) *,
+.on-focus-mode .CodeMirror.cm-s-inner:not(.CodeMirror-focused) * {
+    color: rgba(0, 0, 0, 0) !important;
+}
+
+.on-focus-mode .md-focus,
+.on-focus-mode .md-focus-container {
+    color: #111;
+}
+
+.on-focus-mode #typora-source .CodeMirror-code>*:not(.CodeMirror-activeline) * {
+    color: rgba(0,0,0,.075) !important;
+}
+c {background-color: red}
+
+.on-typewriter-mode #write > [cid]:not(.md-meta-block):first-child{
+    margin-top: 0 !important;
+}
+
+.on-typewriter-mode #write > [cid]:not(.md-meta-block):last-child{
+    margin-bottom: 0 !important;
+}
+
+.typora-node #outline-dropmenu {
+    display: block;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    transition: 0.3s;
+    width: 120px;
+    box-shadow: none;
+    border-right: 1px solid #ddd;
+    background-color: #ddd;
+}
+.typora-node #outline-content {
+    padding: 0 0;
+    padding-left: 15px;
+    padding-top: 8px;
+    overflow-y: scroll;
+    transition: 1s;
+    font-size: 14px;
+}
+
+.pin-outline #write {
+    margin-left: 41px;
+}
