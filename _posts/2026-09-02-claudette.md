@@ -24,6 +24,7 @@ A warm, understated theme for Typora, in light and dark. Paper-toned background,
 - **Editorial typography** — serif headings at weight 400, a lead paragraph after H1, uppercase H6 labels.
 - **Quiet code blocks** — hairline border, `.75rem` radius, language pill, low-saturation syntax colors.
 - **Hairline tables** — horizontal rules only, uppercase headers, subtle row hover.
+- **Paper sheet and callouts** — the document sits on a white sheet over the ivory page; `> [!NOTE]`-style callouts are tinted with the brand's secondary swatches.
 - **Whole-app styling** — sidebar, outline, quick-open, search, menus, dialogs, source mode and scrollbars all match.
 - **Print-ready** — decorations are stripped on export.
 
