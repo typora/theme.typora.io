@@ -45,6 +45,8 @@ typora-copy-images-to: ../../media/theme/vlook-fancy-v2
 
 ![vlook-theme-preview-08](/media/theme/vlook-fancy-v2/preview-08.png)
 
+![vlook-theme-preview-08](/media/theme/vlook-fancy-v2/preview-09.png)
+
 # Custom Theme
 
 More personalized themes can also be flexibly customized according to your needs.
