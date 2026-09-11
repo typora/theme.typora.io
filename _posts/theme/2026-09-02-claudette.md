@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: theme
+category: theme
 title: "Claudette"
 author: "CookPiu"
-preview: "claudette.png"
+thumbnail: "claudette.png"
 homepage: "https://github.com/CookPiu/typora-theme-claudette"
 download: "https://github.com/CookPiu/typora-theme-claudette/archive/refs/heads/main.zip"
 description: "A warm, understated theme in light and dark: paper-toned page, a single terracotta accent, serif headings and hairline rules."
