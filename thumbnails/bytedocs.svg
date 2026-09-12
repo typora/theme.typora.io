@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="400" viewBox="0 0 500 400">
+  <rect width="500" height="400" fill="#f5f2e9"/>
+  <rect x="28" y="28" width="444" height="344" fill="#fcfaf4" stroke="#242621" stroke-width="2"/>
+  <rect x="28" y="28" width="444" height="48" fill="#242621"/>
+  <circle cx="53" cy="52" r="6" fill="#efa17e"/><circle cx="73" cy="52" r="6" fill="#a2b2ff"/><circle cx="93" cy="52" r="6" fill="#a4c48a"/>
+  <text x="126" y="58" fill="#e8e5d9" font-family="monospace" font-size="14" letter-spacing="2">BYTEDOCS / NOTE</text>
+  <text x="64" y="132" fill="#242621" font-family="Georgia, serif" font-size="38">Always curious.</text>
+  <rect x="64" y="151" width="92" height="4" fill="#ad3d21"/>
+  <text x="64" y="190" fill="#64665c" font-family="monospace" font-size="13">01 / FIELD JOURNAL</text>
+  <line x1="64" y1="215" x2="424" y2="215" stroke="#d3d2c5" stroke-width="2"/>
+  <text x="64" y="252" fill="#242621" font-family="Georgia, serif" font-size="24">Readable by design.</text>
+  <text x="64" y="284" fill="#263eb4" font-family="monospace" font-size="13">LIGHT + DARK / TYPORA THEME</text>
+  <rect x="64" y="314" width="112" height="28" fill="#263eb4"/><text x="76" y="333" fill="#fff" font-family="monospace" font-size="12">BYTEDOCS</text>
+</svg>
