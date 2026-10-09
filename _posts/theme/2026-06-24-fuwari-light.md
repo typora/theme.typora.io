@@ -1,10 +1,13 @@
 ---
-layout: post
-title: "Fuwari Light"
-author: "Caphhh"
-preview: "fuwari-light.png"
+layout: theme
+title: Fuwari Light
+category: theme
 homepage: "https://github.com/Caph-dev/typora-fuwari-theme"
 download: "https://github.com/Caph-dev/typora-fuwari-theme/archive/refs/heads/main.zip"
+built-in: false
+author: Caphhh
+thumbnail: fuwari-light.png
+typora-root-url: ../../
 description: "A soft, card-style light Typora theme inspired by Fuwari. Features an OKLCH color palette, restrained syntax highlighting, and CJK-friendly typography."
 tags: [light, soft, card, cjk, clean]
 ---
