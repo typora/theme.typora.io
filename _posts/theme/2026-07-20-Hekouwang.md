@@ -5,7 +5,7 @@ category: theme
 author: "huiyonghkw"
 thumbnail: hekouwang.png
 homepage: "https://github.com/huiyonghkw/hekouwang-typora-theme"
-download: "https://github.com/huiyonghkw/hekouwang-typora-theme/archive/refs/tags/v1.3.0.zip"
+download: "https://github.com/huiyonghkw/hekouwang-typora-theme/archive/refs/tags/v1.3.1.zip"
 description: "CJK long-form Typora theme (light + dark): body 1rem · leading 1.65 · paper that fills the window with a 48–96rem reading column · Tailwind-scale backgrounds. Token-generated CSS, ~100 KB Inter — MIT free."
 tags: [light, dark, clean, cjk, minimal, reading]
 typora-root-url: ../../
