@@ -3,12 +3,12 @@ layout: theme
 title: "Claude-like"
 category: theme
 homepage: "https://github.com/Xv-Bowen/claude-like-typora-theme"
-download: "https://github.com/Xv-Bowen/claude-like-typora-theme/releases/download/v1.0.0/claude-like-typora-theme-v1.0.0.zip"
+download: "https://github.com/Xv-Bowen/claude-like-typora-theme/releases/download/v2.1.0/claude-like-typora-theme-v2.1.0.zip"
 author: "Xv-Bowen"
 author_url: "https://github.com/Xv-Bowen"
 thumbnail: "claude-like-xv-bowen.png"
 preview: "claude-like-xv-bowen.png"
-description: "A polished Claude-inspired Typora theme with independently tuned light and dark palettes, bilingual typography, and comprehensive editor UI coverage."
+description: "Light and dark Typora themes rebuilt from the Claude desktop app's own styles, with support for Typora 1.14's toolbar and file preview."
 tags: [light, dark, clean, cjk, bilingual, anthropic]
 built-in: false
 typora-root-url: ../../
@@ -17,9 +17,7 @@ typora-copy-images-to: ../../media/theme/claude-like-xv-bowen
 
 # Claude-like
 
-Claude-like brings the calm, warm visual character associated with Claude to Typora while treating the editor as a complete writing environment rather than styling only the document canvas. Its light and dark variants are tuned independently for comfortable contrast, coherent hierarchy, and long-form reading in English, Chinese, and mixed-language documents.
-
-The theme is self-contained: it uses system-font stacks, loads no remote assets, and requires only two CSS files.
+Claude-like brings the reading experience of the Claude desktop app to Typora. Version 2 rebuilt the theme from Claude's own styles: the colours, typography, code styling, sidebar and popovers were taken from the desktop app and compared with it side by side, in light and dark mode.
 
 ## Light Theme
 
@@ -31,26 +29,27 @@ The theme is self-contained: it uses system-font stacks, loads no remote assets,
 
 ## Highlights
 
-- **Two purpose-built palettes:** warm paper-like light mode and low-glare charcoal dark mode, with separately balanced text, borders, surfaces, and syntax colors.
-- **Bilingual reading comfort:** system-native font stacks, measured content width, and relaxed line height for English, Chinese, and mixed CJK/Latin writing.
-- **Complete Markdown language:** carefully styled headings, emphasis, links, lists, task lists, blockquotes, tables, images, footnotes, table of contents, YAML front matter, and all five GitHub-style alert types.
-- **Focused technical writing:** cohesive fenced code, inline code, CodeMirror source mode, syntax highlighting, Mermaid diagrams, and math blocks.
-- **Typora-wide polish:** matching file tree, outline, search, tabs, sidebar controls, title bar, focus mode, typewriter mode, and integrated-window details.
-- **Responsive and export-aware:** compact-screen breakpoints, reduced-motion handling, and print/PDF rules keep documents usable beyond the desktop editor.
-- **Private and offline-friendly:** no bundled third-party fonts, analytics, scripts, or network requests.
+- **Claude's palettes:** light and dark colours taken from Claude, with clay accents for the caret, selection, task boxes and focus ring.
+- **Claude's chat typography:** the same body size, line height and heading scale, with quiet underlined links. The font stacks prefer Anthropic Serif, Anthropic Sans and JetBrains Mono NL when they are installed, then fall back to PingFang SC and system fonts.
+- **Code like Claude's chat:** inline code chips, translucent code cards with language labels and Claude's syntax colours. YAML front matter uses the same card.
+- **Alerts and diagrams:** GitHub-style alerts in Claude's soft notice style, and Mermaid diagrams coloured by the theme in the editor.
+- **Typora itself:** a flush sidebar like Claude's, Claude-style menus, popovers and tooltips, and styles for Typora 1.14's floating toolbar and file preview.
+- **Export-aware:** exports keep the editor's styles, and printing always uses the light palette.
 
 ## Installation
 
-1. Download and extract the [v1.0.0 release package](https://github.com/Xv-Bowen/claude-like-typora-theme/releases/tag/v1.0.0).
+1. Download and extract the [v2.1.0 release package](https://github.com/Xv-Bowen/claude-like-typora-theme/releases/tag/v2.1.0).
 2. In Typora, open **Settings → Appearance → Open Theme Folder**.
 3. Copy `claude-light.css` and `claude-dark.css` into the theme folder.
-4. Restart Typora.
+4. Quit and reopen Typora.
 5. Select **Claude Light** or **Claude Dark** from the **Themes** menu.
 
-Detailed English and Chinese documentation, customization recipes, release notes, and the full preview document are available in the [GitHub repository](https://github.com/Xv-Bowen/claude-like-typora-theme).
+English and Chinese documentation, customization notes and release notes are available in the [GitHub repository](https://github.com/Xv-Bowen/claude-like-typora-theme).
 
-## Platform Notes
+## Notes
 
-The theme was designed and visually verified on macOS with the current desktop version of Typora. It includes explicit macOS integrated-window styling, Windows unibody selectors, system-font fallbacks, and responsive layouts. Windows and Linux have not yet received the same full regression pass, so reports and screenshots from those platforms are welcome.
+- The theme does not include or download any font. The Anthropic typefaces are only named in the font stacks.
+- Mermaid diagrams are exported as they look in the editor, so export documents with diagrams from Claude Light.
+- Designed and verified on macOS with Typora 1.14. Reports and screenshots from Windows and Linux are welcome.
 
 Claude-like is an independent, unofficial community theme. It is not affiliated with, endorsed by, or sponsored by Anthropic, PBC. Claude is a trademark of Anthropic, PBC.
