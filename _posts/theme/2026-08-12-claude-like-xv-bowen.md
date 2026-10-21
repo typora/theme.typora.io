@@ -3,7 +3,7 @@ layout: theme
 title: "Claude-like"
 category: theme
 homepage: "https://github.com/Xv-Bowen/claude-like-typora-theme"
-download: "https://github.com/Xv-Bowen/claude-like-typora-theme/releases/download/v2.1.0/claude-like-typora-theme-v2.1.0.zip"
+download: "https://github.com/Xv-Bowen/claude-like-typora-theme/releases/download/v2.1.1/claude-like-typora-theme-v2.1.1.zip"
 author: "Xv-Bowen"
 author_url: "https://github.com/Xv-Bowen"
 thumbnail: "claude-like-xv-bowen.png"
@@ -38,7 +38,7 @@ Claude-like brings the reading experience of the Claude desktop app to Typora. V
 
 ## Installation
 
-1. Download and extract the [v2.1.0 release package](https://github.com/Xv-Bowen/claude-like-typora-theme/releases/tag/v2.1.0).
+1. Download and extract the [v2.1.1 release package](https://github.com/Xv-Bowen/claude-like-typora-theme/releases/tag/v2.1.1).
 2. In Typora, open **Settings → Appearance → Open Theme Folder**.
 3. Copy `claude-light.css` and `claude-dark.css` into the theme folder.
 4. Quit and reopen Typora.
