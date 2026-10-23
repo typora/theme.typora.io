@@ -15,7 +15,7 @@ typora-copy-images-to: ../../media/theme/claude-style
 
 # Claude Style
 
-A light and a dark theme that make your documents read like a reply in the Claude desktop app. The text, code and tables follow Claude's chat view, alerts follow the way Claude shows a document, a file linked on its own becomes the card Claude shows for a file it shares, and Typora's own interface (sidebar, menus, floating toolbar, find bar, dialogs) takes on Claude's look as well.
+A light and a dark theme that make your documents read like a reply in Claude. The text, code and tables follow Claude's chat view, alerts follow the way Claude shows a document, a file linked on its own becomes the card Claude shows for a file it shares, and Typora's own interface (sidebar, menus, floating toolbar, find bar, dialogs) takes on Claude's look as well.
 
 ## Light
 
