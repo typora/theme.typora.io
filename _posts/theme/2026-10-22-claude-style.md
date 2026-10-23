@@ -15,7 +15,7 @@ typora-copy-images-to: ../../media/theme/claude-style
 
 # Claude Style
 
-A light and a dark theme that make your documents read like a reply in the Claude desktop app. The text, code, tables and alerts follow Claude's chat view, and Typora's own interface (sidebar, menus, find bar, dialogs) takes on Claude's look as well.
+A light and a dark theme that make your documents read like a reply in the Claude desktop app. The text, code and tables follow Claude's chat view, alerts follow the way Claude shows a document, a file linked on its own becomes the card Claude shows for a file it shares, and Typora's own interface (sidebar, menus, floating toolbar, find bar, dialogs) takes on Claude's look as well.
 
 ## Light
 
@@ -25,12 +25,21 @@ A light and a dark theme that make your documents read like a reply in the Claud
 
 ![](/media/theme/claude-style/preview-dark.png)
 
+## File cards
+
+Files linked in paragraphs of their own, in the light and the dark theme:
+
+![](/media/theme/claude-style/file-cards-light.png)
+
+![](/media/theme/claude-style/file-cards-dark.png)
+
 ## What it covers
 
-- **Reading:** Claude's text size, line spacing and heading scale; quiet links, quotes, lists and tables.
+- **Reading:** Claude's text size, line spacing and heading scale; quiet links, quotes, lists and tables; keycaps, task lists and footnotes as in Claude.
 - **Code:** Claude's code card with a language label and Claude's syntax colours; inline code as Claude's small code chip.
-- **Math, alerts and diagrams:** formulas at the same size as in Claude, GitHub alerts as Claude's notices, Mermaid diagrams in Claude's colours.
-- **Typora itself:** sidebar with file tree, outline and search; menus, find and replace, quick open, dialogs, notifications, the floating toolbar and file preview.
+- **Math, alerts and diagrams:** formulas at the same size as in Claude, GitHub alerts the way Claude shows them in a document, Mermaid diagrams in Claude's colours.
+- **File links:** a file linked in a paragraph of its own shows as the card Claude draws for a file it shares, coloured by the kind of file, with its icon, name, kind and extension; web links stay links, and exports keep the plain link.
+- **Typora itself:** sidebar with file tree, outline and search; the floating toolbar in the look of Claude's review bar, with the heading levels in a submenu of Paragraph; find and replace, quick open with matches in bold as in Claude's search, dialogs, notifications, tooltips, the floating outline window and file preview.
 - **Export:** HTML and PDF use the same styles as the editor.
 
 The theme prefers Anthropic Serif, Anthropic Sans and JetBrains Mono NL when they are installed and falls back to Times New Roman, the system fonts and PingFang SC. No font is bundled or downloaded.
