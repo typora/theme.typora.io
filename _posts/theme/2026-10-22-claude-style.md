@@ -35,12 +35,12 @@ Files linked in paragraphs of their own, in the light and the dark theme:
 
 ## What it covers
 
-- **Reading:** Claude's text size, line spacing and heading scale; quiet links, quotes, lists and tables; keycaps, task lists and footnotes as in Claude.
-- **Code:** Claude's code card with a language label and Claude's syntax colours; inline code as Claude's small code chip.
+- **Reading:** Claude's text size, line spacing and heading scale; links, quotes, lists, tables, keycaps, task lists and footnotes as in Claude.
+- **Code:** Claude's code card with a language label and Claude's syntax colours; inline code as in Claude.
 - **Math, alerts and diagrams:** formulas at the same size as in Claude, GitHub alerts the way Claude shows them in a document, Mermaid diagrams in Claude's colours.
-- **File links:** a file linked in a paragraph of its own shows as the card Claude draws for a file it shares, coloured by the kind of file, with its icon, name, kind and extension; links to web pages, mail addresses, a place in the document or a part of a file stay links, and exports keep the plain link.
+- **File links:** a file linked in a paragraph of its own shows as the card Claude draws for a file it shares, coloured by the kind of file, with its icon, name, kind and extension; links to web pages, mail addresses, a place in the document or a part of a file stay links. HTML and PDF exports draw no cards: file links are plain links there.
 - **Typora itself:** sidebar with file tree, outline and search; the floating toolbar in the look of Claude's review bar, with the heading levels in a submenu of Paragraph; find and replace, quick open with matches in bold as in Claude's search, dialogs, notifications, tooltips, the floating outline window and file preview.
-- **Export:** HTML and PDF use the same styles as the editor.
+- **Export:** HTML and PDF use the same styles as the editor (file cards are drawn in the editor only).
 
 The theme prefers Anthropic Serif, Anthropic Sans and JetBrains Mono NL when they are installed and falls back to Times New Roman, the system fonts and PingFang SC. No font is bundled or downloaded.
 
