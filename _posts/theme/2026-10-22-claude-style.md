@@ -49,7 +49,7 @@ Files linked in paragraphs of their own, in the light and the dark theme:
 
 The theme prefers Anthropic Serif, Anthropic Sans and JetBrains Mono NL when they are installed and falls back to Times New Roman, the system fonts and PingFang SC (Microsoft YaHei on Windows). No font is bundled or downloaded.
 
-Since 2.0, the theme follows the desktop app's new interface in its sizes, spacing, corners, type, layout and icons. The colours stay those of 1.x, except that in the sidebar, file names and their extensions, outline headings, New and Search, the 项目列表 heading and the folder's name in the footer are always in the colour of the body text. Tables, the border around inline code and file cards keep the look of 1.x. The 1.x releases stay on the [releases page](https://github.com/Xv-Bowen/Claude-Style-Typora/releases) for anyone who wants the earlier look.
+Since the 1.2 series, the theme follows the desktop app's new interface in its sizes, spacing, corners, type, layout and icons. The colours stay those of the 1.1 series, except that in the sidebar, file names and their extensions, outline headings, New and Search, the 项目列表 heading and the folder's name in the footer are always in the colour of the body text. Tables, the border around inline code and file cards keep the look of the 1.1 series. The releases of the 1.1 series stay on the [releases page](https://github.com/Xv-Bowen/Claude-Style-Typora/releases) for anyone who wants the earlier look.
 
 ## Installation
 
