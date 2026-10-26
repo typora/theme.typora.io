@@ -59,7 +59,7 @@ Since the 1.2 series, the theme follows the desktop app's new interface in its s
 
 ## Enhancement script (optional)
 
-The same release has `claude-style-enhance.zip`, an optional script that adds what a theme cannot do: a picture viewer that zooms and drags, file names and picture thumbnails on file cards, a copy button on code cards, a sidebar search that finds as you type, a top folder that folds, and file cards in exported HTML and PDF. It comes with installers for macOS, Windows and Linux; the [README](https://github.com/Xv-Bowen/Claude-Style-Typora#enhancement-script-optional) says how to install it, with or without the installers. Without the script, the theme works as described above.
+The same release has `claude-style-enhance.zip`, an optional script that adds what a theme cannot do: a picture viewer that zooms and drags, file names and picture thumbnails on file cards, a copy button on code cards, a sidebar search that finds as you type, a top folder that folds, and file cards in exported HTML and PDF. It comes with installers for macOS, Windows and Linux; the [README](https://github.com/Xv-Bowen/Claude-Style-Typora#enhancement-script-optional) says how to install it, with or without the installers. Without the script, the theme works as described above. The script is made for the Claude Style 1.2 series and later. Script 0.1.1 (from Claude Style 1.2.2) is adapted to Typora 1.14.15, and 0.1.0 (in Claude Style 1.2.1) to Typora 1.14.10. The script works by hooking into Typora's own code, so a later version of Typora may need an update of the script.
 
 Carefully designed on the Mac and thoroughly tested on macOS, Windows and Linux.
 
