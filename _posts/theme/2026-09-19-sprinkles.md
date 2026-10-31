@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: theme
 title: "Sprinkles"
 author: "heihu577"
-preview: "sprinkles.png"
+category: theme
+thumbnail: "sprinkles.png"
 homepage: "https://github.com/heihu577/typora-theme-sprinkles"
 download: "https://github.com/heihu577/typora-theme-sprinkles/archive/refs/heads/main.zip"
 description: "An emoji-flavored minimal Typora theme with emoji-prefixed headings, macOS traffic-light code fences, and a Dracula-style dark code palette."
