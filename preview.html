@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tailors Theme for Typora - Live Preview</title>
+<title>Tailors Theme for Typora - 官方视觉展示</title>
 <style>
 /* ==========================================================================
    Tailors Theme for Typora (Optimized Edition)
@@ -1232,11 +1232,151 @@ body.typora-export #write hr,
   }
 }
 
+/* Additional CodeMirror syntax highlight colors for offline showcase */
+.cm-s-inner .cm-keyword { color: #d73a49; font-weight: 600; }
+.cm-s-inner .cm-def { color: #6f42c1; font-weight: 600; }
+.cm-s-inner .cm-string { color: #032f62; }
+.cm-s-inner .cm-comment { color: #6a737d; font-style: italic; }
+.cm-s-inner .cm-variable { color: #24292e; }
+.cm-s-inner .cm-property { color: #005cc5; }
+.cm-s-inner .cm-number { color: #005cc5; }
+.cm-s-inner .cm-operator { color: #d73a49; }
+.cm-s-inner .CodeMirror-linenumber { color: #94a3b8; }
 </style>
 </head>
 <body>
 <content>
-<div id='write'  class=''><h2 id='go-back-to-blogs-home-page'><a href='https://chiamzhang.github.io/'><span>Go Back To Blogs Home Page</span></a></h2><h2 id='github-release-downloadhttpsgithubcomchiamzhangtyporatheme-tailors'><a href='https://github.com/ChiamZhang/TyporaTheme-Tailors'><span>Github Release DownLoad</span></a></h2><hr /><h1 id='typora-theme-tailors--introduction'><span>Typora-Theme-Tailors  Introduction</span></h1><h2 id='introduction'><span>Introduction</span></h2><p><span>This theme is inspired by my two favorite themes:</span></p><ol start='' ><li><p><span>Phycat by XuJilong. Homepage: </span><a href='https://github.com/sumruler/typora-theme-phycat'><span>GitHub - sumruler/typora-theme-phycat: Phycat Typora Theme</span></a><span> </span><strong><span>Mainly referencing the title part</span></strong><span>.</span></p></li><li><p><span>Typora-Theme-Neumorphism by Soanguy. Homepage: </span><a href='https://github.com/Soanguy/Typora-Theme-Neumorphism'><span>GitHub - Soanguy/Typora-Theme-Neumorphism: Neumorphism style typora theme</span></a><span> </span><strong><span>Mainly referencing the inline part</span></strong><span>.</span></p></li><li><p><span>I changed a lot of the colors and unnecessary hover CSS to make the overall style more compatible. Since Soanguy hasn’t updated for a long time, I encountered some bugs while using it, which I fixed.</span></p></li><li><p><span>Continuous updates, if there are any issues, please raise them in the issue section, and I will fix them when I have time.</span></p></li><li><p><span>Tailors means that I have patched together this theme from various sources, feeling a bit embarrassed.</span></p></li></ol><h1 id='title-styles'><span>Title Styles</span></h1><hr /><h1 id='first-level-title'><span>First Level Title</span></h1><h2 id='second-level-title'><span>Second Level Title</span></h2><h3 id='third-level-title'><span>Third Level Title</span></h3><h4 id='fourth-level-title'><span>Fourth Level Title</span></h4><h5 id='fifth-level-title'><span>Fifth Level Title</span></h5><h6 id='sixth-level-title'><span>Sixth Level Title</span></h6><h1 id='image-tips'><span>Image Tips</span></h1><ol start='' ><li><p><span>Quickly adjust the photo size: Adjust any number in the positions below to the desired scaling size.</span></p><center><var>Method: <code>![Photo Name Number](Photo URL "Number")</code> </var></center> <center><var>For example: Adjust to 50% size <code>![Photo Name 50](Photo URL "50")</code> </var></center> <blockquote><p><span>Note: The default scaling size is set in steps of 5, i.e., 0, 5, 10, 15...</span></p></blockquote><p><img src="https://img2.baidu.com/it/u=3012984283,879707191&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=1200" referrerpolicy="no-referrer" alt="Maine 50"></p><p><img src="https://img2.baidu.com/it/u=3012984283,879707191&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=1200" referrerpolicy="no-referrer" alt="Maine 30"></p></li><li><p><span>Note that photos cannot be adjusted to inline elements.</span></p></li></ol><h2 id='html-elements-introduction'><span>HTML Elements Introduction</span></h2><ol start='' ><li><p><span>You can introduce the following styles through the </span><code>&lt;var&gt; &lt;/var&gt;</code><span> element:</span></p><ul><li><p><var><span> The original meaning of this element is to define variables.</span></var></p></li><li><p><var><span> Like this</span></var></p></li></ul></li></ol><h1 id='typographical-introduction'><span>Typographical Introduction</span></h1><h2 id='blockquote-style'><span>Blockquote Style</span></h2><blockquote><p><span>欲买桂花同载酒，终不似少年游！</span></p></blockquote><h2 id='inline-styles'><span>Inline Styles</span></h2><p><span>Inline styles support </span><strong><span>bold</span></strong><span>, </span><em><span>emphasis</span></em><span>, </span><code>code</code><span>, </span><u><span>underline</span></u><span>, </span><del><span>strikethrough</span></del><span>, </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.488ex;"><defs><path id="MJX-3-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-3-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-3-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-3-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-3-TEX-I-1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-3-TEX-I-1D43F"></use></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-3-TEX-I-1D434"></use></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><use data-c="1D447" xlink:href="#MJX-3-TEX-I-1D447"></use></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-3-TEX-I-1D438"></use></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><use data-c="1D44B" xlink:href="#MJX-3-TEX-I-1D44B"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mspace width="-.325em"></mspace><mpadded height="+.21em" depth="-.21em" voffset="+.21em"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="false" scriptlevel="1"><mrow data-mjx-texclass="ORD"><mi>A</mi></mrow></mstyle></mrow></mpadded><mspace width="-.17em"></mspace><mi>T</mi><mspace width="-.14em"></mspace><mpadded height="-.5ex" depth="+.5ex" voffset="-.5ex"><mrow data-mjx-texclass="ORD"><mi>E</mi></mrow></mpadded><mspace width="-.115em"></mspace><mi>X</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">\LaTeX</script><span>, X</span><sup><span>2</span></sup><span>, H</span><sub><span>2</span></sub><span>O, </span><mark><span>highlight</span></mark><span>, </span><a href='https://typora.io'><span>link</span></a><span>.</span></p><h2 id='table-styles'><span>Table Styles</span></h2><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>Align Left</span></th><th style='text-align:center;' ><span>Align Center</span></th><th style='text-align:center;' ><span>Align Right</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>Third column</span></td><td style='text-align:center;' ><u><span>Some lengthy text</span></u></td><td style='text-align:center;' ><span>$1600</span></td></tr><tr><td style='text-align:center;' ><span>Second column</span></td><td style='text-align:center;' ><span>Align center</span></td><td style='text-align:center;' ><span>$12</span></td></tr><tr><td style='text-align:center;' ><span>Zebra stripes</span></td><td style='text-align:center;' ><span>Very tidy</span></td><td style='text-align:center;' ><span>$1</span></td></tr></tbody></table></figure><h2 id='list-styles'><span>List Styles</span></h2><ol start='' ><li><p><span>Ordered list item 1.</span></p></li><li><p><span>Ordered list item 2.</span></p><ul><li><p><span>Unordered sublist item 1.</span></p><ul><li><p><span>Second-level unordered sublist item 1</span></p></li></ul></li><li><p><span>Unordered sublist item 2.</span></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Completed item. Use &quot;[]&quot;</span></p></li><li class='md-task-list-item task-list-item task-list-done' ><input type='checkbox' checked/><p><span>Uncompleted item. Use &quot;[x]&quot;</span></p></li></ul></li></ul></li></ol><h2 id='code-styles'><span>Code Styles</span></h2><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="html" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.125px; left: 42px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div>
+<div id="write">
+
+  <!-- 主标题 -->
+  <h1 id="tailors-theme"><span>Tailors Theme for Typora</span></h1>
+  <p style="text-align: center; color: #52607d; font-size: 1.15rem; margin-top: -0.8rem; margin-bottom: 2rem;">
+    <span>新拟物优雅 · 日落渐变胶囊 · 全幅淡冰蓝底色 · 出版级排版导出</span>
+  </p>
+
+  <p style="text-align: center; margin-bottom: 2.5rem;">
+    <var><span>Neumorphic 2.0</span></var>
+    &nbsp;
+    <var><span>Sunset Gradient</span></var>
+    &nbsp;
+    <var><span>A4 Print Native</span></var>
+    &nbsp;
+    <var><span>Classic Typography</span></var>
+  </p>
+
+  <hr />
+
+  <!-- 1. 标题层级展示 -->
+  <h2 id="headings"><span>1. 独具匠心的层级标题体系 (Headings)</span></h2>
+  <p><span>Tailors 拥有极具辨识度的标题色彩体系，每个层级均赋予专属的视觉定位与色彩标识：</span></p>
+
+  <h3 id="h3-demo"><span>三级标题 · 晴空海蓝 (Sky Blue Accent)</span></h3>
+  <p><span>三级标题左侧带有 4px 晴空海蓝高亮指示条，结构清晰，层级分明。</span></p>
+
+  <h4 id="h4-demo"><span>四级标题 · 活力玫红 (Vibrant Rose)</span></h4>
+  <p><span>四级标题前置玫红实心圆形微标，轻盈灵动。</span></p>
+
+  <h5 id="h5-demo"><span>五级标题 · 优雅罗兰 (Violet Ring)</span></h5>
+  <p><span>五级标题前置罗兰紫镂空环形微标，典雅精致。</span></p>
+
+  <h6 id="h6-demo"><span>六级标题 · 沉稳靛蓝 (Indigo Pillar)</span></h6>
+  <p><span>六级标题前置微型圆柱标识，稳重收尾。</span></p>
+
+  <hr />
+
+  <!-- 2. 精致代码块 -->
+  <h2 id="code-blocks"><span>2. 精致 macOS 拟物代码块 (Code Fences)</span></h2>
+  <p><span>代码块内置经典 macOS 红黄绿拟物三色圆点，搭配柔和阴影与高对比度语法高亮，尽享沉浸式代码阅读：</span></p>
+
+  <pre class="md-fences md-end-block ty-contain-cm modeLoaded" lang="python" style="position: relative;"><div class="CodeMirror cm-s-inner CodeMirror-wrap"><div class="CodeMirror-scroll"><div class="CodeMirror-lines"><div class="CodeMirror-code">
+<div class="CodeMirror-line"><span class="cm-keyword">def</span> <span class="cm-def">render_tailors_theme</span>():</div>
+<div class="CodeMirror-line">    <span class="cm-comment"># 全局温润淡冰蓝底色，彻底告别刺眼纯白</span></div>
+<div class="CodeMirror-line">    palette = {</div>
+<div class="CodeMirror-line">        <span class="cm-string">"canvas"</span>: <span class="cm-string">"#F9FCFF"</span>,  <span class="cm-comment"># 冰蓝底色</span></div>
+<div class="CodeMirror-line">        <span class="cm-string">"sunset"</span>: <span class="cm-string">"linear-gradient(135deg, #f7ce68, #fbabfe)"</span>,</div>
+<div class="CodeMirror-line">        <span class="cm-string">"typography"</span>: [<span class="cm-string">"Bellota"</span>, <span class="cm-string">"华文中宋"</span>, <span class="cm-string">"霞鹜文楷"</span>]</div>
+<div class="CodeMirror-line">    }</div>
+<div class="CodeMirror-line">    <span class="cm-keyword">return</span> <span class="cm-string">f"Enjoy distraction-free writing with Tailors!"</span></div>
+</div></div></div></div></pre>
+
+  <hr />
+
+  <!-- 3. 内联与新拟物元素 -->
+  <h2 id="inline-components"><span>3. 内联文本与微拟物徽标 (Inline &amp; Components)</span></h2>
+  <p><span>文字排版完整支持所有 Markdown 行内语法，并深度融合微拟物与柔和高亮风格：</span></p>
+  <ul>
+    <li><span>支持 <strong>粗体强调用色 (Bold)</strong>、<em>斜体平滑字形 (Italic)</em> 以及 <code>行内代码标签 (Inline Code)</code>；</span></li>
+    <li><span>独具质感的 <u>荧光下划线 (Underline)</u> 与 <mark>马卡龙温润高亮 (Highlight)</mark>；</span></li>
+    <li><span>支持删除线 <del>Strikethrough</del> 与精致超链接 <a href="#">Interactive Link</a>；</span></li>
+    <li><span>专属微拟物胶囊徽标：通过 <code>&lt;var&gt;</code> 标签定义变量或徽章：<var>Neumorphism</var> <var>Sunset Pill</var> <var>Typora Official</var>。</span></li>
+  </ul>
+
+  <hr />
+
+  <!-- 4. 引用与任务清单 -->
+  <h2 id="quotes-and-tasks"><span>4. 经典引用块与交互清单 (Quotes &amp; Tasks)</span></h2>
+
+  <blockquote>
+    <p><span><strong>Tailors 设计哲学</strong>：集各家之所长，裁多余之冗杂。</span></p>
+    <p><span>优雅不仅在于第一眼的惊艳，更在于数小时持续书写与深度阅读时，依然保持柔和、静谧与专注。</span></p>
+  </blockquote>
+
+  <ul class="task-list">
+    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>统一全幅淡冰蓝底色（#F9FCFF），杜绝生硬白卡片与接缝色差</span></p></li>
+    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>原生对齐 Typora 官方标准响应式版芯（860px ~ 1200px）</span></p></li>
+    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>出版级 A4 PDF 导出增强，0 外边距全幅无缝铺色并去除多余下划线</span></p></li>
+    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>精致 macOS 红黄绿三色拟物圆点代码块</span></p></li>
+    <li class="task-list-item"><input type="checkbox" disabled /> <p><span>持续倾听社区反馈，进一步打磨更多个性化配置选项</span></p></li>
+  </ul>
+
+  <hr />
+
+  <!-- 5. 现代通透表格 -->
+  <h2 id="table-demo"><span>5. 现代圆角斑马纹表格 (Airy Modern Table)</span></h2>
+  <p><span>表格表头采用标志性日落渐变铺色，配合圆角卡片质感与隔行交替斑马纹：</span></p>
+
+  <figure class="table-figure">
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: left;"><span>特性模块</span></th>
+          <th style="text-align: left;"><span>功能亮点</span></th>
+          <th style="text-align: center;"><span>适配状态</span></th>
+          <th style="text-align: right;"><span>效果评级</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align: left;"><strong>底色系统</strong></td>
+          <td style="text-align: left;">全页温润冰蓝，消除白卡片生硬分界</td>
+          <td style="text-align: center;"><var>已完善</var></td>
+          <td style="text-align: right;">★★★★★</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><strong>正常版芯</strong></td>
+          <td style="text-align: left;">完全对齐 GitHub / Night 官方自适应规范</td>
+          <td style="text-align: center;"><var>已对齐</var></td>
+          <td style="text-align: right;">★★★★★</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><strong>PDF 导出</strong></td>
+          <td style="text-align: left;">A4 全幅铺色，彻底去除打印白边与蓝色横线</td>
+          <td style="text-align: center;"><var>已增强</var></td>
+          <td style="text-align: right;">★★★★★</td>
+        </tr>
+        <tr>
+          <td style="text-align: left;"><strong>代码区块</strong></td>
+          <td style="text-align: left;">macOS 三色拟物圆点徽标 + 护眼高亮</td>
+          <td style="text-align: center;"><var>已内置</var></td>
+          <td style="text-align: right;">★★★★★</td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
+
+  <div style="height: 80px;"></div>
+
+</div>
 </content>
 </body>
 </html>

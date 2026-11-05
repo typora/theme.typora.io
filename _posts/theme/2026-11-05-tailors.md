@@ -30,8 +30,42 @@ typora-copy-images-to: ../../media/theme/tailors
 > To experience or share the full aesthetic of the Tailors theme:
 > 1. **In Typora**: Install the theme and select **Tailors** from the **Themes** menu for a true WYSIWYG writing experience.
 > 2. **Export to Standalone HTML or PDF**:
->    - **Export to HTML**: In Typora, click **File → Export → HTML (with styles)**. The resulting HTML file can be opened in any browser to showcase the sunset gradient headings, neumorphic badges, and typography.
+>    - **Export to HTML**: In Typora, click **File → Export → HTML (with styles)**. The resulting HTML file can be opened in any browser to showcase the sunset gradient headings, neumorphic badges, and typography (check the [Live HTML Preview](https://chiamzhang.github.io/tailors.theme.typora/preview.html)).
 >    - **Export to PDF**: In Typora, click **File → Export → PDF** with seamless background printing and native A4 page layout.
+
+---
+
+## 🎨 Latest Visual Showcase & Features
+
+To demonstrate the full design of the latest **Tailors** theme, here are the actual renderings:
+
+### 1. Distinctive Heading System & Neumorphic Badges
+- **Centered H1**: Accompanied by a sunset gradient indicator bar underneath;
+- **Signature Sunset Gradient Capsule (H2)**: Iconic pill badge (`linear-gradient(135deg, #f7ce68, #fbabfe)`);
+- **H3 ~ H6 Color Hierarchy**: Sky Blue (H3), Vibrant Rose (H4), Violet Ring (H5), Indigo Pillar (H6);
+- **`<var>` Neumorphic Badges**: Soft raised touch with subtle glowing gradient.
+
+![Headings and Badges](media/theme/tailors/showcase-headings.png)
+
+---
+
+### 2. Refined macOS-Style Code Fences
+- Features classic **macOS red/yellow/green triple-dot window controls**;
+- Soft neumorphic drop shadow and WCAG-compliant high-contrast syntax highlighting.
+
+![macOS Code Block](media/theme/tailors/showcase-code.png)
+
+---
+
+### 3. Quotes, Tables & Interactive Task Lists
+- **Unified Icy Blue Canvas**: The screen editor and exported document share the soothing `#F9FCFF` tone;
+- **Gradient Blockquote**: Elegant sunset accent bar with soft blue tint;
+- **Airy Modern Table**: Sunset gradient headers, rounded card corners, and alternating zebra stripes;
+- **Interactive Task List**: Smooth strikethrough animations and state badges.
+
+![Tables, Quotes and Task List](media/theme/tailors/showcase-table.png)
+
+> 📸 **[View Full High-Resolution Showcase Image](media/theme/tailors/Introduction.png)**
 
 ---
 
@@ -70,14 +104,6 @@ This theme is inspired by my two favorite themes:
    
    directly into your Typora theme folder.
 4. Restart Typora or select **Tailors** from the **Themes** menu.
-
----
-
-## 🎨 Theme Visual Preview
-
-Here is a full-length rendering of the Tailors theme in action. (You can also view the [Live HTML Rendering](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)):
-
-![Tailors Full Preview](https://camo.githubusercontent.com/331531fc9fec0560bbbc2c95516dca6bc291a9a6e2db473c25b32acbe906a29d/68747470733a2f2f696d67322e62616964752e636f6d2f69742f753d333031323938343238332c38373937303731393126666d3d32353326666d743d6175746f266170703d31333826663d4a5045473f773d38303026683d31323030)
 
 ---
 

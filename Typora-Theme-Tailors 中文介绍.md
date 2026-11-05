@@ -23,13 +23,47 @@ typora-copy-images-to: ../../media/theme/tailors
 ## 💡 如何正确体验与展示本主题？
 
 > [!IMPORTANT]
-> **注意**：直接在 GitHub 或常规文本编辑器中浏览原生 `.md` 文件是**无法加载自定义 CSS 主题**的（只能显示无样式的纯文本）。
+> **关于主题渲染机制的特别说明**：
+> 直接在 GitHub 仓库主页或常规文本编辑器中浏览原生 `.md` 文件是**无法加载自定义外部 CSS 主题**的（只会显示 GitHub 默认黑白无样式文本）。
 > 
-> 若想体验或对外呈现 Tailors 主题的真正风采，有以下两种方式：
+> 若想体验或对外呈现 Tailors 主题的真正风采，有以下途径：
 > 1. **在 Typora 中使用**：安装本主题后，在 Typora 顶部菜单【主题】选择 **Tailors**，享受所见即所得的精致写作体验；
-> 2. **导出为独立网页 (HTML) 或 PDF**：
->    - **导出 HTML**：在 Typora 中点击【文件】→【导出】→【HTML（包含样式）】，生成的文件即可在任意电脑或浏览器中完美呈现主题的所有渐变标题、拟物标签与字体排版；
->    - **导出 PDF**：在 Typora 中点击【文件】→【导出】→【PDF】，全页无缝铺色并精准适配 A4 纸张排版。
+> 2. **导出为独立网页 (HTML)**：在 Typora 中点击【文件】→【导出】→【HTML（包含样式）】，生成的文件即可在任意电脑或浏览器中脱离 Typora 完美呈现主题样式（可点击上方 [在线 HTML 预览](https://chiamzhang.github.io/tailors.theme.typora/preview.html) 查看效果）；
+> 3. **导出为 A4 PDF**：在 Typora 中点击【文件】→【导出】→【PDF】，全页无缝铺色并精准适配 A4 纸张排版。
+
+---
+
+## 🎨 最新视觉效果与核心特性展示
+
+为直观呈现最新版 **Tailors** 的所有核心设计亮点，以下截取自最新主题渲染效果：
+
+### 1. 独具匠心的层级标题与微拟物胶囊 (Headings & Badges)
+- **H1 典雅居中排版**：底部搭配日落渐变高亮指示线；
+- **H2 标志性日落渐变胶囊**：Tailors 标志性胶囊造型（`linear-gradient(135deg, #f7ce68, #fbabfe)`）；
+- **H3 ~ H6 色彩标示体系**：晴空海蓝、活力玫红、优雅罗兰、沉稳靛蓝，层级一眼分明；
+- **`<var>` 微拟物胶囊**：微凸起触感与渐变微发光。
+
+![标题体系与微拟物胶囊](media/theme/tailors/showcase-headings.png)
+
+---
+
+### 2. 精致 macOS 拟物代码块 (Code Fences)
+- 代码块顶部带有经典 **macOS 红黄绿三色拟物圆点徽标**；
+- 柔和新拟物外层投影搭配高对比度语法高亮，尽享沉浸式代码阅读体验。
+
+![macOS 拟物代码块展示](media/theme/tailors/showcase-code.png)
+
+---
+
+### 3. 优雅引用块、现代表格与交互任务清单 (Quotes, Tables & Tasks)
+- **温润全幅淡冰蓝底色**：屏幕编辑区与导出全页统一为温润淡冰蓝（`#F9FCFF`），杜绝刺眼纯白；
+- **经典渐变引用块**：左侧带有优雅日落渐变指示条；
+- **现代通透表格**：日落渐变表头、圆角卡片质感与隔行交替斑马纹；
+- **交互式任务清单**：已完成任务带有平滑划线与状态徽标。
+
+![表格、引用块与任务清单展示](media/theme/tailors/showcase-table.png)
+
+> 📸 **[点击查看最新主题全景渲染长图 (Full Preview)](media/theme/tailors/Introduction.png)**
 
 ---
 
@@ -71,14 +105,6 @@ typora-copy-images-to: ../../media/theme/tailors
    - `tailors.css`（主题样式文件）
    - `tailors`（离线字体目录）
 4. 重启 Typora，在顶部菜单栏【主题】列表中选中 **Tailors** 即可使用。
-
----
-
-## 🎨 主题全貌视觉效果预览
-
-以下为在 Typora 中应用 Tailors 主题导出的实际视觉效果预览长图（若无法直接加载，可查看 [在线 HTML 渲染效果页面](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)）：
-
-![Tailors 主题渲染效果长图](media/theme/tailors/Introduction.png)
 
 ---
 
