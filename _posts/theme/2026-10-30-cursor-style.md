@@ -66,9 +66,9 @@ Cursor Style is a community work inspired by Cursor's visual language. It is not
 
 ## Compatibility
 
-Designed and tested on macOS with Typora 1.5.6. Both variants were re-checked in reading view, with the sidebars, after the latest changes (scrollbars and heading spacing); editing, source and focus modes, search, narrow windows and HTML export of the light theme were checked on earlier revisions of the theme. Not tested on Windows or Linux, on other Typora versions, or with PDF export, and no styles specific to the Windows "unibody" window are included.
+Designed and tested on macOS with Typora 1.5.6, in both the light and the dark variant; the project README lists exactly what was checked. Not tested on Windows or Linux, on other Typora versions, or with PDF export, and no styles specific to the Windows "unibody" window are included.
 
-With the Mermaid bundled in Typora 1.5, pie chart legend labels longer than about twelve Chinese characters (plus the value) are clipped at the default column width, and any longer label is clipped when the text column is narrower than about 480px. The project README describes a one-line workaround.
+With the Mermaid bundled in Typora 1.5, long pie chart legend labels are clipped when the text column is narrower than about 480px. The project README describes a one-line workaround.
 
 ## License and attribution
 
