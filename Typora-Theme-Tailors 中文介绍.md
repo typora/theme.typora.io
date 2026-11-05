@@ -4,7 +4,7 @@ author: ChiamZhang
 description: Typora-Theme-Tailors 的中文介绍与使用文档
 layout: theme
 category: theme
-homepage: https://github.com/ChiamZhang/tailors.theme.typora
+homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
 download: https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip
 thumbnail: tailors.png
 preview: tailors.png
@@ -14,8 +14,24 @@ typora-copy-images-to: ../../media/theme/tailors
 
 # Typora-Theme-Tailors 介绍 [English Version](https://github.com/ChiamZhang/tailors.theme.typora/blob/gh-pages/README.md)
 
-## [项目主页](https://github.com/ChiamZhang/tailors.theme.typora)
-## [离线下载包](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip)
+> 一款集柔和新拟物化质感（Neumorphism）、日落渐变胶囊标题、全幅淡冰蓝底色与出版级 PDF 导出于一体的精制 Typora 主题。
+
+[🌐 在线查看主题实时渲染效果 (Live HTML Preview)](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html) | [⬇️ 下载离线安装包 (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub 仓库](https://github.com/ChiamZhang/tailors.theme.typora)
+
+---
+
+## 💡 如何正确体验与展示本主题？
+
+> [!IMPORTANT]
+> **注意**：直接在 GitHub 或常规文本编辑器中浏览原生 `.md` 文件是**无法加载自定义 CSS 主题**的（只能显示无样式的纯文本）。
+> 
+> 若想体验或对外呈现 Tailors 主题的真正风采，有以下两种方式：
+> 1. **在 Typora 中使用**：安装本主题后，在 Typora 顶部菜单【主题】选择 **Tailors**，享受所见即所得的精致写作体验；
+> 2. **导出为独立网页 (HTML) 或 PDF**：
+>    - **导出 HTML**：在 Typora 中点击【文件】→【导出】→【HTML（包含样式）】，生成的文件即可在任意电脑或浏览器中完美呈现主题的所有渐变标题、拟物标签与字体排版；
+>    - **导出 PDF**：在 Typora 中点击【文件】→【导出】→【PDF】，全页无缝铺色并精准适配 A4 纸张排版。
+
+---
 
 ## 主题起源
 
@@ -29,137 +45,43 @@ typora-copy-images-to: ../../media/theme/tailors
 
 ---
 
-## ✨ 最新升级与优化亮点
+## ✨ 核心特性与最新优化
 
-- 🎨 **全局统一护眼画布**：正文编辑区与窗口背景完美融为一体，采用柔和温润的 `#f7f9fc` 纸面底色，彻底告别原版突兀生硬的纯白贴纸感。
-- 📄 **深度适配 A4 纸张排版**：屏幕端精校 A4 黄金阅读宽度（`860px`），导出 PDF 时自动铺满 A4 页面标准打印区域，不浪费纸面空间。
-- 🖨️ **出版级纯净导出体验**：针对导出 PDF 与打印环境进行了专属净化，自动去除屏幕投影，彻底根除超链接多余的“蓝色横杠”与隐藏锚点伪影。
-- 💻 **macOS 风格代码视窗**：代码块增设红黄绿三色控制圆点，高对比度重绘代码高亮，注释清晰易读，兼具美感与实用性。
-- 🔤 **原汁原味古典字体传承**：完整保留原版特色字体栈（`Bellota`、`Tw Cen MT`、`HYHuaGuan` 汉仪花冠、霞鹜文楷、华文中宋），同时修复加粗嵌套语法失效问题。
-- 🚫 **无遮挡清爽排版**：移除引用块右下角遮挡正文的大圆球装饰，去除表格悬停时突兀跳动的黄色底线。
-
----
-
-## 安装与使用说明
-
-1. 下载最新安装包 **[tailors.zip](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip)**。
-2. 打开 Typora，点击菜单栏 **文件 -> 偏好设置 -> 外观 -> 打开主题文件夹**。
-3. 解压 `tailors.zip`，将解压出的：
-   - `tailors.css` 文件
-   - `tailors` 字体文件夹
-   
-   直接拷贝到上述主题文件夹根目录下。
-4. 重启 Typora 或在菜单栏 **主题** 中勾选 **Tailors** 即可享受全新排版！
-
-![Tailors Preview](media/theme/tailors/tailors.png)
-
-## 个性化微调
-
-如需微调字号或局部主色，可直接打开 `tailors.css` 修改顶部的 `:root` 变量。
+- 🎨 **全幅淡冰蓝底色**：彻底摒弃传统白色卡片的生硬分界，屏幕编辑区与导出态全页统一为温润淡冰蓝（`#F9FCFF`），久读不累眼。
+- 📐 **完全对齐 Typora 官方标准版芯**：
+  - 默认版芯宽度 `860px`（标准内边距 `30px`，文末自带 `100px` 舒适留白）；
+  - 宽屏（>1400px）与超宽屏（>1800px）自动无缝伸展至 `1024px` / `1200px`，完全对齐 GitHub / Night 官方主流主题行为。
+- 🖨️ **出版级 A4 PDF 导出增强**：
+  - 页面 0 外边距全幅无缝铺色，彻底根除打印引擎留下的外层纸张白边；
+  - 彻底清除所有超链接的生硬蓝色与下划线，恢复纯净文本颜色；
+  - 智能避免代码块、引用块在跨页接缝处被生硬切断。
+- 💻 **精致 macOS 风格代码块**：代码块顶部带有经典红黄绿三色拟物圆点徽标，搭配高对比度语法高亮。
+- 🔤 **原汁原味经典排版**：完整保留原版字体栈（`Bellota`、`Tw Cen MT`、`HYHuaGuan`、`霞鹜文楷`、`华文中宋` 等），字体无需系统额外安装。
+- 🚫 **去除杂乱干扰元素**：移除引用块重叠的圆形悬停跳动图，表格隔行斑马纹温润整洁。
 
 ---
 
-# 标题样式展示
+## 📦 安装与使用指南
 
-# 一级标题展示
-
-## 二级标题：日落渐变胶囊
-
-### 三级标题展示
-
-#### 四级标题展示
-
-##### 五级标题展示
-
-###### 六级标题展示
+1. 下载最新离线发布包 **[tailors.zip](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip)**。
+2. 打开 Typora，点击顶部菜单栏：
+   - macOS: **Typora → 偏好设置 → 外观 → 打开主题文件夹**
+   - Windows/Linux: **文件 → 偏好设置 → 外观 → 打开主题文件夹**
+3. 解压 `tailors.zip`，将解压出的文件直接放入主题文件夹内：
+   - `tailors.css`（主题样式文件）
+   - `tailors`（离线字体目录）
+4. 重启 Typora，在顶部菜单栏【主题】列表中选中 **Tailors** 即可使用。
 
 ---
 
-# 图片排版技巧
+## 🎨 主题全貌视觉效果预览
 
-1. **快速调节图片显示比例**：将方括号或引号中的数字修改为您期望的缩放百分比即可：
+以下为在 Typora 中应用 Tailors 主题导出的实际视觉效果预览长图（若无法直接加载，可查看 [在线 HTML 渲染效果页面](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)）：
 
-    <center><var>用法示例： <code>![图片名称 数字](图片地址 "数字")</code> </var></center> 
-
-    <center><var>例如缩放为 50% 大小：<code>![图片名称 50](图片地址 "50")</code> </var></center> 
-
-    > 注意：默认缩放步长以 5 为递进梯度（0, 5, 10, 15, ..., 100）。
-
-    ![缅因猫 50](https://img2.baidu.com/it/u=3012984283,879707191&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200)
-
-    ![缅因猫 30](https://img2.baidu.com/it/u=3012984283,879707191&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=1200)
-
-2. 需要注意的是无法将图片调整为行内包裹元素。
+![Tailors 主题渲染效果长图](media/theme/tailors/Introduction.png)
 
 ---
 
-## HTML 元素拓展
+## ⚙️ 个性化定制
 
-可以通过 `<var> </var>` 标签引入个性化徽章提示条：
-- <var>该标签的原生语义是定义数学或程序变量。</var>
-- <var>在这里渲染为一枚精致温暖的日落渐变胶囊徽标。</var>
-
----
-
-# 常用排版与组件演示
-
-## 引用块（Blockquote）
-
-> 集大家之所长，改大家之所短。
->
-> —— *Tailors 设计理念*
-
-## 内联文字样式
-
-支持 **加粗**、*斜体强调*、`行内代码胶囊`、<u>下划线衬底</u>、~~删除线~~、$\LaTeX$ 数学公式、上标 X^2^、下标 H~2~O、==荧光高亮== 以及 [网页超链接](https://typora.io)。
-
-## 表格样式
-
-|  左对齐列  |       居中对齐列       | 右对齐列 |
-| :--------: | :--------------------: | :------: |
-| 第一行内容 | <u>带下划线的长文本</u> |  $1600   |
-| 第二行内容 |     居中展示数据项     |   $12    |
-| 清爽斑马纹 |     行间距适中整齐     |    $1    |
-
-## 列表与任务清单
-
-1. 有序编号列表 1
-2. 有序编号列表 2
-   + 无序子列表项 A
-     + 二级嵌套子列表项
-   + 任务清单项：
-     + [ ] 未完成的待办事项（输入 `[ ]`）
-     + [x] 已完成的任务事项（输入 `[x]`）
-
-## 代码块展示
-
-```html
-<!DOCTYPE html>
-<html>
-<body>
-
-<h1>Tailors Theme</h1>
-<p id="demo">Clean & Modern Typora Experience</p>
-
-<script>
-const theme = { name: "Tailors", layout: "A4-ready" };
-console.log(`Loaded ${theme.name}`);
-</script>
-
-</body>
-</html>
-```
-
-```cpp
-#include <iostream>
-using namespace std;
-
-int main() {
-    cout << "Hello, Tailors Markdown!" << endl;
-    return 0;
-}
-```
-
-## 目录（TOC）
-
-[TOC]
+如需调整主色调、字体栈或版面宽度，可直接打开 `tailors.css` 修改顶部的 `:root` 变量区。
