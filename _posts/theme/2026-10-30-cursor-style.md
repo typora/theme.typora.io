@@ -2,11 +2,11 @@
 layout: theme
 title: Cursor Style
 category: theme
-homepage: https://github.com/OldJii/typora-cursor-theme
-download: https://github.com/OldJii/typora-cursor-theme/releases/latest/download/cursor-style.zip
+homepage: https://github.com/folay-git/typora-cursor-theme
+download: https://github.com/folay-git/typora-cursor-theme/releases/latest/download/cursor-style.zip
 built-in: false
-author: OldJii
-author_url: https://github.com/OldJii
+author: folay-git
+author_url: https://github.com/folay-git
 thumbnail: cursor-style.png
 description: A restyle of Typora's GitHub theme in the visual language of Cursor's website, with light and dark variants, one shared text column, refined English and CJK typography and themed Mermaid diagrams.
 tags: [light, dark, warm, minimal, cjk, code, technical-writing]
