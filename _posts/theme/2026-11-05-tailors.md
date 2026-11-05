@@ -2,7 +2,7 @@
 layout: theme
 title: Tailors
 category: theme
-homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
+homepage: https://chiamzhang.github.io/tailors.theme.typora/preview.html
 download: https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip
 author: ChiamZhang
 thumbnail: tailors.png
@@ -18,7 +18,7 @@ typora-copy-images-to: ../../media/theme/tailors
 
 > A refined Typora theme featuring soft neumorphic elegance, sunset-gradient capsule headings, full-bleed icy blue background, and publisher-grade PDF export.
 
-[🌐 Live HTML Preview](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html) | [⬇️ Download Theme (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub Repository](https://github.com/ChiamZhang/tailors.theme.typora)
+[🌐 Live HTML Preview](https://chiamzhang.github.io/tailors.theme.typora/preview.html) | [⬇️ Download Theme (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub Repository](https://github.com/ChiamZhang/tailors.theme.typora)
 
 ---
 
@@ -77,7 +77,7 @@ This theme is inspired by my two favorite themes:
 
 Here is a full-length rendering of the Tailors theme in action. (You can also view the [Live HTML Rendering](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html)):
 
-![Tailors Full Preview](media/theme/tailors/Introduction.png)
+![Tailors Full Preview](https://camo.githubusercontent.com/331531fc9fec0560bbbc2c95516dca6bc291a9a6e2db473c25b32acbe906a29d/68747470733a2f2f696d67322e62616964752e636f6d2f69742f753d333031323938343238332c38373937303731393126666d3d32353326666d743d6175746f266170703d31333826663d4a5045473f773d38303026683d31323030)
 
 ---
 

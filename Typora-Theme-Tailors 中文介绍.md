@@ -4,7 +4,7 @@ author: ChiamZhang
 description: Typora-Theme-Tailors 的中文介绍与使用文档
 layout: theme
 category: theme
-homepage: https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html
+homepage: https://chiamzhang.github.io/tailors.theme.typora/preview.html
 download: https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip
 thumbnail: tailors.png
 preview: tailors.png
@@ -16,7 +16,7 @@ typora-copy-images-to: ../../media/theme/tailors
 
 > 一款集柔和新拟物化质感（Neumorphism）、日落渐变胶囊标题、全幅淡冰蓝底色与出版级 PDF 导出于一体的精制 Typora 主题。
 
-[🌐 在线查看主题实时渲染效果 (Live HTML Preview)](https://chiamzhang.github.io/html/Typora-Theme-Tailors%20%20Introduction.html) | [⬇️ 下载离线安装包 (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub 仓库](https://github.com/ChiamZhang/tailors.theme.typora)
+[🌐 在线查看主题实时渲染效果 (Live HTML Preview)](https://chiamzhang.github.io/tailors.theme.typora/preview.html) | [⬇️ 下载离线安装包 (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub 仓库](https://github.com/ChiamZhang/tailors.theme.typora)
 
 ---
 

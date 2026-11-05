@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tailors Theme for Typora - Live Preview</title>
+<style>
+/* ==========================================================================
+   Tailors Theme for Typora (Optimized Edition)
+   Style: Refined Neumorphism & Sunset Gradient
+   ========================================================================== */
+
+:root {
+  /* ---------------- 基础色彩与渐变 ---------------- */
+  --primary-gradient: linear-gradient(135deg, #f7ce68 0%, #fbabfe 100%);
+  --head-title-h2-background: linear-gradient(135deg, #f7ce68 0%, #fbabfe 100%);
+  --head-title-color: #f59e0b;
+  
+  --text-color: #1a2238;
+  --text-color-light: #52607d;
+  --text-color-muted: #8492a6;
+  
+  --bg-color: #F9FCFF;
+  --write-bg: var(--bg-color); /* 统一全局背景色，去除白卡片突兀感 */
+  
+  /* 柔和新拟物化投影 */
+  --neumorphic-flat: 12px 12px 32px rgba(166, 180, 204, 0.28), -10px -10px 28px rgba(255, 255, 255, 0.95);
+  --neumorphic-hover: 16px 16px 40px rgba(166, 180, 204, 0.35), -12px -12px 32px rgba(255, 255, 255, 1);
+  --neumorphic-inset: inset 4px 4px 10px rgba(166, 180, 204, 0.25), inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+  --card-shadow: 0 10px 30px -5px rgba(26, 34, 56, 0.07), 0 4px 12px -2px rgba(26, 34, 56, 0.04);
+  
+  /* 交互与高亮 */
+  --item-hover-bg-color: #f3ede2;
+  --active-file-bg-color: #faebd7;
+  --active-file-text-color: #1a2238;
+  --select-text-bg-color: #c7d2fe;
+  --select-text-font-color: #1e1b4b;
+  
+  /* 标题层级色彩标示 */
+  --h1-color: #1a2238;
+  --h2-color: #2b1836;
+  --h3-r-color: #0284c7;  /* 晴空海蓝 */
+  --h4-r-color: #e11d48;  /* 活力玫红 */
+  --h5-r-color: #9333ea;  /* 优雅罗兰 */
+  --h6-r-color: #4f46e5;  /* 沉稳靛蓝 */
+
+  /* 字体栈（完整保留原版字体体系） */
+  --font-sans: "Bellota", "Tw Cen MT", "HYHuaGuan", "霞鹜文楷", "STLibianSC-Regular", "华文中宋", sans-serif;
+  --font-serif: "Old Standard TT", Didot, "Modern No. 20", "KhaiTi", STKaiti, Kaiti, sans-serif;
+  --font-display: "Bellota", "Tw Cen MT", "HYHuaGuan", "霞鹜文楷", "STLibianSC-Regular", "华文中宋", sans-serif;
+  --monospace: "Fira Code", "menlo", "KhaiTi", STKaiti, Kaiti, monospace;
+  --mermaid-font-family: "Old Standard TT", Didot, "Modern No. 20", "KhaiTi", STKaiti, Kaiti, sans-serif;
+
+  /* 屏幕编辑器版芯宽度 (860px) */
+  --max-width: 860px;
+}
+
+/* ==========================================================================
+   字体导入 (@font-face)
+   ========================================================================== */
+
+@font-face {
+  font-family: 'FZJZFS';
+  src: url('tailors/FZJZFS.woff2') format('woff2'), url('tailors/FZJZFS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bellota';
+  src: url('tailors/Bellota-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bellota';
+  src: url('tailors/Bellota-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bellota';
+  src: url('tailors/Bellota-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYHuaGuan';
+  src: url('tailors/HYHuaGuan_55W.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HYHuaGuan';
+  src: url('tailors/HYHuaGuan_85W.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KhaiTi';
+  src: url('tailors/fangzhengkaiti.woff2') format('woff2'), url('tailors/fangzhengkaiti.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('tailors/OldStandard-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('tailors/FiraCode-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('tailors/FiraCode-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('tailors/FiraCode-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('tailors/Anonymous.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('tailors/AnonymousB.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anonymous';
+  src: url('tailors/AnonymousI.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ==========================================================================
+   全局页面与基础排版
+   ========================================================================== */
+
+html {
+  font-size: 16.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-sans);
+  line-height: 1.85;
+}
+
+body content,
+content {
+  background-color: var(--bg-color);
+  background: var(--bg-color);
+}
+
+#top-titlebar,
+#top-titlebar * {
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   编辑器核心版芯与宽度规范（完全对齐 Typora 官方标准规范）
+   ========================================================================== */
+
+#write {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 30px;
+  padding-bottom: 100px;
+  line-height: 1.85;
+  font-family: var(--font-sans);
+  color: var(--text-color);
+  counter-reset: figures;
+  word-break: break-word;
+  text-align: left;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* 宽屏自动伸展至 1024px（完全对齐 GitHub / Night 等官方主题标准规范） */
+@media only screen and (min-width: 1400px) {
+  #write {
+    max-width: 1024px;
+  }
+}
+
+/* 超宽屏自动伸展至 1200px（完全对齐 GitHub / Night 等官方主题标准规范） */
+@media only screen and (min-width: 1800px) {
+  #write {
+    max-width: 1200px;
+  }
+}
+
+/* 小屏视口自适应 */
+@media only screen and (max-width: 860px) {
+  #write {
+    padding: 20px 24px;
+    padding-bottom: 80px;
+  }
+}
+
+/* 段落与基础元素 */
+#write p {
+  margin: 1.15em 0;
+  letter-spacing: 0.015em;
+}
+
+#write hr {
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, transparent, rgba(2, 132, 199, 0.35), rgba(247, 206, 104, 0.5), transparent);
+  margin: 2.8rem 0;
+}
+
+/* ==========================================================================
+   标题系统 (Headings)
+   ========================================================================== */
+
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.35;
+  cursor: text;
+}
+
+/* 一级大标题 */
+#write h1 {
+  font-size: 2.15rem;
+  text-align: center;
+  margin: 2.5rem 0 1.8rem;
+  letter-spacing: 0.03em;
+  color: var(--h1-color);
+  position: relative;
+  padding-bottom: 0.6rem;
+}
+
+#write h1::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  border-radius: 3px;
+  background: var(--primary-gradient);
+  margin: 0.75rem auto 0;
+}
+
+/* 二级标题：Tailors 标志性日落渐变胶囊 */
+#write h2 {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  width: fit-content;
+  max-width: 100%;
+  margin: 2.3rem 0 1.2rem;
+  padding: 0.35rem 1.25rem;
+  border-radius: 24px;
+  color: var(--h2-color);
+  background: var(--head-title-h2-background);
+  background-size: 180% 100%;
+  background-position: 0% 0%;
+  box-shadow: 0 4px 15px rgba(247, 206, 104, 0.35), 0 2px 6px rgba(251, 171, 254, 0.2);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  letter-spacing: 0.02em;
+}
+
+#write h2:hover {
+  background-position: 100% 0%;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(247, 206, 104, 0.45), 0 3px 8px rgba(251, 171, 254, 0.3);
+}
+
+#write h2.md-heading a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 三级标题：优雅左侧高亮边框 */
+#write h3 {
+  font-size: 1.25rem;
+  margin: 1.9rem 0 1rem;
+  padding-left: 0.75rem;
+  border-left: 4.5px solid var(--h3-r-color);
+  border-radius: 2px;
+}
+
+/* 四级标题：精致实心圆点 */
+#write h4 {
+  font-size: 1.12rem;
+  margin: 1.6rem 0 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+#write h4::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background-color: var(--h4-r-color);
+  box-shadow: 0 0 8px rgba(225, 29, 72, 0.45);
+  flex-shrink: 0;
+}
+
+/* 五级标题：精致空心环圈 */
+#write h5 {
+  font-size: 1.02rem;
+  margin: 1.4rem 0 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+#write h5::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2.5px solid var(--h5-r-color);
+  flex-shrink: 0;
+}
+
+/* 六级标题：极简坚竖条 */
+#write h6 {
+  font-size: 0.95rem;
+  margin: 1.2rem 0 0.65rem;
+  color: var(--text-color-light);
+  display: flex;
+  align-items: center;
+}
+
+#write h6::before {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 2px;
+  background-color: var(--h6-r-color);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   内联文字修饰 (Inline Elements)
+   ========================================================================== */
+
+/* 加粗 (修复了原代码中的嵌套 Bug) */
+#write strong {
+  font-weight: 700;
+  color: #0b1329;
+}
+
+/* 斜体 */
+#write em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  color: #334155;
+  padding: 0 2px;
+}
+
+/* 加粗 + 斜体 */
+#write strong em,
+#write em strong {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-style: italic;
+  color: #0b1329;
+}
+
+/* 下划线与高亮效果 */
+#write u {
+  text-decoration: none;
+  background: linear-gradient(180deg, transparent 65%, rgba(147, 197, 253, 0.45) 65%);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+#write mark {
+  background: linear-gradient(135deg, rgba(254, 240, 138, 0.75), rgba(253, 224, 71, 0.75));
+  color: #1a2238;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+/* 超链接 */
+#write a {
+  position: relative;
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s ease;
+  padding: 0 2px;
+}
+
+#write a:hover {
+  color: #ec4899;
+}
+
+#write a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 1.5px;
+  background: linear-gradient(90deg, #6366f1, #ec4899);
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+#write a:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* 彻底隐藏 Typora 自动生成的空白锚点，避免出现悬浮短线 */
+.md-header-anchor,
+a.md-header-anchor,
+#write a.md-header-anchor {
+  display: none !important;
+  text-decoration: none !important;
+  border: none !important;
+}
+
+/* 删除线 */
+#write del,
+#write s {
+  color: var(--text-color-muted);
+  text-decoration: line-through;
+}
+
+/* ==========================================================================
+   行内代码与代码块 (Code)
+   ========================================================================== */
+
+/* 行内代码：轻盈圆角胶囊 */
+#write code {
+  font-family: var(--monospace);
+  font-size: 0.88em;
+  padding: 0.15em 0.48em;
+  margin: 0 3px;
+  border-radius: 5px;
+  background: rgba(99, 102, 241, 0.08);
+  color: #6b21a8;
+  border: 1px solid rgba(99, 102, 241, 0.18);
+  word-break: break-all;
+  box-shadow: none;
+}
+
+/* 围栏代码块容器 */
+body #write .md-fences {
+  width: 100%;
+  margin: 1.8rem 0;
+  padding: 1rem 1.25rem 0.9rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 8px 24px -4px rgba(26, 34, 56, 0.06), 0 2px 8px -2px rgba(26, 34, 56, 0.03);
+  font-family: var(--monospace) !important;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  position: relative;
+}
+
+/* macOS 风格红黄绿三色控制圆点 */
+body #write .md-fences::before {
+  content: "";
+  display: block;
+  height: 11px;
+  width: 42px;
+  margin-bottom: 0.85rem;
+  border-radius: 6px;
+  background: radial-gradient(circle 4.5px at 5px 5.5px, #ff5f56 100%, transparent 0),
+              radial-gradient(circle 4.5px at 21px 5.5px, #ffbd2e 100%, transparent 0),
+              radial-gradient(circle 4.5px at 37px 5.5px, #27c93f 100%, transparent 0);
+  opacity: 0.85;
+}
+
+body #write pre.md-fences .CodeMirror-code {
+  line-height: 1.6;
+}
+
+/* YAML 元数据块 */
+body #write pre.md-meta-block {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  background: #f8fafc;
+  border: 1px dashed #cbd5e1;
+  color: #475569;
+  font-family: var(--monospace);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin: 1.5rem 0;
+}
+
+/* 代码高亮语法着色 (优化色彩平衡与可读性) */
+pre.md-fences .cm-s-inner .cm-keyword {
+  color: #a855f7 !important;  /* 关键字：优雅紫 */
+  font-weight: 700 !important;
+}
+
+pre.md-fences .cm-s-inner .cm-tag {
+  color: #ef4444 !important;  /* 标签：珊瑚红 */
+  font-weight: 600 !important;
+}
+
+pre.md-fences .cm-s-inner .cm-attribute {
+  color: #8b5cf6 !important;
+}
+
+pre.md-fences .cm-s-inner .cm-string,
+pre.md-fences .cm-s-inner .cm-string-2 {
+  color: #059669 !important;  /* 字符串：翡翠绿 */
+}
+
+/* 注释提升对比度，摆脱原有的刺眼灰白 */
+pre.md-fences .cm-s-inner .cm-comment,
+pre.md-fences .cm-s-inner.cm-comment {
+  color: #94a3b8 !important;  /* 浅铅灰，清晰不扎眼 */
+  font-style: italic;
+}
+
+pre.md-fences .cm-s-inner .cm-header,
+pre.md-fences .cm-s-inner .cm-def {
+  color: #d97706 !important;  /* 定义/函数名：金琥珀 */
+}
+
+pre.md-fences .cm-s-inner .cm-number {
+  color: #0284c7 !important;  /* 数字：海蓝 */
+}
+
+pre.md-fences .cm-s-inner .cm-variable,
+pre.md-fences .cm-s-inner .cm-operator,
+pre.md-fences .cm-s-inner .cm-property {
+  color: #334155 !important;  /* 变量/操作符：石墨灰 */
+}
+
+pre.md-fences .cm-s-inner .cm-builtin {
+  color: #ec4899 !important;  /* 内置函数：玫红 */
+}
+
+pre.md-fences .cm-s-inner .cm-link {
+  color: #6366f1 !important;
+}
+
+pre.md-fences .CodeMirror-selectedtext,
+pre.md-fences .CodeMirror-selected {
+  background: rgba(199, 210, 254, 0.5) !important;
+  color: inherit !important;
+}
+
+pre.md-fences .CodeMirror-gutters {
+  border-right: 1px solid #f1f5f9;
+  background-color: transparent;
+}
+
+/* ==========================================================================
+   引用块 (Blockquote)
+   ========================================================================== */
+
+/* 优雅通透卡片 + 渐变边框，去除遮挡正文的巨型圆球 */
+body #write blockquote {
+  margin: 1.8rem 0;
+  padding: 0.85rem 1.4rem;
+  position: relative;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(240, 245, 255, 0.65) 0%, rgba(250, 245, 255, 0.75) 100%);
+  border-left: 4.5px solid #8b5cf6;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-right: 1px solid rgba(226, 232, 240, 0.6);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0 4px 16px -2px rgba(139, 92, 246, 0.08);
+  font-family: var(--font-serif);
+  color: #334155;
+  transition: all 0.3s ease;
+}
+
+body #write blockquote:hover {
+  background: linear-gradient(135deg, rgba(235, 242, 255, 0.8) 0%, rgba(248, 240, 255, 0.9) 100%);
+  box-shadow: 0 6px 20px -2px rgba(139, 92, 246, 0.14);
+}
+
+/* 消除原版遮盖正文的巨大圆球伪元素 */
+body #write blockquote::after,
+body #write blockquote::before {
+  display: none !important;
+}
+
+/* 嵌套引用 */
+body #write blockquote blockquote {
+  margin: 0.75rem 0;
+  border-left: 3.5px solid #f59e0b;
+  background: rgba(255, 251, 235, 0.65);
+  box-shadow: none;
+}
+
+/* ==========================================================================
+   表格 (Table)
+   ========================================================================== */
+
+body #write .md-table-fig {
+  margin: 2rem 0;
+}
+
+body #write table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.06);
+}
+
+body #write table thead {
+  background: var(--primary-gradient);
+  color: #2b1836;
+  font-weight: 700;
+}
+
+body #write table th,
+body #write table td {
+  padding: 0.75rem 1.1rem;
+  text-align: left;
+  border-bottom: 1px solid #edf2f7;
+  border-right: 1px solid #edf2f7;
+}
+
+body #write table th:last-child,
+body #write table td:last-child {
+  border-right: none;
+}
+
+body #write table tr:last-child td {
+  border-bottom: none;
+}
+
+/* 斑马纹 */
+body #write table tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* 悬停平滑高亮，彻底去除原版导致跳动的 5px 下划线 */
+body #write table tbody tr:hover {
+  background-color: #f1f5f9;
+  box-shadow: none;
+  transition: background-color 0.2s ease;
+}
+
+/* ==========================================================================
+   任务列表 (Task Lists)
+   ========================================================================== */
+
+body #write .task-list-item {
+  padding-left: 1.8rem;
+  position: relative;
+  list-style-type: none;
+}
+
+body #write .task-list-item input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  accent-color: #6366f1;
+}
+
+body #write .task-list-item input + p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* 消除原版多余且错位的紫色小圆点 */
+body #write .task-list-item p::before,
+body #write .task-list-item p::after {
+  display: none !important;
+}
+
+/* 任务已完成态 */
+body #write .task-list-done {
+  opacity: 0.55;
+  text-decoration: line-through;
+  transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   常规列表 (Lists)
+   ========================================================================== */
+
+#write ul,
+#write ol {
+  padding-left: 1.6rem;
+  margin: 0.9rem 0;
+}
+
+#write li {
+  margin: 0.35rem 0;
+}
+
+#write ul > li::marker {
+  color: #ec4899;
+}
+
+#write ol > li::marker {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   图片与多媒体 (Images & Figures)
+   ========================================================================== */
+
+body #write figure {
+  margin: 1.8rem auto;
+  text-align: center;
+}
+
+body #write .md-image {
+  margin: 1.5rem auto;
+  display: block;
+  text-align: center;
+}
+
+body #write img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.08);
+  margin: 0.5rem auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body #write img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -4px rgba(26, 34, 56, 0.14);
+}
+
+body #write figcaption {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  color: var(--text-color-muted);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* 兼容用户常用的尺寸后缀规范 (alt / title 百分比缩放) */
+body #write img[alt~="inline"],
+body #write img[title~="inline"] { display: inline-block; margin: 0; }
+body #write img[alt~="10"], body #write img[title~="10"] { width: 10%; }
+body #write img[alt~="20"], body #write img[title~="20"] { width: 20%; }
+body #write img[alt~="25"], body #write img[title~="25"] { width: 25%; }
+body #write img[alt~="30"], body #write img[title~="30"] { width: 30%; }
+body #write img[alt~="35"], body #write img[title~="35"] { width: 35%; }
+body #write img[alt~="40"], body #write img[title~="40"] { width: 40%; }
+body #write img[alt~="45"], body #write img[title~="45"] { width: 45%; }
+body #write img[alt~="50"], body #write img[title~="50"] { width: 50%; }
+body #write img[alt~="55"], body #write img[title~="55"] { width: 55%; }
+body #write img[alt~="60"], body #write img[title~="60"] { width: 60%; }
+body #write img[alt~="65"], body #write img[title~="65"] { width: 65%; }
+body #write img[alt~="70"], body #write img[title~="70"] { width: 70%; }
+body #write img[alt~="75"], body #write img[title~="75"] { width: 75%; }
+body #write img[alt~="80"], body #write img[title~="80"] { width: 80%; }
+body #write img[alt~="85"], body #write img[title~="85"] { width: 85%; }
+body #write img[alt~="90"], body #write img[title~="90"] { width: 90%; }
+body #write img[alt~="100"], body #write img[title~="100"] { width: 100%; }
+
+/* ==========================================================================
+   图表与思维导图 (Mermaid & Diagrams)
+   ========================================================================== */
+
+body #write pre.md-diagram {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+  text-align: center;
+}
+
+body #write .md-diagram-panel svg {
+  border-radius: 10px;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.05);
+  padding: 1.25rem;
+}
+
+/* ==========================================================================
+   目录、公式与脚注 (TOC, Math & Footnotes)
+   ========================================================================== */
+
+/* 目录 (TOC) */
+.md-toc {
+  margin: 1.8rem 0;
+  padding: 1.2rem 1.6rem;
+  border-radius: 12px;
+  background: rgba(248, 250, 252, 0.85);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px -2px rgba(26, 34, 56, 0.04);
+}
+
+.md-toc-content {
+  line-height: 1.8;
+}
+
+.md-toc-item {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.md-toc-item:hover {
+  text-decoration: underline;
+  color: #ec4899;
+}
+
+/* 数学公式块 (MathJax) */
+.md-math-block {
+  margin: 1.6rem 0;
+  padding: 1rem 1.2rem;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 16px -2px rgba(26, 34, 56, 0.04);
+  text-align: center;
+}
+
+/* 脚注 */
+.footnote-line {
+  color: var(--text-color-muted);
+  font-size: 0.9em;
+}
+
+sup.md-footnote {
+  color: #6366f1;
+  background-color: rgba(99, 102, 241, 0.1);
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Typora 界面组件 (Sidebar, Search, Focus Mode)
+   ========================================================================== */
+
+/* 侧边栏整体 */
+#typora-sidebar {
+  background: var(--bg-color);
+  border-right: 1px solid #e2e8f0;
+}
+
+#typora-sidebar .file-list-item.active {
+  border-radius: 8px;
+  background: var(--active-file-bg-color);
+  color: var(--active-file-text-color);
+  font-weight: 600;
+}
+
+#typora-sidebar .file-tree-node.active > .file-node-content {
+  color: #1a2238;
+  background: var(--active-file-bg-color);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* 修复搜索框字体颜色与高亮 */
+.ty-search-panel-row .form-control {
+  border-radius: 6px;
+  background: #ffffff !important;
+  color: #1a2238 !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: none !important;
+  font-size: 13.5px;
+  padding: 6px 12px;
+}
+
+.ty-search-panel-row .form-control:focus {
+  border-color: #6366f1 !important;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* 快捷打开弹窗 */
+#typora-quick-open {
+  background: #ffffff;
+  border-radius: 10px;
+  border-top: 4px solid #f7ce68;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+#typora-quick-open .typora-quick-open-item.active {
+  background-color: var(--active-file-bg-color);
+  color: var(--active-file-text-color);
+}
+
+/* 专注模式 (Focus Mode) */
+.on-focus-mode #write {
+  border-radius: 12px;
+}
+
+.on-focus-mode .md-focus {
+  background: rgba(254, 240, 138, 0.15);
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+.on-focus-mode .md-end-block:not(.md-focus):not(.md-focus-container) * {
+  color: rgba(26, 34, 56, 0.22) !important;
+}
+
+/* 提示徽标 (var 标签优化) */
+var {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 16px;
+  background: var(--primary-gradient);
+  color: #2b1836;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 0.85em;
+  box-shadow: 0 2px 8px rgba(247, 206, 104, 0.3);
+}
+
+/* ==========================================================================
+   Typora 导出态全局重置 (.typora-export)
+   无论 Typora 采用何种引擎导出 PDF/HTML，均强制统一为淡蓝底色并填满 A4 页面
+   ========================================================================== */
+
+body.typora-export,
+.typora-export {
+  background-color: var(--bg-color) !important;
+  background: var(--bg-color) !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+body.typora-export #write,
+.typora-export #write,
+.typora-export-content #write {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  min-height: 100% !important;
+  margin: 0 auto !important;
+  padding: 16mm 18mm 20mm 18mm !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+
+/* 导出态去除任何多余的超链接蓝色与下划线横线 */
+body.typora-export #write a,
+.typora-export #write a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+body.typora-export #write a::after,
+.typora-export #write a::after {
+  display: none !important;
+  content: none !important;
+}
+
+body.typora-export #write hr,
+.typora-export #write hr {
+  height: 1px !important;
+  background: #cbd5e1 !important;
+  border: none !important;
+}
+
+/* ==========================================================================
+   打印与 PDF 导出增强 (@media print)
+   ========================================================================== */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    /* 彻底消除外围未着色白边，使背景完整覆盖整张 A4 纸 */
+    margin: 0 !important;
+  }
+
+  html,
+  body {
+    background-color: var(--bg-color) !important;
+    background: var(--bg-color) !important;
+    font-family: var(--font-sans) !important;
+    font-size: 17px;
+    line-height: 1.85;
+    color: var(--text-color) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body content {
+    background-color: var(--bg-color) !important;
+    background: var(--bg-color) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 打印专用：利用 fixed 伪元素跨页铺满整张 A4 纸，杜绝任何接缝或白边 */
+  body::before,
+  body.typora-export::before {
+    content: "" !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: var(--bg-color) !important;
+    background: var(--bg-color) !important;
+    z-index: -99999 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 版芯内容区透明并设置标准内边距，文字与页面完全融合且不贴边 */
+  #write,
+  body #write,
+  .typora-export #write,
+  body.typora-export #write,
+  .typora-export-content #write {
+    font-family: var(--font-sans) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 100% !important;
+    margin: 0 auto !important;
+    padding: 16mm 18mm 20mm 18mm !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    background: transparent !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 标题分页与排版保护，去除任何多余的彩色点条装饰 */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+    color: #0f172a !important;
+    text-shadow: none !important;
+  }
+
+  #write h1 {
+    font-size: 22pt;
+    margin-top: 1rem;
+  }
+
+  #write h1::after {
+    display: none !important; /* 隐藏 H1 底部装饰条，保证纯净正规 */
+  }
+
+  #write h2 {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* H3 左侧边框改为典雅中性灰色，杜绝突兀的蓝色条 */
+  #write h3 {
+    border-left: 3.5px solid #64748b !important;
+    padding-left: 0.6rem !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 隐藏 H4、H5、H6 前置的彩色圆点和竖条伪元素，防止打印产生斑驳感 */
+  #write h4::before,
+  #write h5::before,
+  #write h6::before {
+    display: none !important;
+  }
+
+  /* 避免关键块在页面接缝处被生硬切断 */
+  pre.md-fences,
+  blockquote,
+  table,
+  figure,
+  .md-image {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  /* 分割线导出纯净素雅灰 */
+  #write hr {
+    height: 1px !important;
+    background: #e2e8f0 !important;
+    border: none !important;
+    margin: 1.5rem 0 !important;
+  }
+
+  /* 代码块墨粉节约与边框规范 */
+  body #write .md-fences {
+    background: #f8fafc !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    padding: 0.8rem 1rem !important;
+  }
+
+  body #write .md-fences::before {
+    display: none !important;
+  }
+
+  /* 引用块导出：经典中性浅灰边框，去除任何蓝色偏色 */
+  body #write blockquote {
+    background: #f8fafc !important;
+    border-left: 3.5px solid #cbd5e1 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    color: #334155 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 表格导出风格 */
+  body #write table {
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+  }
+
+  body #write table thead {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body #write table th,
+  body #write table td {
+    border: 1px solid #cbd5e1 !important;
+  }
+
+  /* 彻底消除所有超链接在打印时的“蓝色”与“下划线”，恢复纯净文本颜色 */
+  #write a,
+  #write a:hover,
+  .md-toc-item {
+    color: inherit !important;
+    text-decoration: none !important;
+    border: none !important;
+  }
+
+  #write a::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  /* 彻底消除任何锚点生成的虚假下划线或短横 */
+  .md-header-anchor,
+  a.md-header-anchor,
+  #write a.md-header-anchor {
+    display: none !important;
+    text-decoration: none !important;
+    border: none !important;
+    opacity: 0 !important;
+  }
+
+  /* 列表标号与符号统一为经典中性深灰，去除蓝色高亮 */
+  #write ul > li::marker,
+  #write ol > li::marker {
+    color: #64748b !important;
+  }
+
+  /* 隐藏多余界面元素 */
+  #top-titlebar,
+  #typora-sidebar,
+  .md-hover-tip {
+    display: none !important;
+  }
+}
+
+</style>
+</head>
+<body>
+<content>
+<div id='write'  class=''><h2 id='go-back-to-blogs-home-page'><a href='https://chiamzhang.github.io/'><span>Go Back To Blogs Home Page</span></a></h2><h2 id='github-release-downloadhttpsgithubcomchiamzhangtyporatheme-tailors'><a href='https://github.com/ChiamZhang/TyporaTheme-Tailors'><span>Github Release DownLoad</span></a></h2><hr /><h1 id='typora-theme-tailors--introduction'><span>Typora-Theme-Tailors  Introduction</span></h1><h2 id='introduction'><span>Introduction</span></h2><p><span>This theme is inspired by my two favorite themes:</span></p><ol start='' ><li><p><span>Phycat by XuJilong. Homepage: </span><a href='https://github.com/sumruler/typora-theme-phycat'><span>GitHub - sumruler/typora-theme-phycat: Phycat Typora Theme</span></a><span> </span><strong><span>Mainly referencing the title part</span></strong><span>.</span></p></li><li><p><span>Typora-Theme-Neumorphism by Soanguy. Homepage: </span><a href='https://github.com/Soanguy/Typora-Theme-Neumorphism'><span>GitHub - Soanguy/Typora-Theme-Neumorphism: Neumorphism style typora theme</span></a><span> </span><strong><span>Mainly referencing the inline part</span></strong><span>.</span></p></li><li><p><span>I changed a lot of the colors and unnecessary hover CSS to make the overall style more compatible. Since Soanguy hasn’t updated for a long time, I encountered some bugs while using it, which I fixed.</span></p></li><li><p><span>Continuous updates, if there are any issues, please raise them in the issue section, and I will fix them when I have time.</span></p></li><li><p><span>Tailors means that I have patched together this theme from various sources, feeling a bit embarrassed.</span></p></li></ol><h1 id='title-styles'><span>Title Styles</span></h1><hr /><h1 id='first-level-title'><span>First Level Title</span></h1><h2 id='second-level-title'><span>Second Level Title</span></h2><h3 id='third-level-title'><span>Third Level Title</span></h3><h4 id='fourth-level-title'><span>Fourth Level Title</span></h4><h5 id='fifth-level-title'><span>Fifth Level Title</span></h5><h6 id='sixth-level-title'><span>Sixth Level Title</span></h6><h1 id='image-tips'><span>Image Tips</span></h1><ol start='' ><li><p><span>Quickly adjust the photo size: Adjust any number in the positions below to the desired scaling size.</span></p><center><var>Method: <code>![Photo Name Number](Photo URL "Number")</code> </var></center> <center><var>For example: Adjust to 50% size <code>![Photo Name 50](Photo URL "50")</code> </var></center> <blockquote><p><span>Note: The default scaling size is set in steps of 5, i.e., 0, 5, 10, 15...</span></p></blockquote><p><img src="https://img2.baidu.com/it/u=3012984283,879707191&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=1200" referrerpolicy="no-referrer" alt="Maine 50"></p><p><img src="https://img2.baidu.com/it/u=3012984283,879707191&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=800&amp;h=1200" referrerpolicy="no-referrer" alt="Maine 30"></p></li><li><p><span>Note that photos cannot be adjusted to inline elements.</span></p></li></ol><h2 id='html-elements-introduction'><span>HTML Elements Introduction</span></h2><ol start='' ><li><p><span>You can introduce the following styles through the </span><code>&lt;var&gt; &lt;/var&gt;</code><span> element:</span></p><ul><li><p><var><span> The original meaning of this element is to define variables.</span></var></p></li><li><p><var><span> Like this</span></var></p></li></ul></li></ol><h1 id='typographical-introduction'><span>Typographical Introduction</span></h1><h2 id='blockquote-style'><span>Blockquote Style</span></h2><blockquote><p><span>欲买桂花同载酒，终不似少年游！</span></p></blockquote><h2 id='inline-styles'><span>Inline Styles</span></h2><p><span>Inline styles support </span><strong><span>bold</span></strong><span>, </span><em><span>emphasis</span></em><span>, </span><code>code</code><span>, </span><u><span>underline</span></u><span>, </span><del><span>strikethrough</span></del><span>, </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="6.293ex" height="2.108ex" role="img" focusable="false" viewBox="0 -716.3 2781.3 931.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.488ex;"><defs><path id="MJX-3-TEX-I-1D43F" d="M228 637Q194 637 192 641Q191 643 191 649Q191 673 202 682Q204 683 217 683Q271 680 344 680Q485 680 506 683H518Q524 677 524 674T522 656Q517 641 513 637H475Q406 636 394 628Q387 624 380 600T313 336Q297 271 279 198T252 88L243 52Q243 48 252 48T311 46H328Q360 46 379 47T428 54T478 72T522 106T564 161Q580 191 594 228T611 270Q616 273 628 273H641Q647 264 647 262T627 203T583 83T557 9Q555 4 553 3T537 0T494 -1Q483 -1 418 -1T294 0H116Q32 0 32 10Q32 17 34 24Q39 43 44 45Q48 46 59 46H65Q92 46 125 49Q139 52 144 61Q147 65 216 339T285 628Q285 635 228 637Z"></path><path id="MJX-3-TEX-I-1D434" d="M208 74Q208 50 254 46Q272 46 272 35Q272 34 270 22Q267 8 264 4T251 0Q249 0 239 0T205 1T141 2Q70 2 50 0H42Q35 7 35 11Q37 38 48 46H62Q132 49 164 96Q170 102 345 401T523 704Q530 716 547 716H555H572Q578 707 578 706L606 383Q634 60 636 57Q641 46 701 46Q726 46 726 36Q726 34 723 22Q720 7 718 4T704 0Q701 0 690 0T651 1T578 2Q484 2 455 0H443Q437 6 437 9T439 27Q443 40 445 43L449 46H469Q523 49 533 63L521 213H283L249 155Q208 86 208 74ZM516 260Q516 271 504 416T490 562L463 519Q447 492 400 412L310 260L413 259Q516 259 516 260Z"></path><path id="MJX-3-TEX-I-1D447" d="M40 437Q21 437 21 445Q21 450 37 501T71 602L88 651Q93 669 101 677H569H659Q691 677 697 676T704 667Q704 661 687 553T668 444Q668 437 649 437Q640 437 637 437T631 442L629 445Q629 451 635 490T641 551Q641 586 628 604T573 629Q568 630 515 631Q469 631 457 630T439 622Q438 621 368 343T298 60Q298 48 386 46Q418 46 427 45T436 36Q436 31 433 22Q429 4 424 1L422 0Q419 0 415 0Q410 0 363 1T228 2Q99 2 64 0H49Q43 6 43 9T45 27Q49 40 55 46H83H94Q174 46 189 55Q190 56 191 56Q196 59 201 76T241 233Q258 301 269 344Q339 619 339 625Q339 630 310 630H279Q212 630 191 624Q146 614 121 583T67 467Q60 445 57 441T43 437H40Z"></path><path id="MJX-3-TEX-I-1D438" d="M492 213Q472 213 472 226Q472 230 477 250T482 285Q482 316 461 323T364 330H312Q311 328 277 192T243 52Q243 48 254 48T334 46Q428 46 458 48T518 61Q567 77 599 117T670 248Q680 270 683 272Q690 274 698 274Q718 274 718 261Q613 7 608 2Q605 0 322 0H133Q31 0 31 11Q31 13 34 25Q38 41 42 43T65 46Q92 46 125 49Q139 52 144 61Q146 66 215 342T285 622Q285 629 281 629Q273 632 228 634H197Q191 640 191 642T193 659Q197 676 203 680H757Q764 676 764 669Q764 664 751 557T737 447Q735 440 717 440H705Q698 445 698 453L701 476Q704 500 704 528Q704 558 697 578T678 609T643 625T596 632T532 634H485Q397 633 392 631Q388 629 386 622Q385 619 355 499T324 377Q347 376 372 376H398Q464 376 489 391T534 472Q538 488 540 490T557 493Q562 493 565 493T570 492T572 491T574 487T577 483L544 351Q511 218 508 216Q505 213 492 213Z"></path><path id="MJX-3-TEX-I-1D44B" d="M42 0H40Q26 0 26 11Q26 15 29 27Q33 41 36 43T55 46Q141 49 190 98Q200 108 306 224T411 342Q302 620 297 625Q288 636 234 637H206Q200 643 200 645T202 664Q206 677 212 683H226Q260 681 347 681Q380 681 408 681T453 682T473 682Q490 682 490 671Q490 670 488 658Q484 643 481 640T465 637Q434 634 411 620L488 426L541 485Q646 598 646 610Q646 628 622 635Q617 635 609 637Q594 637 594 648Q594 650 596 664Q600 677 606 683H618Q619 683 643 683T697 681T738 680Q828 680 837 683H845Q852 676 852 672Q850 647 840 637H824Q790 636 763 628T722 611T698 593L687 584Q687 585 592 480L505 384Q505 383 536 304T601 142T638 56Q648 47 699 46Q734 46 734 37Q734 35 732 23Q728 7 725 4T711 1Q708 1 678 1T589 2Q528 2 496 2T461 1Q444 1 444 10Q444 11 446 25Q448 35 450 39T455 44T464 46T480 47T506 54Q523 62 523 64Q522 64 476 181L429 299Q241 95 236 84Q232 76 232 72Q232 53 261 47Q262 47 267 47T273 46Q276 46 277 46T280 45T283 42T284 35Q284 26 282 19Q279 6 276 4T261 1Q258 1 243 1T201 2T142 2Q64 2 42 0Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><use data-c="1D43F" xlink:href="#MJX-3-TEX-I-1D43F"></use></g><g data-mml-node="mspace" transform="translate(681,0)"></g><g data-mml-node="mpadded" transform="translate(356,0)"><g transform="translate(0,210)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mstyle" transform="scale(0.707)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D434" xlink:href="#MJX-3-TEX-I-1D434"></use></g></g></g></g></g></g><g data-mml-node="mspace" transform="translate(886.3,0)"></g><g data-mml-node="mi" transform="translate(716.3,0)"><use data-c="1D447" xlink:href="#MJX-3-TEX-I-1D447"></use></g><g data-mml-node="mspace" transform="translate(1420.3,0)"></g><g data-mml-node="mpadded" transform="translate(1280.3,0)"><g transform="translate(0,-215.5)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D438" xlink:href="#MJX-3-TEX-I-1D438"></use></g></g></g></g><g data-mml-node="mspace" transform="translate(2044.3,0)"></g><g data-mml-node="mi" transform="translate(1929.3,0)"><use data-c="1D44B" xlink:href="#MJX-3-TEX-I-1D44B"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>L</mi><mspace width="-.325em"></mspace><mpadded height="+.21em" depth="-.21em" voffset="+.21em"><mrow data-mjx-texclass="ORD"><mstyle displaystyle="false" scriptlevel="1"><mrow data-mjx-texclass="ORD"><mi>A</mi></mrow></mstyle></mrow></mpadded><mspace width="-.17em"></mspace><mi>T</mi><mspace width="-.14em"></mspace><mpadded height="-.5ex" depth="+.5ex" voffset="-.5ex"><mrow data-mjx-texclass="ORD"><mi>E</mi></mrow></mpadded><mspace width="-.115em"></mspace><mi>X</mi></math></mjx-assistive-mml></mjx-container><script type="math/tex">\LaTeX</script><span>, X</span><sup><span>2</span></sup><span>, H</span><sub><span>2</span></sub><span>O, </span><mark><span>highlight</span></mark><span>, </span><a href='https://typora.io'><span>link</span></a><span>.</span></p><h2 id='table-styles'><span>Table Styles</span></h2><figure class='table-figure'><table><thead><tr><th style='text-align:center;' ><span>Align Left</span></th><th style='text-align:center;' ><span>Align Center</span></th><th style='text-align:center;' ><span>Align Right</span></th></tr></thead><tbody><tr><td style='text-align:center;' ><span>Third column</span></td><td style='text-align:center;' ><u><span>Some lengthy text</span></u></td><td style='text-align:center;' ><span>$1600</span></td></tr><tr><td style='text-align:center;' ><span>Second column</span></td><td style='text-align:center;' ><span>Align center</span></td><td style='text-align:center;' ><span>$12</span></td></tr><tr><td style='text-align:center;' ><span>Zebra stripes</span></td><td style='text-align:center;' ><span>Very tidy</span></td><td style='text-align:center;' ><span>$1</span></td></tr></tbody></table></figure><h2 id='list-styles'><span>List Styles</span></h2><ol start='' ><li><p><span>Ordered list item 1.</span></p></li><li><p><span>Ordered list item 2.</span></p><ul><li><p><span>Unordered sublist item 1.</span></p><ul><li><p><span>Second-level unordered sublist item 1</span></p></li></ul></li><li><p><span>Unordered sublist item 2.</span></p><ul><li class='md-task-list-item task-list-item task-list-not-done' ><input type='checkbox' /><p><span>Completed item. Use &quot;[]&quot;</span></p></li><li class='md-task-list-item task-list-item task-list-done' ><input type='checkbox' checked/><p><span>Uncompleted item. Use &quot;[x]&quot;</span></p></li></ul></li></ul></li></ol><h2 id='code-styles'><span>Code Styles</span></h2><pre class="md-fences md-end-block md-fences-with-lineno ty-contain-cm modeLoaded" spellcheck="false" lang="html" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="html"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 8.125px; left: 42px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div>
+</content>
+</body>
+</html>
