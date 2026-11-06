@@ -35,14 +35,6 @@
   --active-file-text-color: #1a2238;
   --select-text-bg-color: #c7d2fe;
   --select-text-font-color: #1e1b4b;
-  
-  /* 标题层级色彩标示 */
-  --h1-color: #1a2238;
-  --h2-color: #2b1836;
-  --h3-r-color: #0284c7;  /* 晴空海蓝 */
-  --h4-r-color: #e11d48;  /* 活力玫红 */
-  --h5-r-color: #9333ea;  /* 优雅罗兰 */
-  --h6-r-color: #4f46e5;  /* 沉稳靛蓝 */
 
   /* 字体栈（完整保留原版字体体系） */
   --font-sans: "Bellota", "Tw Cen MT", "HYHuaGuan", "霞鹜文楷", "STLibianSC-Regular", "华文中宋", sans-serif;
@@ -266,43 +258,19 @@ content {
   text-align: center;
   margin: 2.5rem 0 1.8rem;
   letter-spacing: 0.03em;
-  color: var(--h1-color);
+  color: var(--text-color);
   position: relative;
-  padding-bottom: 0.6rem;
 }
 
-#write h1::after {
-  content: "";
-  display: block;
-  width: 72px;
-  height: 4px;
-  border-radius: 3px;
-  background: var(--primary-gradient);
-  margin: 0.75rem auto 0;
-}
-
-/* 二级标题：Tailors 标志性日落渐变胶囊 */
+/* 二级标题 */
 #write h2 {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  width: fit-content;
-  max-width: 100%;
-  margin: 2.3rem 0 1.2rem;
-  padding: 0.35rem 1.25rem;
-  border-radius: 24px;
-  color: var(--h2-color);
-  background: var(--head-title-h2-background);
-  background-size: 180% 100%;
-  background-position: 0% 0%;
-  box-shadow: 0 4px 15px rgba(247, 206, 104, 0.35), 0 2px 6px rgba(251, 171, 254, 0.2);
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  letter-spacing: 0.02em;
-}
-
-#write h2:hover {
-  background-position: 100% 0%;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(247, 206, 104, 0.45), 0 3px 8px rgba(251, 171, 254, 0.3);
+  font-size: 1.5rem;
+  line-height: 1.45;
+  margin: 2.2rem 0 1.1rem;
+  color: var(--text-color);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(26, 34, 56, 0.1);
+  letter-spacing: 0.01em;
 }
 
 #write h2.md-heading a {
@@ -310,73 +278,32 @@ content {
   color: inherit;
 }
 
-/* 三级标题：优雅左侧高亮边框 */
+/* 三级标题 */
 #write h3 {
   font-size: 1.25rem;
-  margin: 1.9rem 0 1rem;
-  padding-left: 0.75rem;
-  border-left: 4.5px solid var(--h3-r-color);
-  border-radius: 2px;
+  margin: 1.8rem 0 0.9rem;
+  color: var(--text-color);
 }
 
-/* 四级标题：精致实心圆点 */
+/* 四级标题 */
 #write h4 {
   font-size: 1.12rem;
-  margin: 1.6rem 0 0.85rem;
-  display: flex;
-  align-items: center;
+  margin: 1.5rem 0 0.8rem;
+  color: var(--text-color);
 }
 
-#write h4::before {
-  content: "";
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-right: 9px;
-  border-radius: 50%;
-  background-color: var(--h4-r-color);
-  box-shadow: 0 0 8px rgba(225, 29, 72, 0.45);
-  flex-shrink: 0;
-}
-
-/* 五级标题：精致空心环圈 */
+/* 五级标题 */
 #write h5 {
   font-size: 1.02rem;
-  margin: 1.4rem 0 0.75rem;
-  display: flex;
-  align-items: center;
+  margin: 1.3rem 0 0.7rem;
+  color: var(--text-color);
 }
 
-#write h5::before {
-  content: "";
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  margin-right: 8px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: 2.5px solid var(--h5-r-color);
-  flex-shrink: 0;
-}
-
-/* 六级标题：极简坚竖条 */
+/* 六级标题 */
 #write h6 {
   font-size: 0.95rem;
-  margin: 1.2rem 0 0.65rem;
+  margin: 1.2rem 0 0.6rem;
   color: var(--text-color-light);
-  display: flex;
-  align-items: center;
-}
-
-#write h6::before {
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 12px;
-  margin-right: 8px;
-  border-radius: 2px;
-  background-color: var(--h6-r-color);
-  flex-shrink: 0;
 }
 
 /* ==========================================================================
@@ -949,17 +876,11 @@ sup.md-footnote {
   color: rgba(26, 34, 56, 0.22) !important;
 }
 
-/* 提示徽标 (var 标签优化) */
+/* 变量与强调 */
 var {
-  display: inline-block;
-  padding: 4px 14px;
-  border-radius: 16px;
-  background: var(--primary-gradient);
-  color: #2b1836;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 0.85em;
-  box-shadow: 0 2px 8px rgba(247, 206, 104, 0.3);
+  font-family: var(--monospace);
+  font-style: italic;
+  color: var(--text-color);
 }
 
 /* ==========================================================================
@@ -1089,7 +1010,7 @@ body.typora-export #write hr,
     print-color-adjust: exact !important;
   }
 
-  /* 标题分页与排版保护，去除任何多余的彩色点条装饰 */
+  /* 标题分页与排版保护，保证纯净典雅 */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
     break-after: avoid;
@@ -1102,34 +1023,14 @@ body.typora-export #write hr,
     margin-top: 1rem;
   }
 
-  #write h1::after {
-    display: none !important; /* 隐藏 H1 底部装饰条，保证纯净正规 */
-  }
-
   #write h2 {
-    background: #f1f5f9 !important;
+    font-size: 16pt;
+    background: transparent !important;
     color: #0f172a !important;
-    border: 1px solid #cbd5e1 !important;
+    border-bottom: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
     page-break-after: avoid;
     break-after: avoid;
-  }
-
-  /* H3 左侧边框改为典雅中性灰色，杜绝突兀的蓝色条 */
-  #write h3 {
-    border-left: 3.5px solid #64748b !important;
-    padding-left: 0.6rem !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  /* 隐藏 H4、H5、H6 前置的彩色圆点和竖条伪元素，防止打印产生斑驳感 */
-  #write h4::before,
-  #write h5::before,
-  #write h6::before {
-    display: none !important;
   }
 
   /* 避免关键块在页面接缝处被生硬切断 */
@@ -1232,16 +1133,6 @@ body.typora-export #write hr,
   }
 }
 
-/* Additional CodeMirror syntax highlight colors for offline showcase */
-.cm-s-inner .cm-keyword { color: #d73a49; font-weight: 600; }
-.cm-s-inner .cm-def { color: #6f42c1; font-weight: 600; }
-.cm-s-inner .cm-string { color: #032f62; }
-.cm-s-inner .cm-comment { color: #6a737d; font-style: italic; }
-.cm-s-inner .cm-variable { color: #24292e; }
-.cm-s-inner .cm-property { color: #005cc5; }
-.cm-s-inner .cm-number { color: #005cc5; }
-.cm-s-inner .cm-operator { color: #d73a49; }
-.cm-s-inner .CodeMirror-linenumber { color: #94a3b8; }
 </style>
 </head>
 <body>
@@ -1250,37 +1141,24 @@ body.typora-export #write hr,
 
   <!-- 主标题 -->
   <h1 id="tailors-theme"><span>Tailors Theme for Typora</span></h1>
-  <p style="text-align: center; color: #52607d; font-size: 1.15rem; margin-top: -0.8rem; margin-bottom: 2rem;">
-    <span>新拟物优雅 · 日落渐变胶囊 · 全幅淡冰蓝底色 · 出版级排版导出</span>
-  </p>
-
-  <p style="text-align: center; margin-bottom: 2.5rem;">
-    <var><span>Neumorphic 2.0</span></var>
-    &nbsp;
-    <var><span>Sunset Gradient</span></var>
-    &nbsp;
-    <var><span>A4 Print Native</span></var>
-    &nbsp;
-    <var><span>Classic Typography</span></var>
+  <p style="text-align: center; color: #52607d; font-size: 1.15rem; margin-top: -0.5rem; margin-bottom: 2.2rem;">
+    <span>新拟物优雅 · 全幅温润淡冰蓝 · 严谨标准版芯 · 出版级 A4 导出</span>
   </p>
 
   <hr />
 
-  <!-- 1. 标题层级展示 -->
-  <h2 id="headings"><span>1. 独具匠心的层级标题体系 (Headings)</span></h2>
-  <p><span>Tailors 拥有极具辨识度的标题色彩体系，每个层级均赋予专属的视觉定位与色彩标识：</span></p>
+  <!-- 1. 标题排版体系展示 -->
+  <h2 id="headings"><span>1. 清爽典雅的标题排版体系 (Headings)</span></h2>
+  <p><span>Tailors 遵循沉稳清爽的现代排版理念，去除多余繁复的彩色点条装饰，让标题自然承担起结构划分的核心作用：</span></p>
 
-  <h3 id="h3-demo"><span>三级标题 · 晴空海蓝 (Sky Blue Accent)</span></h3>
-  <p><span>三级标题左侧带有 4px 晴空海蓝高亮指示条，结构清晰，层级分明。</span></p>
+  <h3 id="h3-demo"><span>三级标题 · 舒适明晰的文字层级 (Heading 3)</span></h3>
+  <p><span>三级标题字阶经过精心校准，行高适度，与正文段落形成优雅的呼吸节奏。</span></p>
 
-  <h4 id="h4-demo"><span>四级标题 · 活力玫红 (Vibrant Rose)</span></h4>
-  <p><span>四级标题前置玫红实心圆形微标，轻盈灵动。</span></p>
+  <h4 id="h4-demo"><span>四级标题 · 细腻的段落锚点 (Heading 4)</span></h4>
+  <p><span>四级标题用于正文中更细致的章节切分，字体饱满清晰，自然无干扰。</span></p>
 
-  <h5 id="h5-demo"><span>五级标题 · 优雅罗兰 (Violet Ring)</span></h5>
-  <p><span>五级标题前置罗兰紫镂空环形微标，典雅精致。</span></p>
-
-  <h6 id="h6-demo"><span>六级标题 · 沉稳靛蓝 (Indigo Pillar)</span></h6>
-  <p><span>六级标题前置微型圆柱标识，稳重收尾。</span></p>
+  <h5 id="h5-demo"><span>五级与六级标题 · 辅助分组 (Heading 5 &amp; 6)</span></h5>
+  <p><span>更深层级的结构同样整洁分明，支持深层技术文档与复杂笔记的清晰呈现。</span></p>
 
   <hr />
 
@@ -1292,89 +1170,84 @@ body.typora-export #write hr,
 <div class="CodeMirror-line"><span class="cm-keyword">def</span> <span class="cm-def">render_tailors_theme</span>():</div>
 <div class="CodeMirror-line">    <span class="cm-comment"># 全局温润淡冰蓝底色，彻底告别刺眼纯白</span></div>
 <div class="CodeMirror-line">    palette = {</div>
-<div class="CodeMirror-line">        <span class="cm-string">"canvas"</span>: <span class="cm-string">"#F9FCFF"</span>,  <span class="cm-comment"># 冰蓝底色</span></div>
-<div class="CodeMirror-line">        <span class="cm-string">"sunset"</span>: <span class="cm-string">"linear-gradient(135deg, #f7ce68, #fbabfe)"</span>,</div>
-<div class="CodeMirror-line">        <span class="cm-string">"typography"</span>: [<span class="cm-string">"Bellota"</span>, <span class="cm-string">"华文中宋"</span>, <span class="cm-string">"霞鹜文楷"</span>]</div>
+<div class="CodeMirror-line">        <span class="cm-string">"canvas"</span>: <span class="cm-string">"#F9FCFF"</span>,  <span class="cm-comment"># 全幅统一背景</span></div>
+<div class="CodeMirror-line">        <span class="cm-string">"typography"</span>: [<span class="cm-string">"Bellota"</span>, <span class="cm-string">"华文中宋"</span>, <span class="cm-string">"霞鹜文楷"</span>],</div>
+<div class="CodeMirror-line">        <span class="cm-string">"editor_width"</span>: <span class="cm-string">"860px (Responsive to 1200px)"</span></div>
 <div class="CodeMirror-line">    }</div>
 <div class="CodeMirror-line">    <span class="cm-keyword">return</span> <span class="cm-string">f"Enjoy distraction-free writing with Tailors!"</span></div>
 </div></div></div></div></pre>
 
   <hr />
 
-  <!-- 3. 内联与新拟物元素 -->
-  <h2 id="inline-components"><span>3. 内联文本与微拟物徽标 (Inline &amp; Components)</span></h2>
-  <p><span>文字排版完整支持所有 Markdown 行内语法，并深度融合微拟物与柔和高亮风格：</span></p>
+  <!-- 3. 内联与排版 -->
+  <h2 id="inline-components"><span>3. 内联文本排版 (Inline Styles)</span></h2>
+  <p><span>文字排版完整支持所有 Markdown 行内语法，各元素之间拥有和谐统一的视觉层级：</span></p>
   <ul>
-    <li><span>支持 <strong>粗体强调用色 (Bold)</strong>、<em>斜体平滑字形 (Italic)</em> 以及 <code>行内代码标签 (Inline Code)</code>；</span></li>
-    <li><span>独具质感的 <u>荧光下划线 (Underline)</u> 与 <mark>马卡龙温润高亮 (Highlight)</mark>；</span></li>
-    <li><span>支持删除线 <del>Strikethrough</del> 与精致超链接 <a href="#">Interactive Link</a>；</span></li>
-    <li><span>专属微拟物胶囊徽标：通过 <code>&lt;var&gt;</code> 标签定义变量或徽章：<var>Neumorphism</var> <var>Sunset Pill</var> <var>Typora Official</var>。</span></li>
+    <li><span>支持 <strong>粗体强调 (Bold)</strong>、<em>斜体字形 (Italic)</em> 以及 <code>行内代码 (Inline Code)</code>；</span></li>
+    <li><span>提供 <u>荧光下划线 (Underline)</u> 与 <mark>温润高亮标记 (Highlight)</mark>；</span></li>
+    <li><span>包含删除线 <del>Strikethrough</del> 与精致超链接 <a href="#">Interactive Link</a>。</span></li>
   </ul>
 
   <hr />
 
-  <!-- 4. 引用与任务清单 -->
-  <h2 id="quotes-and-tasks"><span>4. 经典引用块与交互清单 (Quotes &amp; Tasks)</span></h2>
-
+  <!-- 4. 引用块与表格 -->
+  <h2 id="quotes-and-tables"><span>4. 优雅引用块与现代表格 (Quotes &amp; Tables)</span></h2>
+  
   <blockquote>
-    <p><span><strong>Tailors 设计哲学</strong>：集各家之所长，裁多余之冗杂。</span></p>
-    <p><span>优雅不仅在于第一眼的惊艳，更在于数小时持续书写与深度阅读时，依然保持柔和、静谧与专注。</span></p>
+    <p><span>凡所书写，皆为风景。Tailors 缝合优秀设计精粹，去除冗余视觉噪点，为长时间阅读与写作提供最舒适的视觉庇护所。</span></p>
   </blockquote>
 
-  <ul class="task-list">
-    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>统一全幅淡冰蓝底色（#F9FCFF），杜绝生硬白卡片与接缝色差</span></p></li>
-    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>原生对齐 Typora 官方标准响应式版芯（860px ~ 1200px）</span></p></li>
-    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>出版级 A4 PDF 导出增强，0 外边距全幅无缝铺色并去除多余下划线</span></p></li>
-    <li class="task-list-item task-list-done"><input type="checkbox" checked disabled /> <p><span>精致 macOS 红黄绿三色拟物圆点代码块</span></p></li>
-    <li class="task-list-item"><input type="checkbox" disabled /> <p><span>持续倾听社区反馈，进一步打磨更多个性化配置选项</span></p></li>
-  </ul>
+  <p><span>通透开阔的现代圆角表格，配备精致表头与交替浅色斑马条纹：</span></p>
 
-  <hr />
-
-  <!-- 5. 现代通透表格 -->
-  <h2 id="table-demo"><span>5. 现代圆角斑马纹表格 (Airy Modern Table)</span></h2>
-  <p><span>表格表头采用标志性日落渐变铺色，配合圆角卡片质感与隔行交替斑马纹：</span></p>
-
-  <figure class="table-figure">
+  <figure class="md-table-fig">
     <table>
       <thead>
         <tr>
-          <th style="text-align: left;"><span>特性模块</span></th>
-          <th style="text-align: left;"><span>功能亮点</span></th>
-          <th style="text-align: center;"><span>适配状态</span></th>
-          <th style="text-align: right;"><span>效果评级</span></th>
+          <th>特性模块</th>
+          <th>设计定位</th>
+          <th>视觉规格</th>
+          <th>排版状态</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="text-align: left;"><strong>底色系统</strong></td>
-          <td style="text-align: left;">全页温润冰蓝，消除白卡片生硬分界</td>
-          <td style="text-align: center;"><var>已完善</var></td>
-          <td style="text-align: right;">★★★★★</td>
+          <td><strong>全局底色</strong></td>
+          <td>温润淡冰蓝</td>
+          <td><code>#F9FCFF</code> 全局统一步调</td>
+          <td>已完美统一</td>
         </tr>
         <tr>
-          <td style="text-align: left;"><strong>正常版芯</strong></td>
-          <td style="text-align: left;">完全对齐 GitHub / Night 官方自适应规范</td>
-          <td style="text-align: center;"><var>已对齐</var></td>
-          <td style="text-align: right;">★★★★★</td>
+          <td><strong>屏幕版芯</strong></td>
+          <td>Typora 官方标准</td>
+          <td><code>860px</code>（宽屏自动伸展）</td>
+          <td>已严格对齐</td>
         </tr>
         <tr>
-          <td style="text-align: left;"><strong>PDF 导出</strong></td>
-          <td style="text-align: left;">A4 全幅铺色，彻底去除打印白边与蓝色横线</td>
-          <td style="text-align: center;"><var>已增强</var></td>
-          <td style="text-align: right;">★★★★★</td>
+          <td><strong>PDF 导出</strong></td>
+          <td>出版级无缝打印</td>
+          <td>A4 零纸张白边 / 清除链接生硬下划线</td>
+          <td>已校准就绪</td>
         </tr>
         <tr>
-          <td style="text-align: left;"><strong>代码区块</strong></td>
-          <td style="text-align: left;">macOS 三色拟物圆点徽标 + 护眼高亮</td>
-          <td style="text-align: center;"><var>已内置</var></td>
-          <td style="text-align: right;">★★★★★</td>
+          <td><strong>标题排版</strong></td>
+          <td>自然典雅层级</td>
+          <td>去除多余彩色点圈，纯粹专注内容</td>
+          <td>已精简重构</td>
         </tr>
       </tbody>
     </table>
   </figure>
 
-  <div style="height: 80px;"></div>
+  <hr />
+
+  <!-- 5. 交互任务清单 -->
+  <h2 id="task-lists"><span>5. 交互任务清单 (Interactive Task List)</span></h2>
+  <ul class="task-list">
+    <li class="task-list-item"><input type="checkbox" checked disabled> <span>统一屏幕编辑区与导出全页为温润淡冰蓝底色（#F9FCFF）</span></li>
+    <li class="task-list-item"><input type="checkbox" checked disabled> <span>严格对齐 Typora 官方标准版芯宽度（860px / 1024px / 1200px）</span></li>
+    <li class="task-list-item"><input type="checkbox" checked disabled> <span>校准 A4 零外边距出版级打印，彻底根除白边与生硬分页截断</span></li>
+    <li class="task-list-item"><input type="checkbox" checked disabled> <span>重构标题体系，移除日落渐变胶囊与彩色圆点，回归纯净阅读</span></li>
+  </ul>
 
 </div>
 </content>

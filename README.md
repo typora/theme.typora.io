@@ -7,7 +7,7 @@ download: https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/
 author: ChiamZhang
 thumbnail: tailors.png
 preview: tailors.png
-description: A refined Typora theme featuring soft neumorphic elegance, sunset-gradient capsule headings, unified seamless background, A4-native reading width, and publisher-grade PDF export.
+description: A refined Typora theme featuring soft neumorphic elegance, clean classical typography, unified seamless background, A4-native reading width, and publisher-grade PDF export.
 tags: [light, neumorphism, gradient, a4, clean, modern, typography]
 built-in: false
 typora-root-url: ../../
@@ -16,7 +16,7 @@ typora-copy-images-to: ../../media/theme/tailors
 
 # Typora-Theme-Tailors Introduction [中文版](https://github.com/ChiamZhang/tailors.theme.typora/blob/gh-pages/Typora-Theme-Tailors%20%E4%B8%AD%E6%96%87%E4%BB%8B%E7%BB%8D.md)
 
-> A refined Typora theme featuring soft neumorphic elegance, sunset-gradient capsule headings, full-bleed icy blue background, and publisher-grade PDF export.
+> A refined Typora theme featuring soft neumorphic elegance, clean classical typography, full-bleed icy blue background, and publisher-grade PDF export.
 
 [🌐 Live HTML Preview](https://chiamzhang.github.io/tailors.theme.typora/preview.html) | [⬇️ Download Theme (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub Repository](https://github.com/ChiamZhang/tailors.theme.typora)
 
@@ -39,13 +39,13 @@ typora-copy-images-to: ../../media/theme/tailors
 
 To demonstrate the full design of the latest **Tailors** theme, here are the actual renderings:
 
-### 1. Distinctive Heading System & Neumorphic Badges
-- **Centered H1**: Accompanied by a sunset gradient indicator bar underneath;
-- **Signature Sunset Gradient Capsule (H2)**: Iconic pill badge (`linear-gradient(135deg, #f7ce68, #fbabfe)`);
-- **H3 ~ H6 Color Hierarchy**: Sky Blue (H3), Vibrant Rose (H4), Violet Ring (H5), Indigo Pillar (H6);
-- **`<var>` Neumorphic Badges**: Soft raised touch with subtle glowing gradient.
+### 1. Clean & Elegant Typography (Headings)
+- **Centered H1**: Generous letter spacing and balanced proportions for a commanding document header;
+- **Refined H2 Subheadings**: Clean modern styling with a subtle dividing hairline for effortless visual hierarchy;
+- **Harmonious H3 ~ H6 Hierarchy**: Natural font scaling and calibrated line-heights focused purely on readability;
+- **Distraction-Free Focus**: Removed all extraneous colorful dots, capsules, and rings to prioritize your content.
 
-![Headings and Badges](media/theme/tailors/showcase-headings.png)
+![Clean & Elegant Typography](media/theme/tailors/showcase-headings.png)
 
 ---
 
@@ -73,7 +73,7 @@ To demonstrate the full design of the latest **Tailors** theme, here are the act
 
 This theme is inspired by my two favorite themes:
 
-1. **Phycat** by XuJilong. Homepage: [GitHub - sumruler/typora-theme-phycat](https://github.com/sumruler/typora-theme-phycat) — *Mainly referencing the title system and sunset gradient capsule badges.*
+1. **Phycat** by XuJilong. Homepage: [GitHub - sumruler/typora-theme-phycat](https://github.com/sumruler/typora-theme-phycat) — *Mainly referencing the title hierarchical system and gradient accents.*
 2. **Typora-Theme-Neumorphism** by Soanguy. Homepage: [GitHub - Soanguy/Typora-Theme-Neumorphism](https://github.com/Soanguy/Typora-Theme-Neumorphism) — *Mainly referencing the soft neumorphic inline styling.*
 3. I changed a lot of the colors and unnecessary hover CSS to make the overall style more compatible and pleasant for long reading. Since Soanguy hasn’t updated for a long time, I encountered some bugs while using it, which I fixed.
 4. Continuous updates — if there are any issues, please feel free to raise them in the issue section, and I will fix them when I have time.

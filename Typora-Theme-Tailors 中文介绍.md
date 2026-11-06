@@ -14,7 +14,7 @@ typora-copy-images-to: ../../media/theme/tailors
 
 # Typora-Theme-Tailors 介绍 [English Version](https://github.com/ChiamZhang/tailors.theme.typora/blob/gh-pages/README.md)
 
-> 一款集柔和新拟物化质感（Neumorphism）、日落渐变胶囊标题、全幅淡冰蓝底色与出版级 PDF 导出于一体的精制 Typora 主题。
+> 一款集柔和新拟物化质感（Neumorphism）、清爽典雅经典排版、全幅淡冰蓝底色与出版级 PDF 导出于一体的精制 Typora 主题。
 
 [🌐 在线查看主题实时渲染效果 (Live HTML Preview)](https://chiamzhang.github.io/tailors.theme.typora/preview.html) | [⬇️ 下载离线安装包 (tailors.zip)](https://github.com/ChiamZhang/tailors.theme.typora/raw/gh-pages/media/theme/tailors/tailors.zip) | [⭐ GitHub 仓库](https://github.com/ChiamZhang/tailors.theme.typora)
 
@@ -37,13 +37,13 @@ typora-copy-images-to: ../../media/theme/tailors
 
 为直观呈现最新版 **Tailors** 的所有核心设计亮点，以下截取自最新主题渲染效果：
 
-### 1. 独具匠心的层级标题与微拟物胶囊 (Headings & Badges)
-- **H1 典雅居中排版**：底部搭配日落渐变高亮指示线；
-- **H2 标志性日落渐变胶囊**：Tailors 标志性胶囊造型（`linear-gradient(135deg, #f7ce68, #fbabfe)`）；
-- **H3 ~ H6 色彩标示体系**：晴空海蓝、活力玫红、优雅罗兰、沉稳靛蓝，层级一眼分明；
-- **`<var>` 微拟物胶囊**：微凸起触感与渐变微发光。
+### 1. 清爽典雅的标题排版体系 (Typography & Headings)
+- **H1 典雅居中大标题**：舒展大气的字间距与黄金字阶，沉稳聚焦文档核心；
+- **H2 经典轻分隔次标题**：去除花哨胶囊，底部搭配极细轻质感浅分割线，层级自然分明；
+- **H3 ~ H6 细腻结构排版**：舒适的视觉呼吸节奏与阅读留白，回归纯净沉浸阅读；
+- **纯粹专注内容表达**：全面移除冗余的彩色点圈与装饰，呈现出版级的纯净质感。
 
-![标题体系与微拟物胶囊](media/theme/tailors/showcase-headings.png)
+![清爽典雅标题体系](media/theme/tailors/showcase-headings.png)
 
 ---
 
@@ -71,7 +71,7 @@ typora-copy-images-to: ../../media/theme/tailors
 
 本主题借鉴了我最喜爱的两个经典主题：
 
-1. **物理猫 Phycat**（作者：XuJilong）主页：[GitHub - sumruler/typora-theme-phycat](https://github.com/sumruler/typora-theme-phycat) —— *主要参考了标题体系与日落渐变胶囊样式*。
+1. **物理猫 Phycat**（作者：XuJilong）主页：[GitHub - sumruler/typora-theme-phycat](https://github.com/sumruler/typora-theme-phycat) —— *主要参考了标题结构体系与渐变元素风格*。
 2. **Typora-Theme-Neumorphism**（作者：Soanguy）主页：[GitHub - Soanguy/Typora-Theme-Neumorphism](https://github.com/Soanguy/Typora-Theme-Neumorphism) —— *主要参考了微拟物内联组件风格*。
 3. 优化了大量配色方案和不必要的悬停动画，使整体阅读更加协调舒适。针对 Soanguy 长时间未维护遗留的一些样式 Bug 进行了全面修复。
 4. **持续维护更新**，如有任何使用建议或显示问题，欢迎在 GitHub Issue 中提出。
