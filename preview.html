@@ -906,8 +906,8 @@ body.typora-export #write,
   max-width: 100% !important;
   min-width: 0 !important;
   min-height: 100% !important;
-  margin: 0 auto !important;
-  padding: 10mm 12mm 12mm 12mm !important;
+  margin: 0 !important;
+  padding: 0 !important; /* 彻底移除 CSS 内边距，完全由 Typora 导出设置统一控制边距 */
   box-sizing: border-box !important;
   box-shadow: none !important;
   border: none !important;
@@ -957,8 +957,6 @@ body.typora-export #write hr,
 @media print {
   @page {
     size: A4 portrait;
-    /* 彻底消除外围未着色白边，使背景完整覆盖整张 A4 纸 */
-    margin: 0 !important;
   }
 
   html,
@@ -1002,7 +1000,7 @@ body.typora-export #write hr,
     print-color-adjust: exact !important;
   }
 
-  /* 版芯内容区透明并设置紧凑舒适边距，默认小四号排版 */
+  /* 版芯内容区透明且无需额外 CSS 边距，完全交由 Typora 导出设置统一控制 */
   #write,
   body #write,
   .typora-export #write,
@@ -1015,8 +1013,8 @@ body.typora-export #write hr,
     max-width: 100% !important;
     min-width: 0 !important;
     min-height: 100% !important;
-    margin: 0 auto !important;
-    padding: 10mm 12mm 12mm 12mm !important; /* 紧凑专业边距 */
+    margin: 0 !important;
+    padding: 0 !important; /* 彻底去除 CSS 边距，杜绝与 Typora 导出自带边距双重叠加 */
     box-sizing: border-box !important;
     border: none !important;
     box-shadow: none !important;
