@@ -23,10 +23,12 @@
   --bg-color: #F9FCFF;
   --write-bg: var(--bg-color); /* 统一全局背景色，去除白卡片突兀感 */
   
-  /* 柔和新拟物化投影 */
-  --neumorphic-flat: 12px 12px 32px rgba(166, 180, 204, 0.28), -10px -10px 28px rgba(255, 255, 255, 0.95);
-  --neumorphic-hover: 16px 16px 40px rgba(166, 180, 204, 0.35), -12px -12px 32px rgba(255, 255, 255, 1);
-  --neumorphic-inset: inset 4px 4px 10px rgba(166, 180, 204, 0.25), inset -4px -4px 10px rgba(255, 255, 255, 0.9);
+  /* 柔和新拟物化拟真光影 (Neumorphism 2.0 光影体系) */
+  --neumorphic-flat: 6px 6px 16px rgba(166, 180, 204, 0.3), -6px -6px 16px rgba(255, 255, 255, 0.95);
+  --neumorphic-hover: 8px 8px 22px rgba(166, 180, 204, 0.38), -8px -8px 22px rgba(255, 255, 255, 1);
+  --neumorphic-inset: inset 3px 3px 8px rgba(166, 180, 204, 0.28), inset -3px -3px 8px rgba(255, 255, 255, 0.95);
+  --neumorphic-pill: 3px 3px 8px rgba(166, 180, 204, 0.32), -3px -3px 8px rgba(255, 255, 255, 0.95);
+  --neumorphic-pill-inset: inset 2px 2px 5px rgba(166, 180, 204, 0.32), inset -2px -2px 5px rgba(255, 255, 255, 0.95);
   --card-shadow: 0 10px 30px -5px rgba(26, 34, 56, 0.07), 0 4px 12px -2px rgba(26, 34, 56, 0.04);
   
   /* 交互与高亮 */
@@ -534,33 +536,38 @@ a.md-header-anchor,
    行内代码与代码块 (Code)
    ========================================================================== */
 
-/* 行内代码：轻盈圆角胶囊 */
+/* 行内代码：Neumorphism 暗夜凹槽微拟物胶囊 (Typora-Theme-Neumorphism 标志性质感) */
 #write code {
   font-family: var(--monospace);
   font-size: 0.88em;
-  padding: 0.15em 0.48em;
+  padding: 0.18em 0.55em;
   margin: 0 3px;
-  border-radius: 5px;
-  background: rgba(99, 102, 241, 0.08);
-  color: #6b21a8;
-  border: 1px solid rgba(99, 102, 241, 0.18);
+  border-radius: 6px;
+  background: linear-gradient(135deg, #101c3e 0%, #0e1734 100%);
+  color: #e6dcff;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.45), 1px 2px 4px rgba(16, 28, 62, 0.15);
   word-break: break-all;
-  box-shadow: none;
+  letter-spacing: 0.01em;
 }
 
-/* 围栏代码块容器 */
+/* 围栏代码块容器：新拟物凸起浮雕画板 (立体柔光阴影) */
 body #write .md-fences {
   width: 100%;
-  margin: 1.8rem 0;
-  padding: 1rem 1.25rem 0.9rem;
-  border-radius: 12px;
-  background: #ffffff;
-  border: 1px solid rgba(226, 232, 240, 0.95);
-  box-shadow: 0 8px 24px -4px rgba(26, 34, 56, 0.06), 0 2px 8px -2px rgba(26, 34, 56, 0.03);
+  margin: 2rem 0;
+  padding: 1.1rem 1.25rem 0.95rem;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #ffffff 0%, #f4f7fb 100%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: var(--neumorphic-hover);
   font-family: var(--monospace) !important;
   font-size: 0.92rem;
   line-height: 1.6;
   position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body #write .md-fences:hover {
+  box-shadow: 10px 10px 28px rgba(166, 180, 204, 0.35), -10px -10px 28px rgba(255, 255, 255, 1);
 }
 
 /* macOS 风格红黄绿三色控制圆点 */
@@ -659,40 +666,71 @@ pre.md-fences .CodeMirror-gutters {
    引用块 (Blockquote)
    ========================================================================== */
 
-/* 优雅通透卡片 + 渐变边框，去除遮挡正文的巨型圆球 */
+/* 引用块：经典 Neumorphism 双阴影浮雕卡片 + 悬停内凹 + 标志性微气泡 */
 body #write blockquote {
-  margin: 1.8rem 0;
-  padding: 0.85rem 1.4rem;
+  margin: 2rem 0;
+  padding: 0.95rem 2.6rem 0.95rem 1.4rem;
   position: relative;
-  border-radius: 8px;
-  background: linear-gradient(135deg, rgba(240, 245, 255, 0.65) 0%, rgba(250, 245, 255, 0.75) 100%);
-  border-left: 4.5px solid #8b5cf6;
-  border-top: 1px solid rgba(255, 255, 255, 0.9);
-  border-right: 1px solid rgba(226, 232, 240, 0.6);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.6);
-  box-shadow: 0 4px 16px -2px rgba(139, 92, 246, 0.08);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4fa 100%);
+  border-left: 5px solid #8b5cf6;
+  border-top: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 6px 6px 16px rgba(166, 180, 204, 0.3), -6px -6px 16px rgba(255, 255, 255, 0.95);
   font-family: var(--font-serif);
   color: #334155;
-  transition: all 0.3s ease;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body #write blockquote:hover {
-  background: linear-gradient(135deg, rgba(235, 242, 255, 0.8) 0%, rgba(248, 240, 255, 0.9) 100%);
-  box-shadow: 0 6px 20px -2px rgba(139, 92, 246, 0.14);
+  background: linear-gradient(135deg, #f5f8fc 0%, #edf2f9 100%);
+  box-shadow: inset 3px 3px 8px rgba(166, 180, 204, 0.28), inset -3px -3px 8px rgba(255, 255, 255, 0.95);
 }
 
-/* 消除原版遮盖正文的巨大圆球伪元素 */
+/* Neumorphism 标志性双圆环装饰气泡 (精巧优雅尺寸，杜绝遮盖正文) */
 body #write blockquote::after,
 body #write blockquote::before {
-  display: none !important;
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+body #write blockquote::after {
+  width: 1.8rem;
+  height: 1.8rem;
+  right: -8px;
+  bottom: -8px;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  box-shadow: 3px 3px 8px rgba(166, 180, 204, 0.3), -3px -3px 8px rgba(255, 255, 255, 0.95);
+}
+
+body #write blockquote::before {
+  width: 1rem;
+  height: 1rem;
+  right: 15px;
+  bottom: -4px;
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  box-shadow: 2px 2px 5px rgba(166, 180, 204, 0.25), -2px -2px 5px rgba(255, 255, 255, 0.95);
+}
+
+body #write blockquote:hover::after,
+body #write blockquote:hover::before {
+  background: var(--primary-gradient);
+  box-shadow: 0 4px 12px rgba(247, 206, 104, 0.35);
 }
 
 /* 嵌套引用 */
 body #write blockquote blockquote {
   margin: 0.75rem 0;
   border-left: 3.5px solid #f59e0b;
-  background: rgba(255, 251, 235, 0.65);
-  box-shadow: none;
+  background: rgba(255, 251, 235, 0.7);
+  box-shadow: inset 2px 2px 5px rgba(245, 158, 11, 0.15);
+}
+
+body #write blockquote blockquote::before,
+body #write blockquote blockquote::after {
+  display: none !important;
 }
 
 /* ==========================================================================
@@ -700,32 +738,38 @@ body #write blockquote blockquote {
    ========================================================================== */
 
 body #write .md-table-fig {
-  margin: 2rem 0;
+  margin: 2.2rem 0;
 }
 
 body #write table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  border-radius: 10px;
+  border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 4px 18px -2px rgba(26, 34, 56, 0.06);
+  background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 7px 7px 20px rgba(166, 180, 204, 0.3), -7px -7px 20px rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+}
+
+body #write table:hover {
+  box-shadow: 9px 9px 26px rgba(166, 180, 204, 0.36), -9px -9px 26px rgba(255, 255, 255, 1);
 }
 
 body #write table thead {
   background: var(--primary-gradient);
   color: #2b1836;
   font-weight: 700;
+  box-shadow: 0 2px 8px rgba(247, 206, 104, 0.25);
 }
 
 body #write table th,
 body #write table td {
-  padding: 0.75rem 1.1rem;
+  padding: 0.8rem 1.15rem;
   text-align: left;
-  border-bottom: 1px solid #edf2f7;
-  border-right: 1px solid #edf2f7;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.75);
+  border-right: 1px solid rgba(226, 232, 240, 0.75);
 }
 
 body #write table th:last-child,
@@ -739,34 +783,64 @@ body #write table tr:last-child td {
 
 /* 斑马纹 */
 body #write table tbody tr:nth-child(even) {
-  background-color: #f8fafc;
+  background-color: rgba(248, 250, 252, 0.6);
 }
 
-/* 悬停平滑高亮，彻底去除原版导致跳动的 5px 下划线 */
+/* 悬停行微拟物高亮 */
 body #write table tbody tr:hover {
   background-color: #f1f5f9;
-  box-shadow: none;
-  transition: background-color 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), 0 2px 4px rgba(166, 180, 204, 0.15);
+  transition: all 0.2s ease;
 }
 
 /* ==========================================================================
    任务列表 (Task Lists)
    ========================================================================== */
 
+/* 任务列表：Neumorphism 凸起浮雕按钮与凹陷完成态 */
 body #write .task-list-item {
-  padding-left: 1.8rem;
+  padding-left: 2rem;
   position: relative;
   list-style-type: none;
 }
 
 body #write .task-list-item input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: absolute;
   left: 0;
-  top: 0.35rem;
-  width: 17px;
-  height: 17px;
+  top: 0.25rem;
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ffffff 0%, #e8edf5 100%);
+  box-shadow: 2.5px 2.5px 6px rgba(166, 180, 204, 0.38), -2.5px -2.5px 6px rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  accent-color: #6366f1;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: middle;
+}
+
+body #write .task-list-item input[type="checkbox"]:hover {
+  box-shadow: inset 1.5px 1.5px 3.5px rgba(166, 180, 204, 0.35), inset -1.5px -1.5px 3.5px rgba(255, 255, 255, 1);
+}
+
+body #write .task-list-item input[type="checkbox"]:checked {
+  background: linear-gradient(135deg, #101c3e 0%, #1a2951 100%);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.45), inset -2px -2px 5px rgba(75, 120, 180, 0.25);
+  border: none;
+}
+
+body #write .task-list-item input[type="checkbox"]:checked::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 9px;
+  border: solid #f8fafc;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin: 2px 0 0 5px;
 }
 
 body #write .task-list-item input + p {
@@ -775,13 +849,11 @@ body #write .task-list-item input + p {
   padding: 0;
 }
 
-/* 消除原版多余且错位的紫色小圆点 */
 body #write .task-list-item p::before,
 body #write .task-list-item p::after {
   display: none !important;
 }
 
-/* 任务已完成态 */
 body #write .task-list-done {
   opacity: 0.55;
   text-decoration: line-through;
@@ -952,14 +1024,16 @@ sup.md-footnote {
 
 #typora-sidebar .file-list-item.active {
   border-radius: 8px;
-  background: var(--active-file-bg-color);
-  color: var(--active-file-text-color);
+  background: linear-gradient(145deg, #ffffff 0%, #edf3fa 100%);
+  box-shadow: inset 2.5px 2.5px 6px rgba(166, 180, 204, 0.28), inset -2.5px -2.5px 6px rgba(255, 255, 255, 0.95);
+  color: #1a2238;
   font-weight: 600;
 }
 
 #typora-sidebar .file-tree-node.active > .file-node-content {
   color: #1a2238;
-  background: var(--active-file-bg-color);
+  background: linear-gradient(145deg, #ffffff 0%, #edf3fa 100%);
+  box-shadow: inset 2px 2px 5px rgba(166, 180, 204, 0.25), inset -2px -2px 5px rgba(255, 255, 255, 0.95);
   border-radius: 8px;
   font-weight: 600;
 }
@@ -1008,11 +1082,42 @@ sup.md-footnote {
   color: rgba(26, 34, 56, 0.22) !important;
 }
 
-/* 变量与强调 */
+/* 变量与微拟物胶囊 (<var>) - Typora-Theme-Neumorphism 标志性微拟物组件 */
 var {
   font-family: var(--monospace);
-  font-style: italic;
-  color: var(--text-color);
+  font-style: normal;
+  display: inline-block;
+  padding: 2.5px 12px;
+  margin: 0 4px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4fa 100%);
+  box-shadow: 3px 3px 8px rgba(166, 180, 204, 0.32), -3px -3px 8px rgba(255, 255, 255, 0.95);
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 0.88em;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  vertical-align: baseline;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+var:hover {
+  background: linear-gradient(135deg, #f0f4fa 0%, #e6ecf5 100%);
+  box-shadow: inset 2px 2px 5px rgba(166, 180, 204, 0.32), inset -2px -2px 5px rgba(255, 255, 255, 0.95);
+  color: #7c3aed;
+}
+
+/* 插图与多媒体 (新拟物柔和卡片浮雕) */
+body #write img,
+body #write .md-image img {
+  border-radius: 10px;
+  box-shadow: 6px 6px 18px rgba(166, 180, 204, 0.28), -6px -6px 18px rgba(255, 255, 255, 0.95);
+  transition: all 0.3s ease;
+}
+
+body #write img:hover,
+body #write .md-image img:hover {
+  box-shadow: 8px 8px 24px rgba(166, 180, 204, 0.36), -8px -8px 24px rgba(255, 255, 255, 1);
 }
 
 /* ==========================================================================
@@ -1352,6 +1457,33 @@ body.typora-export #write hr,
     margin: 0.8rem 0 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
+  }
+
+  body #write blockquote::after,
+  body #write blockquote::before {
+    display: none !important;
+  }
+
+  /* 变量与行内代码打印态：干净边框与中性色，去除暗色凹槽与立体投影 */
+  #write var {
+    font-family: var(--monospace) !important;
+    font-style: normal !important;
+    background: #f1f5f9 !important;
+    color: #334155 !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    padding: 1px 6px !important;
+    border-radius: 4px !important;
+  }
+
+  body #write code {
+    font-family: var(--monospace) !important;
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: none !important;
+    padding: 1px 4px !important;
+    border-radius: 3px !important;
   }
 
   /* 表格导出风格：五号字 (10.5pt) 紧凑清晰 */
