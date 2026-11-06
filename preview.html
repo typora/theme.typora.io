@@ -268,8 +268,7 @@ content {
   line-height: 1.45;
   margin: 2.2rem 0 1.1rem;
   color: var(--text-color);
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(26, 34, 56, 0.1);
+  padding-bottom: 0.2rem;
   letter-spacing: 0.01em;
 }
 
@@ -336,10 +335,12 @@ content {
 
 /* 下划线与高亮效果 */
 #write u {
-  text-decoration: none;
-  background: linear-gradient(180deg, transparent 65%, rgba(147, 197, 253, 0.45) 65%);
-  padding: 0 2px;
-  border-radius: 2px;
+  text-decoration: underline;
+  text-decoration-color: #3b82f6;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3.5px;
+  background: transparent;
+  padding: 0 1px;
 }
 
 #write mark {
@@ -917,6 +918,18 @@ body.typora-export #write,
   print-color-adjust: exact !important;
 }
 
+/* 导出态规范真正的下划线 (u 标签) */
+body.typora-export #write u,
+.typora-export #write u {
+  text-decoration: underline !important;
+  text-decoration-color: #0f172a !important;
+  text-decoration-thickness: 1.2px !important;
+  text-underline-offset: 3.5px !important;
+  background: transparent !important;
+  background-image: none !important;
+  padding: 0 !important;
+}
+
 /* 导出态去除任何多余的超链接蓝色与下划线横线 */
 body.typora-export #write a,
 .typora-export #write a {
@@ -1038,12 +1051,24 @@ body.typora-export #write hr,
     font-size: 14pt !important; /* 四号二级标题 */
     background: transparent !important;
     color: #0f172a !important;
-    border-bottom: 1px solid #cbd5e1 !important;
+    border-bottom: none !important;
     box-shadow: none !important;
     page-break-after: avoid;
     break-after: avoid;
     margin-top: 1.1rem !important;
     margin-bottom: 0.6rem !important;
+  }
+
+  /* 下划线导出规范 (u 标签)：纯净矢量下划线，优雅离底 3px */
+  #write u,
+  body.typora-export #write u {
+    text-decoration: underline !important;
+    text-decoration-color: #0f172a !important;
+    text-decoration-thickness: 1.2px !important;
+    text-underline-offset: 3px !important;
+    background: transparent !important;
+    background-image: none !important;
+    padding: 0 !important;
   }
 
   #write h3 {
