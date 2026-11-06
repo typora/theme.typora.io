@@ -29,11 +29,11 @@ Tailors seamlessly combines classic sunset gradients (Phycat) with soft neumorph
 ### 1. Sunset Gradient & Chromatic Heading System (Headings)
 - **Centered H1**: Prominent title accented by a signature sunset gradient indicator underline;
 - **Signature H2 Sunset Capsule**: Iconic `linear-gradient(to right, #f7ce68, #fbabfe)` pill badge with soft neumorphic depth;
-- **H3 ~ H6 Chromatic Accents & Dot Patterns**:
-  - **H3 Sky-Blue**: Left vertical accent border accompanied by a 3-dot cyan pattern;
-  - **H4 Vibrant Rose**: Solid glowing dot badge accompanied by a 4-dot magenta pattern;
-  - **H5 Roland Purple**: Delicate hollow ring accompanied by a 5-dot purple pattern;
-  - **H6 Indigo**: Minimal horizontal dash accompanied by a 6-dot deep indigo pattern;
+- **H3 ~ H6 Sunset Twilight Accents & Dot Patterns**:
+  - **H3 Coral Sunset Orange**: Left vertical accent border accompanied by a 3-dot amber pattern;
+  - **H4 Twilight Rose**: Solid glowing dot badge accompanied by a 4-dot rose pattern;
+  - **H5 Iris Violet**: Delicate hollow ring accompanied by a 5-dot violet pattern;
+  - **H6 Midnight Azure**: Minimal horizontal dash accompanied by a 6-dot azure pattern;
 - **`<var>` Neumorphic Capsules**: Tactile raised pill badges with ambient gradient glow.
 
 ![Sunset Gradient & Chromatic Heading System](media/theme/tailors/showcase-headings.png)
