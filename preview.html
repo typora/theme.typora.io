@@ -899,12 +899,14 @@ body.typora-export,
 body.typora-export #write,
 .typora-export #write,
 .typora-export-content #write {
+  font-size: 12pt !important; /* 导出默认小四号字体 (12pt / 16px) */
+  line-height: 1.65 !important;
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
   min-height: 100% !important;
   margin: 0 auto !important;
-  padding: 16mm 18mm 20mm 18mm !important;
+  padding: 10mm 12mm 12mm 12mm !important;
   box-sizing: border-box !important;
   box-shadow: none !important;
   border: none !important;
@@ -951,8 +953,8 @@ body.typora-export #write hr,
     background-color: var(--bg-color) !important;
     background: var(--bg-color) !important;
     font-family: var(--font-sans) !important;
-    font-size: 17px;
-    line-height: 1.85;
+    font-size: 12pt !important; /* 默认小四号字体 (12pt / 16px) */
+    line-height: 1.65 !important;
     color: var(--text-color) !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -987,19 +989,21 @@ body.typora-export #write hr,
     print-color-adjust: exact !important;
   }
 
-  /* 版芯内容区透明并设置标准内边距，文字与页面完全融合且不贴边 */
+  /* 版芯内容区透明并设置紧凑舒适边距，默认小四号排版 */
   #write,
   body #write,
   .typora-export #write,
   body.typora-export #write,
   .typora-export-content #write {
     font-family: var(--font-sans) !important;
+    font-size: 12pt !important; /* 默认小四号字体 */
+    line-height: 1.65 !important;
     width: 100% !important;
     max-width: 100% !important;
     min-width: 0 !important;
     min-height: 100% !important;
     margin: 0 auto !important;
-    padding: 16mm 18mm 20mm 18mm !important;
+    padding: 10mm 12mm 12mm 12mm !important; /* 紧凑专业边距 */
     box-sizing: border-box !important;
     border: none !important;
     box-shadow: none !important;
@@ -1010,7 +1014,13 @@ body.typora-export #write hr,
     print-color-adjust: exact !important;
   }
 
-  /* 标题分页与排版保护，保证纯净典雅 */
+  #write p {
+    font-size: 12pt !important; /* 正文默认小四号 */
+    line-height: 1.65 !important;
+    margin: 0.6em 0 !important;
+  }
+
+  /* 标题分页与排版保护，字阶依小四号正文按比例缩放 */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
     break-after: avoid;
@@ -1019,18 +1029,41 @@ body.typora-export #write hr,
   }
 
   #write h1 {
-    font-size: 22pt;
-    margin-top: 1rem;
+    font-size: 18pt !important; /* 小二号大标题 */
+    margin-top: 1.2rem !important;
+    margin-bottom: 0.8rem !important;
   }
 
   #write h2 {
-    font-size: 16pt;
+    font-size: 14pt !important; /* 四号二级标题 */
     background: transparent !important;
     color: #0f172a !important;
     border-bottom: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
     page-break-after: avoid;
     break-after: avoid;
+    margin-top: 1.1rem !important;
+    margin-bottom: 0.6rem !important;
+  }
+
+  #write h3 {
+    font-size: 13pt !important;
+    margin-top: 0.9rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  #write h4 {
+    font-size: 12pt !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.4rem !important;
+  }
+
+  #write h5 {
+    font-size: 11pt !important;
+  }
+
+  #write h6 {
+    font-size: 10.5pt !important;
   }
 
   /* 避免关键块在页面接缝处被生硬切断 */
@@ -1052,20 +1085,24 @@ body.typora-export #write hr,
     margin: 1.5rem 0 !important;
   }
 
-  /* 代码块墨粉节约与边框规范 */
+  /* 代码块墨粉节约与边框规范，五号 (10.5pt) 紧凑排版 */
   body #write .md-fences {
+    font-size: 10.5pt !important;
+    line-height: 1.5 !important;
     background: #f8fafc !important;
     border: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
-    padding: 0.8rem 1rem !important;
+    padding: 0.6rem 0.9rem !important;
   }
 
   body #write .md-fences::before {
     display: none !important;
   }
 
-  /* 引用块导出：经典中性浅灰边框，去除任何蓝色偏色 */
+  /* 引用块导出：经典中性浅灰边框，字号与正文协调 */
   body #write blockquote {
+    font-size: 11.5pt !important;
+    line-height: 1.6 !important;
     background: #f8fafc !important;
     border-left: 3.5px solid #cbd5e1 !important;
     border-top: none !important;
@@ -1073,12 +1110,15 @@ body.typora-export #write hr,
     border-bottom: none !important;
     box-shadow: none !important;
     color: #334155 !important;
+    padding: 0.5rem 1rem !important;
+    margin: 0.8rem 0 !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  /* 表格导出风格 */
+  /* 表格导出风格：五号字 (10.5pt) 紧凑清晰 */
   body #write table {
+    font-size: 10.5pt !important;
     border: 1px solid #cbd5e1 !important;
     box-shadow: none !important;
   }
@@ -1092,6 +1132,7 @@ body.typora-export #write hr,
 
   body #write table th,
   body #write table td {
+    padding: 0.45rem 0.75rem !important;
     border: 1px solid #cbd5e1 !important;
   }
 
