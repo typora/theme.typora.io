@@ -328,7 +328,7 @@ content {
   color: var(--text-color);
 }
 
-/* 四级标题：精致实心发光圆点 (活力玫红) */
+/* 四级标题：精致实心发光圆点 (活力玫红，8px 等宽规格) */
 #write h4 {
   font-size: 1.12rem;
   margin: 1.6rem 0 0.85rem;
@@ -339,16 +339,16 @@ content {
 #write h4::before {
   content: "";
   display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-right: 9px;
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
   border-radius: 50%;
   background-color: var(--h4-r-color);
   box-shadow: 0 0 8px rgba(225, 29, 72, 0.45);
   vertical-align: middle;
 }
 
-/* 五级标题：精致空心环圈 (优雅罗兰) */
+/* 五级标题：精致空心环圈 (优雅罗兰，8px 等宽规格) */
 #write h5 {
   font-size: 1.02rem;
   margin: 1.4rem 0 0.75rem;
@@ -364,11 +364,12 @@ content {
   margin-right: 8px;
   border-radius: 50%;
   background-color: #ffffff;
-  border: 2.5px solid var(--h5-r-color);
+  border: 2px solid var(--h5-r-color);
+  box-sizing: border-box;
   vertical-align: middle;
 }
 
-/* 六级标题：极简短横杠 (沉稳靛蓝) */
+/* 六级标题：极简等宽短横杠 (沉稳靛蓝，8px 等宽规格) */
 #write h6 {
   font-size: 0.95rem;
   margin: 1.2rem 0 0.65rem;
@@ -379,10 +380,10 @@ content {
 #write h6::before {
   content: "";
   display: inline-block;
-  width: 12px;
+  width: 8px;
   height: 2.5px;
   margin-right: 8px;
-  border-radius: 2px;
+  border-radius: 1.5px;
   background-color: var(--h6-r-color);
   vertical-align: middle;
 }
@@ -1282,10 +1283,10 @@ body.typora-export #write hr,
   #write h6::before {
     content: "" !important;
     display: inline-block !important;
-    width: 11px !important;
-    height: 2.5px !important;
+    width: 7px !important;
+    height: 2px !important;
     margin-right: 7px !important;
-    border-radius: 2px !important;
+    border-radius: 1.5px !important;
     background-color: var(--h6-r-color) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
