@@ -24,14 +24,19 @@ typora-copy-images-to: ../../media/theme/tailors
 
 ## 🎨 Visual Showcase
 
-Tailors adheres to a modern, distraction-free typographic philosophy, removing redundant decorative badges and letting clean typographic hierarchy organize your writing:
+Tailors seamlessly combines classic sunset gradients (Phycat) with soft neumorphic (Neumorphism) aesthetics for a vibrant, expressive hierarchy:
 
-### 1. Clean & Elegant Typography (Headings)
-- **Centered H1**: Balanced proportions and generous letter spacing for a commanding document header;
-- **Refined H2 Subheadings**: Modern styling with a subtle dividing hairline for effortless visual hierarchy;
-- **Harmonious H3 ~ H6 Hierarchy**: Natural font scaling and calibrated line-heights focused purely on readability.
+### 1. Sunset Gradient & Chromatic Heading System (Headings)
+- **Centered H1**: Prominent title accented by a signature sunset gradient indicator underline;
+- **Signature H2 Sunset Capsule**: Iconic `linear-gradient(to right, #f7ce68, #fbabfe)` pill badge with soft neumorphic depth;
+- **H3 ~ H6 Chromatic Accents & Dot Patterns**:
+  - **H3 Sky-Blue**: Left vertical accent border accompanied by a 3-dot cyan pattern;
+  - **H4 Vibrant Rose**: Solid glowing dot badge accompanied by a 4-dot magenta pattern;
+  - **H5 Roland Purple**: Delicate hollow ring accompanied by a 5-dot purple pattern;
+  - **H6 Indigo**: Minimal vertical bar accompanied by a 6-dot deep indigo pattern;
+- **`<var>` Neumorphic Capsules**: Tactile raised pill badges with ambient gradient glow.
 
-![Clean & Elegant Typography](media/theme/tailors/showcase-headings.png)
+![Sunset Gradient & Chromatic Heading System](media/theme/tailors/showcase-headings.png)
 
 ---
 
