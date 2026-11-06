@@ -918,16 +918,18 @@ body.typora-export #write,
   print-color-adjust: exact !important;
 }
 
-/* 导出态规范真正的下划线 (u 标签) */
+/* 导出态规范真正的下划线 (u 标签)：采用清新荧光蓝，去除沉闷纯黑 */
 body.typora-export #write u,
 .typora-export #write u {
   text-decoration: underline !important;
-  text-decoration-color: #0f172a !important;
-  text-decoration-thickness: 1.2px !important;
+  text-decoration-color: #3b82f6 !important; /* 清新晴空蓝荧光下划线 */
+  text-decoration-thickness: 1.5px !important;
   text-underline-offset: 3.5px !important;
   background: transparent !important;
   background-image: none !important;
   padding: 0 !important;
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
 }
 
 /* 导出态去除任何多余的超链接蓝色与下划线横线 */
@@ -1057,16 +1059,18 @@ body.typora-export #write hr,
     margin-bottom: 0.6rem !important;
   }
 
-  /* 下划线导出规范 (u 标签)：纯净矢量下划线，优雅离底 3px */
+  /* 下划线导出规范 (u 标签)：清新晴空蓝荧光下划线，优雅离底 3.5px */
   #write u,
   body.typora-export #write u {
     text-decoration: underline !important;
-    text-decoration-color: #0f172a !important;
-    text-decoration-thickness: 1.2px !important;
-    text-underline-offset: 3px !important;
+    text-decoration-color: #3b82f6 !important;
+    text-decoration-thickness: 1.5px !important;
+    text-underline-offset: 3.5px !important;
     background: transparent !important;
     background-image: none !important;
     padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   #write h3 {
