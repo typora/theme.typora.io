@@ -110,3 +110,76 @@ This theme is inspired by my two favorite themes:
 ## ⚙️ Customization
 
 Personalization can be done by modifying the CSS variables in the `:root` module inside `tailors.css`.
+
+---
+
+# Tailors Typography Demonstration (Showcase)
+
+> Soft Neumorphic Elegance · Full-Bleed Icy Blue Canvas · Aligned Standard Reading Width · Publisher-Grade A4 Export
+
+## 1. Clean & Elegant Typography (Headings)
+
+Tailors embraces a clean, modern typographical philosophy, stripping away extraneous decorative dots and bars to let headings naturally structure your writing:
+
+### Third Level Heading · Clear Hierarchical Rhythm (Heading 3)
+
+Heading 3 features calibrated scale and line-height, establishing a comfortable reading rhythm alongside body paragraphs.
+
+#### Fourth Level Heading · Subtle Section Anchors (Heading 4)
+
+Heading 4 is tuned for detailed subsection division within longer articles, clear and distraction-free.
+
+##### Fifth & Sixth Level Headings · Auxiliary Grouping (Heading 5 & 6)
+
+Deeper structural tiers remain clean and legible, effortlessly supporting technical documentation and complex research notes.
+
+---
+
+## 2. Refined macOS-Style Code Fences
+
+Code blocks feature classic macOS red/yellow/green triple-dot controls, paired with gentle neumorphic shadows and high-contrast syntax highlighting:
+
+```python
+def render_tailors_theme():
+    # Full-bleed soothing icy-blue canvas without harsh pure-white cutouts
+    palette = {
+        "canvas": "#F9FCFF",  # Seamless background tone
+        "typography": ["Bellota", "华文中宋", "霞鹜文楷"],
+        "editor_width": "860px (Responsive to 1200px)"
+    }
+    return f"Enjoy distraction-free writing with Tailors!"
+```
+
+---
+
+## 3. Inline Typography Styles
+
+Full support for standard Markdown inline syntax with harmonious visual weights:
+
+- Supports **Bold Emphasis**, *Italic Slant*, and `Inline Code`;
+- Distinctive <u>Underline</u> and ==Highlighter Mark==;
+- Strikethrough ~~Strikethrough~~ and interactive hyperlinks [Interactive Link](https://github.com/ChiamZhang/tailors.theme.typora).
+
+---
+
+## 4. Elegant Blockquotes & Modern Tables
+
+> Every stroke creates a landscape. Tailors gathers the finest nuances of design while eliminating visual noise, offering a serene sanctuary for long-session reading and writing.
+
+Airy modern card-style table with soft header and alternating zebra rows:
+
+| Feature Module | Design Goal | Visual Specification | Status |
+| :--- | :--- | :--- | :--- |
+| **Global Canvas** | Soothing Icy Blue | `#F9FCFF` full-bleed tone | Unified |
+| **Editor Width** | Typora Official Spec | `860px` (auto-expands on wide screens) | Aligned |
+| **PDF Export** | Publisher-Grade Print | A4 zero-margin / clean link typography | Calibrated |
+| **Headings** | Classical Typography | Removed extraneous dots & capsules | Streamlined |
+
+---
+
+## 5. Interactive Task List
+
+- [x] Unified screen editor and export background to soothing icy blue (`#F9FCFF`)
+- [x] Aligned reading width with Typora official standards (`860px` / `1024px` / `1200px`)
+- [x] Calibrated full-bleed zero-margin A4 print output without awkward page-splits
+- [x] Streamlined clean typography, removing noisy colored badges
