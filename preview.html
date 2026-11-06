@@ -332,9 +332,8 @@ content {
 #write h4 {
   font-size: 1.12rem;
   margin: 1.6rem 0 0.85rem;
-  display: flex;
-  align-items: center;
   color: var(--text-color);
+  line-height: 1.4;
 }
 
 #write h4::before {
@@ -346,16 +345,15 @@ content {
   border-radius: 50%;
   background-color: var(--h4-r-color);
   box-shadow: 0 0 8px rgba(225, 29, 72, 0.45);
-  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 /* 五级标题：精致空心环圈 (优雅罗兰) */
 #write h5 {
   font-size: 1.02rem;
   margin: 1.4rem 0 0.75rem;
-  display: flex;
-  align-items: center;
   color: var(--text-color);
+  line-height: 1.4;
 }
 
 #write h5::before {
@@ -367,7 +365,7 @@ content {
   border-radius: 50%;
   background-color: #ffffff;
   border: 2.5px solid var(--h5-r-color);
-  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 /* 六级标题：极简短横杠 (沉稳靛蓝) */
@@ -375,8 +373,7 @@ content {
   font-size: 0.95rem;
   margin: 1.2rem 0 0.65rem;
   color: var(--text-color-light);
-  display: flex;
-  align-items: center;
+  line-height: 1.4;
 }
 
 #write h6::before {
@@ -387,7 +384,7 @@ content {
   margin-right: 8px;
   border-radius: 2px;
   background-color: var(--h6-r-color);
-  flex-shrink: 0;
+  vertical-align: middle;
 }
 
 /* 标题后经典 SVG 点阵徽标 (Phycat 灵动图案) */
@@ -1236,8 +1233,7 @@ body.typora-export #write hr,
 
   #write h4 {
     font-size: 12pt !important;
-    display: flex !important;
-    align-items: center !important;
+    line-height: 1.4 !important;
     margin-top: 0.8rem !important;
     margin-bottom: 0.4rem !important;
   }
@@ -1252,13 +1248,12 @@ body.typora-export #write hr,
     background-color: var(--h4-r-color) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    flex-shrink: 0 !important;
+    vertical-align: middle !important;
   }
 
   #write h5 {
     font-size: 11pt !important;
-    display: flex !important;
-    align-items: center !important;
+    line-height: 1.4 !important;
     margin-top: 0.7rem !important;
     margin-bottom: 0.35rem !important;
   }
@@ -1274,13 +1269,12 @@ body.typora-export #write hr,
     border: 2px solid var(--h5-r-color) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    flex-shrink: 0 !important;
+    vertical-align: middle !important;
   }
 
   #write h6 {
     font-size: 10.5pt !important;
-    display: flex !important;
-    align-items: center !important;
+    line-height: 1.4 !important;
     margin-top: 0.6rem !important;
     margin-bottom: 0.3rem !important;
   }
@@ -1295,7 +1289,7 @@ body.typora-export #write hr,
     background-color: var(--h6-r-color) !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
-    flex-shrink: 0 !important;
+    vertical-align: middle !important;
   }
 
   /* 避免关键块在页面接缝处被生硬切断 */
