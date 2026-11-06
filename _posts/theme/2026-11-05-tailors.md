@@ -33,7 +33,7 @@ Tailors seamlessly combines classic sunset gradients (Phycat) with soft neumorph
   - **H3 Sky-Blue**: Left vertical accent border accompanied by a 3-dot cyan pattern;
   - **H4 Vibrant Rose**: Solid glowing dot badge accompanied by a 4-dot magenta pattern;
   - **H5 Roland Purple**: Delicate hollow ring accompanied by a 5-dot purple pattern;
-  - **H6 Indigo**: Minimal vertical bar accompanied by a 6-dot deep indigo pattern;
+  - **H6 Indigo**: Minimal horizontal dash accompanied by a 6-dot deep indigo pattern;
 - **`<var>` Neumorphic Capsules**: Tactile raised pill badges with ambient gradient glow.
 
 ![Sunset Gradient & Chromatic Heading System](media/theme/tailors/showcase-headings.png)
