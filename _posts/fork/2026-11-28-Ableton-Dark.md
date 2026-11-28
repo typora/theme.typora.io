@@ -13,7 +13,7 @@ typora-copy-images-to: ../../media/theme/ableton-dark
 
 # Ableton Dark
 
-A dark Typora theme with a charcoal background, warm cream body text and a yellow/orange accent.
+A dark Typora theme with a charcoal background, warm tan body text and a yellow/orange accent.
 
 This is a colour variant of [Typora Themeable](/theme/Typora-Themeable/) (dark) by John Hildenbiddle. Only the CSS colour variables are overridden; layout and typography come from Themeable.
 
